@@ -1,0 +1,20 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+
+//pages
+import Login from './pages/Login'
+import Register from './pages/Register'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className="App">
+    <Register/>
+        
+    </div>
+  )
+}
+
+export default App

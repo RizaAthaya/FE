@@ -1,0 +1,22 @@
+.input-title{
+    width: 25rem;
+    margin: auto;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+color: black;
+text-align: left;
+}
+.input-box{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background: #fff;
+/* Neutral/30 */
+width: 25rem;
+height: 3rem;
+border: 1px solid #868686;
+border-radius: 8px;
+
+}
