@@ -3,13 +3,13 @@ import "./Register.css";
 
 //components
 import FormInput from "../components/FormInput";
-import Button from "../components/Button";
+import Buttons from "../components/Buttons";
 
 const Register = () => {
   return (
     <div className="whole-sec2">
       <div className="left-sec2">
-        <Button label="Button"></Button>
+      <Buttons label="Button" styleBtn='btn-norm'></Buttons>
       </div>
       <div className="right-sec2">
         <form className="form-part2">
@@ -20,9 +20,7 @@ const Register = () => {
           <FormInput judul="Title" />
           <FormInput judul="Title" />
           <h3 className="register2">Lorem ipsum dolor sit amet consectetur <br/> lorem ipsum dolor sit amet consectetur.</h3>
-          <button type="submit2" className="submit-form">
-            SUBMIT
-          </button>
+          <Buttons label='SUBMIT' styleBtn='btn-submit'></Buttons>
           <h3 className="penutup2">Lorem ipsum dolor sit amet consectetur.</h3>
         </form>
       </div>
