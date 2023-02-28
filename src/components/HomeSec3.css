@@ -1,0 +1,47 @@
+.sec3 {
+    background-color: #C0C0C0;
+    width: 100vw;
+    height: 15.4%;
+    font-family: 'Poppins';
+    padding: 52px 0px 103px 0px;
+    /* align-content: center;
+    align-items: center; */
+    justify-content: space-around;
+
+}
+
+.title-sec3 {
+    color: #121212;
+    margin: auto;
+    margin-bottom: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.isi-sec3 {
+    justify-content: space-around;
+    display: flex;
+    margin: auto;
+    width: 87%;
+
+}
+
+.pict-sec3 {
+    width: 35%;
+    height: 256px;
+    background: #C0C0C0;
+    /* Neutral/50 */
+    /* margin: auto; */
+    /* margin-right: 20px; */
+    border: 2px solid #121212;
+    border-radius: 8px;
+
+
+}
+
+.box-part {
+    display: block;
+    background-color: #121212;
+}

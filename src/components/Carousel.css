@@ -1,7 +1,6 @@
 .carousel{
     margin: auto;
-    width: 86%;
-
+    width: 85%;
 }
 
 .slick-slide > div {
@@ -25,6 +24,7 @@
   }
   
   .card-top > video {
+    position: relative;
     margin: auto;
     width: 25rem;
     height: 12.5rem;

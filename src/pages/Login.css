@@ -1,52 +1,51 @@
-.whole-sec{
+.whole-sec {
     display: flex;
     background-color: #fff;
     background-position: cover;
     width: 100vw;
     height: 100vh;
-    
+
 }
-.left-sec{
+
+.left-sec {
     display: flex;
     flex-basis: 50%;
-    background-color:#4C4C4C;
+    background-color: #4C4C4C;
     width: 50%;
     height: 100%;
 }
-.right-sec{
+
+.right-sec {
     display: flex;
     flex-basis: 50%;
     background-color: #fff;
     width: 50%;
     height: 100%;
-    
+
 }
-.form-part{
+
+.form-part {
     /* display: flex; */
     padding-top: 18rem;
     width: 100%;
     text-align: center;
-    /* margin: auto; */
-    /* padding-left: 8rem;
-    padding-top: 16.75rem;
-    padding-right: 18rem; */
+
 }
-.title-form{
+
+.title-form {
 
     margin: auto;
-    /* display: flex; */
     width: 25rem;
-    /* margin-left: 20%;
-    margin-top: 16.75rem; */
     color: black;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    
+
 }
-.desc-form{
+
+.desc-form {
 
     margin: auto;
     margin-top: 0.5rem;
@@ -59,42 +58,41 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-font-size: 18px;
-line-height: 28px;
+    font-size: 18px;
+    line-height: 28px;
 }
-.register{
+
+.register {
     width: 25rem;
     color: black;
     margin: auto;
     text-align: right;
     margin-bottom: 3rem;
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 28px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
 }
+
 /* .submit-form{
     width: 25rem;
     background-color: #868686;
     padding: 12px 170px;
     margin-bottom: 11.25rem;
 } */
-.penutup{
+.penutup {
     /* display:list-item; */
     /* B1/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-/* identical to box height, or 156% */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
 
-text-align: center;
+    text-align: center;
 
-/* Neutral/40 */
-
-color: #4C4C4C;
+    color: #4C4C4C;
 
 }

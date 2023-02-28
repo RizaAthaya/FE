@@ -5,7 +5,7 @@ export const dataDigitalBestSeller = [
     price: '$59.99',
     category: 'Nintendo Switch',
     linkImg:
-      'https://www.youtube.com/watch?v=8rI0xZ1sst0',
+      'https://youtu.be/DSWYAclv2I8',
   },
   {
     id: 2,

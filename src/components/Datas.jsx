@@ -1,0 +1,98 @@
+export const dataCard = [
+  {
+    id: 1,
+    tag1: "S1",
+    tag2: "Jepang",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "https://youtu.be/embed/oMqcb16umH0",
+  },
+  {
+    id: 2,
+    tag1: "S2",
+    tag2: "Korea",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "https://youtu.be/oMqcb16umH0",
+  },
+  {
+    id: 3,
+    tag1: "S2",
+    tag2: "Inggris",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "https://youtu.be/oMqcb16umH0",
+  },
+  {
+    id: 4,
+    tag1: "S4",
+    tag2: "Jerman",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "",
+  },
+  {
+    id: 5,
+    tag1: "S1",
+    tag2: "Jepang",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "",
+  },
+  {
+    id: 6,
+    tag1: "S1",
+    tag2: "Jepang",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "",
+  },
+  {
+    id: 7,
+    tag1: "S1",
+    tag2: "Jepang",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "",
+  },
+  {
+    id: 8,
+    tag1: "S1",
+    tag2: "Jepang",
+    desc: "Beasiswa Fully Funded",
+    title: "Lorem ipsum dolor sit",
+    ket1: "Close Registration",
+    ket2: "10 Mar 2023",
+    descLong:
+      "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
+    linkVid: "",
+  },
+];
