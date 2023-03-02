@@ -2,27 +2,36 @@ import React from "react";
 import "./Register.css";
 
 //components
-import FormInput from "../components/FormInput";
-import Buttons from "../components/Buttons";
+import FormRegister from "../components/auth/FormRegister";
+import Buttons from "../components/general/Buttons";
+
+//assets
+import Signup from "../assets/Signup.svg";
 
 const Register = () => {
   return (
     <div className="whole-sec2">
       <div className="left-sec2">
-      <Buttons label="Button" styleBtn='btn-norm'></Buttons>
+        <div className="main-leftSec">
+          <div className="button-register">
+            <Buttons label="Home" styleBtn="btn-norm4" ke="/" ></Buttons>
+          </div>
+          <div className="box-imgRegister">
+            <img className="img-register" src={Signup}></img>
+          </div>
+        </div>
       </div>
       <div className="right-sec2">
-        <form className="form-part2">
-          <h2 className="title-form2">Lorem ipsum</h2>
-          <h3 className="desc-form2">Lorem ipsum dolor sit amet consectetur.</h3>
-          <FormInput judul="Title" />
-          <FormInput judul="Title" />
-          <FormInput judul="Title" />
-          <FormInput judul="Title" />
-          <h3 className="register2">Lorem ipsum dolor sit amet consectetur <br/> lorem ipsum dolor sit amet consectetur.</h3>
-          <Buttons label='SUBMIT' styleBtn='btn-submit'></Buttons>
-          <h3 className="penutup2">Lorem ipsum dolor sit amet consectetur.</h3>
-        </form>
+        <div className="form-part2">
+          <h2 className="title-form2">Buat Akun</h2>
+          <h3 className="desc-form2">Bergabung dengan kami</h3>
+          <FormRegister />
+          <h3 className="register2">
+            Dengan mendaftar, anda setuju dengan Syarat dan Ketentuan serta
+            Kebijakan Privasi yang berlaku.
+          </h3>
+          <h3 className="penutup2">Sudah punya akun? <a href="/login">Masuk</a> di sini.</h3>
+        </div>
       </div>
     </div>
   );

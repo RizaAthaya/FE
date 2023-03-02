@@ -1,0 +1,40 @@
+.whole-komunitas {
+    width: 100vw;
+    height: 2049px;
+    background-color: #fff;
+}
+
+.atas-komunitas {
+    padding-top: 8%;
+    margin: auto;
+}
+
+.header-komunitas {
+    width: 90vw;
+    height: 224px;
+    color: #192BC2;
+    background-color: linear-gradient(93.39deg, #192BC2 0%, #5363E9 100%);
+    border-radius: 24px;
+    padding: 5% 0%;
+}
+
+.desc-komunitas {
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    
+}
+
+.title-komunitas {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+}

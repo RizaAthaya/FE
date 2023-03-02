@@ -1,0 +1,22 @@
+.whole-sec4 {
+    width: 100vw;
+    height: 2616px;
+    display: block;
+    background-color: #fff;
+
+}
+
+.body-sec4 {
+    padding: 7% 7%;
+    color: black;
+}
+
+.main-img {
+    margin: auto;
+    width: 1240px;
+    height: 320px;
+    background: linear-gradient(93.39deg, #192BC2 0%, #5363E9 100%);
+    border-radius: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}

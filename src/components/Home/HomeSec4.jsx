@@ -1,10 +1,6 @@
 import React from "react";
 import "./HomeSec4.css";
-import './Swiper';
-import 'swiper/less';
-import 'swiper/less/navigation';
-import 'swiper/less/pagination';
-import CardHome1 from "./CardHome1";
+import CardHome1 from "../Carousel/CardHome1";
 
 
 const HomeSec4 = (props) => {

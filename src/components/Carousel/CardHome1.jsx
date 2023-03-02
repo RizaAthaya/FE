@@ -1,6 +1,6 @@
 import React from "react";
 import "./CardHome1.css";
-import { dataCard } from "./Datas";
+import { dataCard } from "../utils/Datas";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

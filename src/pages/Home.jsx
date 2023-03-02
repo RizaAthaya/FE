@@ -2,21 +2,21 @@ import React from "react";
 import "./Home.css";
 
 //compnents
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/general/Navbar";
+import Footer from "../components/general/Footer";
 
 //section
-import HomeSec1 from "../components/HomeSec1";
-import HomeSec2 from "../components/HomeSec2";
-import HomeSec3 from "../components/HomeSec3";
-import HomeSec4 from "../components/HomeSec4";
-import HomeSec5 from "../components/HomeSec5";
+import HomeSec1 from "../components/Home/HomeSec1"
+import HomeSec2 from "../components/Home/HomeSec2";
+import HomeSec3 from "../components/Home/HomeSec3";
+import HomeSec4 from "../components/Home/HomeSec4";
+import HomeSec5 from "../components/Home/HomeSec5";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="wholey-sec">
+      <div className="whole-sec3">
         <HomeSec1 />
         <HomeSec2 />
         <HomeSec3 />

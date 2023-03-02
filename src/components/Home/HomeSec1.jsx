@@ -1,6 +1,9 @@
 import React from "react";
 import "./HomeSec1.css";
 
+//assets
+import pana from '../../assets/pana.svg';
+
 const HomeSec1 = () => {
   return (
     <div className="sec1">
@@ -15,7 +18,7 @@ const HomeSec1 = () => {
             congue morbi dapibus quis.
           </h6>
         </div>
-        <img className="img-sec1"></img>
+        <img className="img-sec1" src={pana}></img>
       </div>
     </div>
   );

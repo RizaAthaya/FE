@@ -3,8 +3,8 @@
     width: 100vw;
     /* height: 56.1rem; */
     height: 25%;
-    background-color: #D9D9D9;
-    padding: 20.813rem 7%;
+    background-color: #fff;
+    padding: 11% 7%;
 
 }
 
@@ -22,9 +22,9 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 76px;
-    color: black;
+    color: #192BC2;
     /* margin-top: 24.5rem; */
-    /* padding-top: 24.5rem; */
+    padding-top: 6.5rem;
     height: 9.5rem;
     width: 609px;
 }
@@ -39,6 +39,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    padding-top: 12rem ;
     /* or 140% */
 }
 
@@ -46,12 +47,12 @@
     /* margin-right: 8.75%; */
 
 .img-sec1 {
-
+    margin-left: 10%;
     display: flex;
     float: right;
-    width: 35%;
-    height: 359px;
-    background-color: #C0C0C0;
-    border: 2px solid #121212;
+    width: 65%;
+    max-height: 650px;
+    background-color: #fff;
+    /* border: 2px solid #121212; */
     border-radius: 8px;
 }

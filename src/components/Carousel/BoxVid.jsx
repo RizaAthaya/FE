@@ -1,5 +1,5 @@
 import React from "react";
-import { dataCard } from "./Datas";
+import { dataCard } from "../utils/Datas";
 import "./BoxVid.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -46,8 +46,15 @@ return (
   <Slider {...settings}>
   {dataCard.map((item) => (
         <div className="boxVid">
-        <iframe width="390px" height="180px" margin="auto" src={item.linkVid} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullScreen></iframe>
-        </div>
+        <iframe
+        width="400px"
+        height="200px"
+        src={item.linkVid}
+        title={item.title}
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      /></div>
     ))}
   </Slider>
     

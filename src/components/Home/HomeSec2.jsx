@@ -3,7 +3,7 @@ import './HomeSec2.css';
 
 //components
 
-import BoxVid from './BoxVid';
+import BoxVid from '../Carousel/BoxVid';
 
 const HomeSec2 = props => {
     return (

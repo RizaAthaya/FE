@@ -2,7 +2,7 @@
 .navbar{
     margin: 0;
     padding: 12px 0px;
-    background-color: #868686;
+    background-color: #fff;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -13,21 +13,21 @@
     
 }
 .nav-list{
-    background-color: #868686;
+    background-color: #fff;
     list-style: none;
     display: flex;
     justify-content:space-around;
 }
 .list-part{
-    background-color: #868686;
+    background-color: #fff;
     margin-right: 15px;
 }
 .nav-list2{
-    background-color: #868686;
+    background-color: #fff;
     list-style: none;
     display: flex;
     justify-content:space-around;
 }
 .list-part2{
-    background-color: #868686;
+    background-color: #fff;
 }

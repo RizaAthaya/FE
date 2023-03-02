@@ -1,8 +1,8 @@
 import React from "react";
 import "./HomeSec5.css";
-import "./CardHome2";
-import CardHome2 from "./CardHome2";
-import BoxSec5 from "./BoxSec5";
+import "../Carousel/CardHome2";
+import CardHome2 from "../Carousel/CardHome2";
+import BoxSec5 from "../BoxSec5";
 const HomeSec5 = (props) => {
   return (
     <div className="sec5">

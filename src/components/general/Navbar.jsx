@@ -1,6 +1,7 @@
 import React from "react";
 import Buttons from "./Buttons";
 import './Navbar.css'
+import { Navigate, Outlet } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,24 +9,24 @@ const Navbar = () => {
       <Buttons label="LOGO" styleBtn="btn-nav"></Buttons>
       <ul className="nav-list">
         <li className="list-part">
-          <Buttons label="LOGO" styleBtn="btn-nav"></Buttons>
+          <Buttons label="Study Abroad" styleBtn="btn-navWhite" ke='/studyabroad'></Buttons>
         </li>
         <li className="list-part">
-          <Buttons label="LOGO" styleBtn="btn-nav"></Buttons>
+          <Buttons label="Pojok Beasiswa" styleBtn="btn-navWhite" ke='/pojokbeasiswa'></Buttons>
         </li>
         <li className="list-part">
-          <Buttons label="LOGO" styleBtn="btn-nav"></Buttons>
+          <Buttons label="Komunitas" styleBtn="btn-navWhite" ke='/komunitas'></Buttons>
         </li>
         <li className="list-part">
-          <Buttons label="LOGO" styleBtn="btn-nav"></Buttons>
+          <Buttons label="Artikel" styleBtn="btn-navWhite" ke='/artikel'></Buttons>
         </li>
       </ul>
       <ul className="nav-list2">
         <li className="list-part2">
-          <Buttons label="LOGO" styleBtn="btn-norm2"></Buttons>
+          <Buttons label="Log In" styleBtn="btn-norm2" ke="/login" ></Buttons>
         </li>
         <li className="list-part2">
-          <Buttons label="LOGO" styleBtn="btn-norm3"></Buttons>
+          <Buttons label="Register" styleBtn="btn-norm3"  ke="/register"></Buttons>
         </li>
       </ul>
     </div>

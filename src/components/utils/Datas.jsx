@@ -33,7 +33,7 @@ export const dataCard = [
     ket2: "10 Mar 2023",
     descLong:
       "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
-    linkVid: "https://youtu.be/oMqcb16umH0",
+    linkVid: "https://www.youtube.com/embed/ggZA6UZsj94",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const dataCard = [
     ket2: "10 Mar 2023",
     descLong:
       "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
-    linkVid: "",
+    linkVid: "https://drive.google.com/file/d/1rLDup1L9g2KYA81vuzRhzkuo8DlQBX24/view",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const dataCard = [
     ket2: "10 Mar 2023",
     descLong:
       "Lorem ipsum dolor sit amet consectetur. Magna non amet aliquam auctor turpis neque. Duis ultrices eget quis arcu feugiat. Mi blandit adipiscing vestibulum non egestas. Rutrum tellus tristique id id viverra semper sit neque quisque.",
-    linkVid: "",
+    linkVid: "https://drive.google.com/file/d/1GY5u4m7JQ8iWpRpsVv6v_OaQ37YHKMqJ/preview",
   },
   {
     id: 6,
