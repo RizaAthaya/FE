@@ -1,87 +1,80 @@
 .footer {
     width: 100vw;
-    height: 8.5%;
-    background: #868686;
-    /* margin: auto; */
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Poppins';
+    height: 360px;
+    background-color: #192BC2;
+    font-family: 'Inter';
+}
+
+.footer-parts {
     padding: 48px 100px;
-    
+    display: flex;
 }
 
 .footer1 {
-    /* margin: auto; */
-    width: 21vw;
-   
+    margin-left: 90px;
+    width: 400px;
 }
 
 .footer1>h2 {
     text-align: left;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 40px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #FAFAFF;
 }
 
 .footer1>h4 {
     text-align: left;
-    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #C0C0C5;
+
+}
+
+.footer2>ul,
+.footer3>ul {
+    list-style: none;
+}
+.part-footer{
+    text-align: left;
+    margin-top: 16px;
+
+} 
+
+.title-footer {
+    text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #FAFAFF;
+
 }
 
 .footer2 {
-    width: 6vw;
-    font-size: 18px;
-    line-height: 28px;
-    font-style: normal;
-}
-
-.footer2>ul {
-    text-align: left;
-    list-style: none;
-}
-
-.footer2>li {
-    text-align: left;
-    font-weight: 400;
-
+    margin-left: 90px;
+    width: 190px;
 }
 
 .footer3 {
-    width: 6vw;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.footer3>ul {
-    text-align: left;
-    list-style: none;
-}
-.title-footer3 , .title-footer2{
-    font-weight: 600;
-    text-align: left;
-}
-
-.footer3>li {
-    text-align: left;
-    font-weight: 400;
+    margin-left: 90px;
+    width: 190px;
 }
 
 .footer4 {
-    width: 21vw;
-    font-size: 18px;
-    line-height: 28px;
+    margin-left: 90px;
+    width: 190px;
 }
-
-.footer4 > h2 {
-    text-align: left;
-    font-weight: 600;
+.flex-footer4{
+    display: flex;
+    margin-top: 22px;
 }
-.footer4 > h3 {
-    text-align: left;
-    font-weight: 400;
+.text-footer4{
+    margin-left: 11px;
+}
+.akhir-footer{
+    margin: 24px 0;
 }

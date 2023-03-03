@@ -1,13 +1,13 @@
 .sec2 {
     width: 100vw;
     height: 15.6%;
-    background-color: #192BC2;
+    background-color: #fff;
     padding-top: 7.2rem;
     font-family: 'Poppins';
 }
 
 .title-sec2 {
-    color: #fff;
+    color: #192BC2;
     text-align: center;
     margin-bottom: 5rem;
     font-style: normal;

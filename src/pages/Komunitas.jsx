@@ -6,6 +6,8 @@ import styled from "styled-components";
 import Navbar from "../components/general/Navbar2";
 import BoxInputFilter from "../components/BoxInputFilter";
 import FilterMini from "../components/FilterMini";
+import CardKomunitas from "../components/CardKomunitas";
+import Footer from "../components/general/Footer";
 
 const Komunitas = (props) => {
   return (
@@ -35,6 +37,10 @@ const Komunitas = (props) => {
           <FilterMini className="filter-beda" title="Urutkan" />
         </div>
       </div>
+      <div className="main-cardK">
+      <CardKomunitas/>
+      </div>
+      <Footer/>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Register.css";
+import { Link } from "react-router-dom";
 
 //components
 import FormRegister from "../components/auth/FormRegister";
@@ -7,15 +8,19 @@ import Buttons from "../components/general/Buttons";
 
 //assets
 import Signup from "../assets/Signup.svg";
+import Back from "../assets/Back.svg";
 
 const Register = () => {
   return (
     <div className="whole-sec2">
       <div className="left-sec2">
         <div className="main-leftSec">
-          <div className="button-register">
-            <Buttons label="Home" styleBtn="btn-norm4" ke="/" ></Buttons>
-          </div>
+          <Link to="/">
+            <div className="button-login">
+              <img src={Back} className="logo-btnHome"></img>
+              <div className="btn-home">Kembali</div>
+            </div>
+          </Link>
           <div className="box-imgRegister">
             <img className="img-register" src={Signup}></img>
           </div>
@@ -30,7 +35,9 @@ const Register = () => {
             Dengan mendaftar, anda setuju dengan Syarat dan Ketentuan serta
             Kebijakan Privasi yang berlaku.
           </h3>
-          <h3 className="penutup2">Sudah punya akun? <a href="/login">Masuk</a> di sini.</h3>
+          <h3 className="penutup2">
+            Sudah punya akun? <a href="/login">Masuk</a> di sini.
+          </h3>
         </div>
       </div>
     </div>

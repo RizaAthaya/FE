@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Carousel.css';
+import Poster from '../../assets/poster.svg';
 
 const Carousel = (props) => {
   const settings = {
@@ -16,7 +17,7 @@ const Carousel = (props) => {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1500,
+          breakpoint: 1920,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -48,8 +49,8 @@ return (
         <div className="boxVid">
         <iframe
         width="400px"
-        height="200px"
-        src={item.linkVid}
+        height="240px"
+        src={Poster}
         title={item.title}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

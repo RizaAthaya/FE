@@ -4,6 +4,7 @@ import "./StudyAbroad.css";
 // components
 import Navbar from "../components/general/Navbar2";
 import CardStudyAbroad from "../components/Carousel/CardStudyAbroad";
+import Footer from "../components/general/Footer";
 
 const StudyAbroad = (props) => {
   return (
@@ -24,6 +25,7 @@ const StudyAbroad = (props) => {
         <CardStudyAbroad />
         <h3 className="title2-bodySA">Program Tersedia</h3>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -1,7 +1,9 @@
 import React from "react";
 import "./Artikel.css";
 //components
+import CardArtikel from "../components/CardArtikel";
 import Navbar from "../components/general/Navbar2";
+import Footer from "../components/general/Footer";
 
 const Artikel = (props) => {
   return (
@@ -14,6 +16,10 @@ const Artikel = (props) => {
           <h3 className="title-artikel">7 Persiapan Kuliah di Luar Negeri</h3>
         </div>
       </div>
+      <div className="main-artikel">
+        <CardArtikel />
+      </div>
+      <Footer/>
     </div>
   );
 };

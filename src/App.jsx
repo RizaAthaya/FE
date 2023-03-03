@@ -21,17 +21,17 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        
+        <Route element={<AuthRoute />}>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          
-          
+        </Route>
+        <Route element={<ProtectedRoute />}>
           <Route path="/home" element={<Home2 />} />
           <Route path="/pojokbeasiswa" element={<PojokBeasiswa />} />
           <Route path="/komunitas" element={<Komunitas />} />
           <Route path="/studyabroad" element={<StudyAbroad />} />
           <Route path="/artikel" element={<Artikel />} />
-          
+        </Route>
       </Routes>
     </div>
   );

@@ -11,7 +11,9 @@
     padding-top: 15px;
     display: flex;
     flex-basis: 50%;
-    background-color: #fff;
+    background-image: url('../assets/Ombak.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
     height: 100%;
     padding-left: 40px;
@@ -26,23 +28,51 @@
     padding-right: 100px;
 }
 
-.main-leftSec{
+.main-leftSec {
+
     margin: 0;
     display: block;
     text-align: left;
 }
-.button-login{
-    width: 10%;
+
+.button-login {
+    margin: 5% 0 0 10%;
+    display: flex;
+    width: 129px;
+    height: 48px;
     float: left;
+    padding: 12px 24px 12px 20px;
+    border: 1px solid #192BC2;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 8px;
+    background: #A9B1F4;
+
 }
 
-.login-img{
+.logo-btnHome{
+    width: 14px;
+}
+.btn-home {
+    /* margin-bottom: 5px; */
+    background: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #192BC2;
+    padding: 0%;
+    margin-left: 10px;
+}
+
+
+.login-img {
     margin: auto;
     margin-top: 22.5%;
     width: 40vw;
     height: auto;
     margin-left: 12%;
 }
+
 .form-part {
     /* display: flex; */
     padding-top: 25%;

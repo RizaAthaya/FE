@@ -14,7 +14,7 @@
 .header-artikel {
     padding: 15% 100px;
     background-image: url("../assets/Rectangle.svg");
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: auto;
@@ -39,4 +39,7 @@
     font-size: 40px;
     line-height: 120%;
     color: #000000;
+}
+.main-artikel{
+    padding: 0 5%;
 }

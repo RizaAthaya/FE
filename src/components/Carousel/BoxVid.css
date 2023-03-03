@@ -1,8 +1,8 @@
 .boxVid{
     margin: auto;
     width: 99%;
-    height: 200px;
-    /* background-color: #cacaca; */
+    height: 240px;
+    background-color: #fff;
     color: #000;
     padding-top: 5px;
 }
