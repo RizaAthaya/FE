@@ -22,7 +22,7 @@ const FormRegister = (props) => {
     const handleRegister = (e) => {
         e.preventDefault()
 
-        axios.post('http://127.0.0.1:8000/api/register', {
+        axios.post('https://tweet-api.up.railway.app/api/v1/auth/register', {
             // name: name,
             email: email,
             password: password
