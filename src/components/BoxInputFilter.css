@@ -1,21 +1,24 @@
 .boxInputFilter {
     padding: 3px 10px;
-    width: 452px;
-    height: 40px;
-    border: 1px solid #868686;
-    border-radius: 24px;
-    margin: auto;
+    width: 505px;
+    height: 48px;
+    border: 1px solid rgba(192, 192, 197, 0.3);
+    /* margin-left: 25%; */
+    background-color: rgba(192, 192, 197, 0.3);
+    border-radius: 8px 0px 0px 8px;
+    /* margin: auto; */
 }
-    
+
 .inputFilter {
     width: 85%;
+    height: 36px;
     margin-left: 10px;
-    border: 1px solid #fff;
+    border: 1px solid rgba(192, 192, 197, 0.3);
     text-align: left;
-    background-color: #fff;
+    background-color: rgba(192, 192, 197, 0.3);
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     color: #868686;
-    
+
 }

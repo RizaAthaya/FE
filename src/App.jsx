@@ -14,23 +14,24 @@ import PojokBeasiswa from "./pages/PojokBeasiswa";
 import Komunitas from "./pages/Komunitas";
 import StudyAbroad from "./pages/StudyAbroad";
 import Artikel from "./pages/Artikel";
+import Home2 from "./pages/Home2";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route element={<AuthRoute />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-        </Route>
-        <Route element={<ProtectedRoute />}>
+          
+          
+          <Route path="/home" element={<Home2 />} />
           <Route path="/pojokbeasiswa" element={<PojokBeasiswa />} />
           <Route path="/komunitas" element={<Komunitas />} />
           <Route path="/studyabroad" element={<StudyAbroad />} />
           <Route path="/artikel" element={<Artikel />} />
-        </Route>
+          
       </Routes>
     </div>
   );

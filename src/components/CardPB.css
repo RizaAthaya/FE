@@ -1,0 +1,106 @@
+.card-pb {
+    font-family: 'Inter';
+    background: #FAFAFF;
+    padding: 24px;
+    border: 1px solid #C0C0C5;
+    border-radius: 16px;
+    width: 400px;
+    height: 264px;
+}
+
+.pb-tag1,
+.pb-tag2 {
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #121216;
+    background-color: #C0C0C5;
+    border-radius: 16px;
+    padding: 3px 9px;
+}
+
+.pb-tag3 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    padding: 3px 9px;
+    color: #080E41;
+    background: #A9B1F4;
+    border-radius: 16px;
+}
+
+.tagpb-part {
+    display: flex;
+}
+
+.textpb-part {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.pb-text1 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #121216;
+    margin-bottom: 8px;
+}
+
+.pb-text2 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #121216;
+    margin-bottom: 8px;
+
+}
+
+.datepb-part {
+    padding: 8px 16px;
+    width: 352px;
+    height: 72px;
+    background: #C0C0C5;
+    border-radius: 8px;
+    
+
+}
+
+.open-part {
+    /* display: flex; */
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #121216;
+    margin-bottom: 8px;
+    
+}
+
+.open-left,
+.close-left {
+    float: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+}
+
+.open-right,
+.close-right {
+    float: right;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+}
+
+.close-part {
+    color: #ED1C24;
+}

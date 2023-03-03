@@ -8,7 +8,7 @@ import BoxVid from '../Carousel/BoxVid';
 const HomeSec2 = props => {
     return (
         <div className='sec2'>
-            <h2 className='title-sec2'>Lorem ipsum</h2>
+            <h2 className='title-sec2'>Promo Menarik</h2>
             <BoxVid/>
         </div>
     );

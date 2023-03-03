@@ -12,9 +12,21 @@ const FormInput = (props) => {
         status: ''
      })
 
+  // useEffect(() => {
+  //   axios.get("")
+  //   .then((response) => {
+  //     console.log(response)
+  //   })
+  // }, []);
 
   const handleLogin = (event) => {
     event.preventDefault();
+
+    // axios.get("http://127.0.0.1:8000/sanctum/csrf-cookie")
+    // .then(response => {
+    //   console.log(response);
+    // });
+
 
     axios
       .post("http://127.0.0.1:8000/api/login", {
@@ -22,12 +34,14 @@ const FormInput = (props) => {
         password: password,
       })
       .then((response) => {
+        const token = (response.data.token);
+        document.cookie = `token=${token}; path=/`;
+        // axios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
         console.log(response);
-        window.localStorage.setItem("token", response.data.token.token);
+        window.localStorage.setItem("token", response.token);
+        
 
-        setTimeout(() => {
-          window.location.reload();
-        }, 1000);
+       
       })
       .catch((error) => {
         console.log(error);

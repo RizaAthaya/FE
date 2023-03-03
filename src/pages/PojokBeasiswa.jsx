@@ -1,11 +1,23 @@
 import React from "react";
 import "./PojokBeasiswa.css";
+import styled from "styled-components";
 
 //components
-import Navbar from "../components/general/Navbar";
+import FilterMini from "../components/FilterMini";
+import Navbar from "../components/general/Navbar2";
 import Footer from "../components/general/Footer";
+import CardPB from "../components/CardPB";
 
 import BoxInputFilter from "../components/BoxInputFilter";
+
+// const FilterMini = styled.nav`
+//   padding: 8px 16px;
+//   background-color: #fafaff;
+//   width: 190px;
+//   height: 40px;
+//   border: 1px solid #86868b;
+//   border-radius: 8px;
+// `;
 
 const AllCourse = (props) => {
   return (
@@ -13,20 +25,31 @@ const AllCourse = (props) => {
       <Navbar />
       <div className="body-sec4">
         <div className="bread-crumb">Page - Page</div>
-        <div className="main-img"></div>
+        <div className="main-img">
+          <h3 className="title-pb">Pojok Beasiswa</h3>
+          <h5 className="desc-pb">
+            Lorem ipsum dolor sit amet consectetur. Dictum vestibulum habitant
+            libero morbi placerat eleifend.
+          </h5>
+        </div>
         <div className="main-part">
           <div className="filter-bar">
-            <div className="TitleFilter-part">
-            <h2 className="Title-filter">Filter</h2>
-            <h3 className="reset-filter">Reset</h3>
-            </div>
-            
-            <BoxInputFilter/>
-            <div className="input-urutkan"></div>
+            <BoxInputFilter />
+            <button type="submit" className="btn-filterBar">
+              Cari
+            </button>
           </div>
+          <div className="filter-bar2">
+            <FilterMini title="Negara tujuan" />
+            <FilterMini title="Tipe pendanaan" />
+            <FilterMini title="Jenjang" />
+          </div>
+          <div className="filter-bar3">
+            <FilterMini className="filter-beda" title="Urutkan" />
+          </div>
+
           <div className="main-bottom">
-            <div className="card-filter"></div>
-            <div className="card-program"></div>
+            <CardPB/>
           </div>
         </div>
       </div>

@@ -1,0 +1,31 @@
+.filterMini {
+    margin-top: 48px;
+    margin-right: 20px;
+    align-items: center;
+    /* display: flex; */
+    width: 190px;
+    height: 40px;
+    background-color: #FAFAFF;
+    border: 1px solid #86868B;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.title-mini {
+    
+    float: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+
+    /* Neutral/50 */
+
+    color: #86868B;
+}
+.arrow-mini{
+    margin-top: 10px;
+    float: right;
+    width: 14px;
+    height: 7px;
+}

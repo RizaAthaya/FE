@@ -1,30 +1,34 @@
-.btn-norm{
+.btn-norm {
     padding: 12px 24px;
     background-color: #192BC2;
     margin-top: 1.5rem;
     margin-left: 6.25rem;
 }
-.btn-norm:hover{
+
+.btn-norm:hover {
     background-color: #111D81;
 }
-.btn-submit{
+
+.btn-submit {
     width: 25rem;
     background-color: #192BC2;
     padding: 12px 170px;
     margin-bottom: 2rem;
 }
 
-.btn-norm2{
+.btn-norm2 {
     padding: 12px 24px;
     background-color: #192BC2;
     /* margin-top: 1.5rem;
     margin-left: 6.25rem; */
     border: 1px solid #FAFAFA;
 }
-.btn-norm2:hover{
+
+.btn-norm2:hover {
     background-color: #111D81;
 }
-.btn-norm3{
+
+.btn-norm3 {
     padding: 12px 24px;
     background-color: #FAFAFA;
     /* margin-top: 1.5rem;
@@ -33,24 +37,33 @@
     border: 1px solid #FAFAFA;
     color: #121212;
 }
-.btn-norm3:hover{
+
+.btn-norm3:hover {
     background-color: #A9B1F4;
 }
-.btn-nav{
+
+.btn-nav {
     padding: 12px 24px;
     background-color: #192BC2;
     /* margin-top: 1.5rem;
     margin-left: 6.25rem; */
 }
-.btn-nav:hover{
+
+.btn-nav:hover {
     background-color: #111D81;
 }
-.btn-navWhite{
+
+.btn-navWhite {
     padding: 12px 24px;
     background-color: #fff;
-    color:#121216;
+    color: #121216;
 }
-.btn-norm4{
+
+.btn-navWhite:hover {
+    color: #192BC2;
+}
+
+.btn-norm4 {
     display: flex;
     float: left;
     padding: 12px 24px;
@@ -58,6 +71,26 @@
     margin-top: 1.5rem;
     margin-left: 6.25rem;
 }
-.btn-norm4:hover{
+
+.btn-norm4:hover {
     background-color: #111D81;
+}
+
+.btn-sa1 {
+    width: 352px;
+    height: 48px;
+    background: #192BC2;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.btn-sa2 {
+    width: 352px;
+    height: 48px;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    border-color: #192BC2;
+    color: #192BC2;
 }

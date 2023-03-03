@@ -1,7 +1,7 @@
 import "./FormRegister.css";
 import React from "react";
 import axios from "axios";
-import { useState, useEffect} from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createAxiosInstance } from "../api/api";
 
@@ -15,23 +15,15 @@ const FormRegister = (props) => {
     const [error, setError] = useState({ 
       message: '',
       status: ''
-   })
+   }, [])
    const [user, setUser] = useState('');
    const axiosInstance = createAxiosInstance();
-
-   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/api/users")
-    .then((response) => {
-      console.log(response);
-      setUser(response.response.data)
-    })
-   }, []);
 
     const handleRegister = (e) => {
         e.preventDefault()
 
         axios.post('http://127.0.0.1:8000/api/register', {
-            name: name,
+            // name: name,
             email: email,
             password: password
         })
@@ -51,15 +43,7 @@ const FormRegister = (props) => {
   return (
     <div>
       <form onSubmit={handleRegister}>
-      <h3 className="input-title">Name</h3>
-        <input
-          label="Name"
-          className="input-box"
-          type="text"
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-        ></input>
+      
         <h3 className="input-title">Email</h3>
         <input
           label="Email"

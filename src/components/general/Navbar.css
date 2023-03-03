@@ -22,6 +22,7 @@
     background-color: #fff;
     margin-right: 15px;
 }
+
 .nav-list2{
     background-color: #fff;
     list-style: none;
@@ -30,4 +31,7 @@
 }
 .list-part2{
     background-color: #fff;
+}
+.btn-LogOut{
+    background-color: #000;
 }

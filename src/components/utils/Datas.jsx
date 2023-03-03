@@ -1,8 +1,8 @@
 export const dataCard = [
   {
     id: 1,
-    tag1: "S1",
-    tag2: "Jepang",
+    tag1: "Non degree",
+    tag2: "Multiple countries",
     desc: "Beasiswa Fully Funded",
     title: "Lorem ipsum dolor sit",
     ket1: "Close Registration",

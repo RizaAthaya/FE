@@ -6,7 +6,7 @@ import { Navigate, Outlet } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Buttons label="LOGO" styleBtn="btn-nav"></Buttons>
+      <Buttons label="LOGO" styleBtn="btn-nav" ke='/'></Buttons>
       <ul className="nav-list">
         <li className="list-part">
           <Buttons label="Study Abroad" styleBtn="btn-navWhite" ke='/studyabroad'></Buttons>
@@ -28,6 +28,7 @@ const Navbar = () => {
         <li className="list-part2">
           <Buttons label="Register" styleBtn="btn-norm3"  ke="/register"></Buttons>
         </li>
+        
       </ul>
     </div>
   );
