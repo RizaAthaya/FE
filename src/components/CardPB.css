@@ -1,4 +1,6 @@
 .card-pb {
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-family: 'Inter';
     background: #FAFAFF;
     padding: 24px;
@@ -6,6 +8,8 @@
     border-radius: 16px;
     width: 400px;
     height: 264px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .pb-tag1,

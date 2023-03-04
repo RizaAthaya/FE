@@ -7,8 +7,9 @@ import FilterMini from "../components/FilterMini";
 import Navbar from "../components/general/Navbar2";
 import Footer from "../components/general/Footer";
 import CardPB from "../components/CardPB";
-
+import PaginationPB from "../components/Carousel/PaginationPB";
 import BoxInputFilter from "../components/BoxInputFilter";
+
 
 // const FilterMini = styled.nav`
 //   padding: 8px 16px;
@@ -47,9 +48,8 @@ const AllCourse = (props) => {
           <div className="filter-bar3">
             <FilterMini className="filter-beda" title="Urutkan" />
           </div>
-
           <div className="main-bottom">
-            <CardPB/>
+            <PaginationPB/>
           </div>
         </div>
       </div>
