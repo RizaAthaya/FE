@@ -19,13 +19,13 @@ const FormInput = (props) => {
     event.preventDefault();
 
     axios
-      .post("https://tweet-api.up.railway.app/api/v1/auth/login", {
+      .post("http://127.0.0.1:8000/api/login", {
         email: email,
         password: password,
       })
       .then((response) => {
+        window.localStorage.setItem("token", JSON.stringify(response.data.data.token));
         console.log(response);
-        window.localStorage.setItem("token", response.data.token.token);
 
         setTimeout(() => {
           window.location.reload();

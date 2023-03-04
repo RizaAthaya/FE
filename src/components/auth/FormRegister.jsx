@@ -22,8 +22,8 @@ const FormRegister = (props) => {
     const handleRegister = (e) => {
         e.preventDefault()
 
-        axios.post('https://tweet-api.up.railway.app/api/v1/auth/register', {
-            // name: name,
+        axios.post('http://127.0.0.1:8000/api/register', {
+            name: name,
             email: email,
             password: password
         })
@@ -43,7 +43,15 @@ const FormRegister = (props) => {
   return (
     <div>
       <form onSubmit={handleRegister}>
-      
+      <h3 className="input-title">Nama</h3>
+      <input
+        label="Nama"
+        type="text"
+        className="input-box"
+        onChange={(e) => {
+          setName(e.target.value);
+        }}
+      ></input>
         <h3 className="input-title">Email</h3>
         <input
           label="Email"

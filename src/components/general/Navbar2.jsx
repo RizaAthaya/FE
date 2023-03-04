@@ -5,11 +5,13 @@ import { Navigate, Outlet } from "react-router-dom";
 import axios from "axios";
 
 const Navbar = () => {
+  const localStore = localStorage.getItem('token');
+  const token = JSON.parse(localStore);
   const handleLogout = () => {
-    axios.post('https://tweet-api.up.railway.app/api/v1/auth/logout', {
+    axios.post('http://127.0.0.1:8000/api/logout', {
     }, {
         headers: {
-            Authorization: `Bearer ${window.localStorage.getItem('token')}`
+            Authorization: `Bearer ${token}`
         }
     })
         .then((response) => {
