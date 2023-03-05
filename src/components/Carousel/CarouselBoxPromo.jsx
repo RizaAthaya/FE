@@ -1,6 +1,6 @@
-import React from "react";
-import { dataCard } from "../utils/Datas";
-import "./BoxVid.css";
+import React,  { useEffect, useState } from "react";
+// import { dataCard } from "../utils/Datas";
+import "./CarouselBoxPromo.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,6 +8,18 @@ import './Carousel.css';
 import Poster from '../../assets/poster.svg';
 
 const Carousel = (props) => {
+  const [tagPromo, setTagPromo] = useState([]);
+  useEffect (async () => {
+    // ini hanya akan mengambil artikel yang punya index tagLevl id tertentu. disini kumasukin 2
+    const response = await axios.get("http://127.0.0.1:8000/api/articles/");
+    // cari tau tag promo itu idnya berapa?
+    // salah ding, ini harusnya pake get yang artikel terbaru. tagnya promo
+    if (response.data.id == 2){
+      setTagPromo(response.data);
+    }
+    // nah ini 2 nya index idnya 
+    // bener tapi ari artikel, kalau cuma nama tagnya, ya yang lain ga muncul
+  }, [])
   const settings = {
       dots: true,
       infinite: false,
@@ -45,13 +57,13 @@ const Carousel = (props) => {
 return (
   <div className="carousel">
   <Slider {...settings}>
-  {dataCard.map((item) => (
-        <div className="boxVid">
+  {tagPromo.map((item) => (
+        <div className="boxPromo">
         <iframe
         width="400px"
         height="240px"
-        src={Poster}
-        title={item.title}
+        src="" // ini diganti dengan tempat link img nya
+        title={item.name}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -64,7 +76,7 @@ return (
 };
 
 
-const BoxVid = (props) => {
+const CarouselBoxPromo = (props) => {
   
   return (
     <div className="boxVid">
@@ -73,4 +85,4 @@ const BoxVid = (props) => {
   );
 };
 
-export default BoxVid;
+export default CarouselBoxPromo;

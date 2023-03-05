@@ -1,23 +1,47 @@
-import React from 'react';
+import React from "react";
 
-import CardSA from './CardSA';
-import './CardSAList.css';
+import CardSA from "./CardSA";
+import "./CardSAList.css";
 
-const CardSAList = ({beasiswaData}) => {
-    return (
-        <div className='cardSA-list'>
-            {beasiswaData.map((items, id) =>{
+const CardSAList = ({ beasiswaData, tagCost, tagLevel }) => {
+  return (
+    <div className="cardSA-list">
+      {beasiswaData.map((items, index) => {
+        {
+          tagLevel((tags) => {
+            // ini nyari mana yang id tagaLevel di programs == id di array tagLevel
+            const getTags = "";
+            for (let i = 0; i <= tagLevel.length(); i++) {
+              if (tags.id == items.tag_level_id) {
+                getTags = tags.name;
+              }
+            }
+            {
+              tagCost((tags2) => {
+                // ini nyari mana yang id tagaLevel di programs == id di array tagCost
+                const getTags2 = "";
+                for (let i = 0; i<=tagCost.length(); i++){
+                    if (tags2.id == items.tag_cost_id){
+                        getTags2 = tags.name;
+                    }
+                }
                 return (
-                    <CardSA key={id}
+                  <CardSA
+                    key={index}
                     linkImg=""
-                    tag1={items.tag_level_id}
-                    tag2={items.tag_cost_id}
+                    tag1={getTags}
+                    tag2={getTags2}
                     title={items.name}
-                    harga={items.price}/>
-                )
-            })}
-        </div>
-    );
+                    harga={items.price}
+                  />
+                );
+              });
+            }
+          });
+        }
+      })}
+    </div>
+  );
 };
 
 export default CardSAList;
