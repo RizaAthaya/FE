@@ -1,23 +1,28 @@
 import React from "react";
 import "./HomeSec1.css";
 
+//components
+import Buttons from "../general/Buttons";
 //assets
-import pana from '../../assets/pana.svg';
+import pana from "../../assets/pana.svg";
 
 const HomeSec1 = () => {
   return (
-    <div className="sec1">
+    <div className="home-sec1">
       <div className="full-sec1">
-        <div className="text-sec1">
-          <h1 className="title-sec1">
-            <b className="title-sec1">Lorem ipsum dolor sit amet.</b>
-          </h1>
-          <h6 className="desc-sec1">
-            Lorem ipsum dolor sit amet consectetur. Maecenas eget pharetra
-            lectus in dolor egestas scelerisque. Maecenas dignissim vivamus eget
-            congue morbi dapibus quis.
-          </h6>
+        <div className="left-sec1">
+          <div className="text-sec1">
+            <h1 className="title-sec1">
+              <b className="title-sec1">Buka Potensimu Taklukkan Dunia.</b>
+            </h1>
+            <h6 className="desc-sec1">
+              Biarkan mentor kami membimbing kamu mempersiapkan diri meraih
+              beasiswa ke perguruan tinggi terbaik di seluruh dunia.
+            </h6>
+          </div>
+          <Buttons label="Daftar Sekarang" styleBtn="btn-daftar"></Buttons>
         </div>
+
         <img className="img-sec1" src={pana}></img>
       </div>
     </div>

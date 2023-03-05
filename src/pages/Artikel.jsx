@@ -1,7 +1,7 @@
 import React from "react";
 import "./Artikel.css";
 //components
-import CardArtikel from "../components/CardArtikel";
+import CardArtikel from "../components/Card/CardArtikel"
 import Navbar from "../components/general/Navbar2";
 import Footer from "../components/general/Footer";
 

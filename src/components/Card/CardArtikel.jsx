@@ -2,8 +2,8 @@ import React from "react";
 import "./CardArtikel.css";
 
 //assets
-import Clock from "../assets/Clock.svg";
-import Profile from "../assets/Profile.svg";
+import Clock from '../../assets/Clock.svg';
+import Profile from "../../assets/Profile.svg";
 
 const CardArtikel = (props) => {
   return (

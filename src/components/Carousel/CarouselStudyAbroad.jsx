@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardStudyAbroad.css";
+import "./CarouselStudyAbroad.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,7 +8,6 @@ import "./Carousel.css";
 import { dataCard2 } from "../utils/Datas2";
 
 //assets
-import Rectangle2 from "../../assets/Rectangle2.svg";
 
 //components
 import Buttons from "../general/Buttons";
@@ -66,7 +65,6 @@ const Carousel = (props) => {
                       <h6 className="title-saCard">
                         {item.title}
                       </h6>
-                      <h7 className="rating-saCard">{item.rating}</h7>
                       <h6 className="harga-saCard">{item.harga}</h6>
                       <Buttons
                         label="Daftar mentoring"
@@ -88,10 +86,10 @@ const Carousel = (props) => {
   );
 };
 
-const CardStudyAbroad = (props) => {
+const CarouselStudyAbroad = (props) => {
   return <div className="card-saFull">
   <Carousel/>
   </div>;
 };
 
-export default CardStudyAbroad;
+export default CarouselStudyAbroad;

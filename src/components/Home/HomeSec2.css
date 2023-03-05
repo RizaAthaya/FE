@@ -1,4 +1,4 @@
-.sec2 {
+.home-sec2 {
     width: 100vw;
     height: 15.6%;
     background-color: #fff;
@@ -14,6 +14,4 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    /* identical to box height, or 125% */
-
 }

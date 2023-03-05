@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Pagination from "./Pagination";
 import { items } from "../utils/Datas3";
 
 const PaginationPB = (props) => {
@@ -32,11 +31,11 @@ const PaginationPB = (props) => {
               </div>
               <div className="datepb-part">
                 <div className="open-part">
-                  <h5 className="open-left">Open Registration</h5>{" "}
+                  <h5 className="open-left">Open Registration</h5>
                   <h5 className="open-right">{item.open}</h5>
                 </div>
                 <div className="close-part">
-                  <h5 className="close-left">Close Registration</h5>{" "}
+                  <h5 className="close-left">Close Registration</h5>
                   <h5 className="close-right">{item.close}</h5>
                 </div>
               </div>

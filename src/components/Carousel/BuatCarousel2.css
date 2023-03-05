@@ -1,0 +1,32 @@
+
+#buatCarousel .buatCarousel{
+    width: 95vw;
+    height: 500px;
+}
+#buatCarousel .slick-slider{
+    width: 90vw;
+    height: 460px;
+    background-color: #fff;
+}
+#buatCarousel .slick-list{
+    width: 90vw;
+    height: 460px;
+    background-color: #fff;
+}
+#buatCarousel .slick-slide{
+    opacity: 0;
+}
+#buatCarousel .slick-slide > div {
+    transition: 1s;
+    margin: 10px;
+}
+#buatCarousel .slick-active{
+    transition: 1s;
+    transform: scale(0.8);
+    opacity: 0.6;
+}
+#buatCarousel .slick-current{
+    transition: 1s;
+    transform: scale(1);
+    opacity: 1;
+}

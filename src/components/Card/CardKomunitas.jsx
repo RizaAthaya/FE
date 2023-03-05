@@ -2,9 +2,9 @@ import React from "react";
 import "./CardKomunitas.css";
 
 //assets
-import Clock from "../assets/Clock.svg";
-import Profile from "../assets/Profile.svg";
-import Chat from "../assets/Chat.svg";
+import Clock from "../../assets/Clock.svg";
+import Profile from "../../assets/Profile.svg";
+import Chat from "../../assets/Chat.svg";
 
 const CardKomunitas = (props) => {
   return (

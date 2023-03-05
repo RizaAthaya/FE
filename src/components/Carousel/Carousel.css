@@ -1,6 +1,6 @@
 .carousel{
     margin: auto;
-    width: 85%;
+    width: 95%;
 }
 
 .slick-slide > div {
@@ -14,8 +14,8 @@
     width: 100%;
   }
   .card-car {
-    margin: auto;
-    border: 1px solid #fff;
+    margin: 0 1px;
+    /* border: 1px solid #fff; */
     /* background: black; */
     border-radius: 8px;
     overflow: hidden;
@@ -47,8 +47,16 @@
 }
 .slick-prev {
     left: -65px;
+    content: url('../../assets/Left.png');
 }
 .slick-next{
     right: -55px;
+    content: url('../../assets/Right.svg');
 }
- 
+.slick-dots li.slick-active button:before{
+  color: #fff;
+}
+.slick-dots li button:before{
+  color: #fff;
+  content: url('../../assets/Dots.svg');
+}

@@ -3,8 +3,9 @@ import "./StudyAbroad.css";
 
 // components
 import Navbar from "../components/general/Navbar2";
-import CardStudyAbroad from "../components/Carousel/CardStudyAbroad";
+import CarouselStudyAbroad from "../components/Carousel/CarouselStudyAbroad";
 import Footer from "../components/general/Footer";
+import Manggil from "../components/Pagination/Manggil";
 
 const StudyAbroad = (props) => {
   return (
@@ -22,8 +23,9 @@ const StudyAbroad = (props) => {
       </div>
       <div className="body-sa">
         <h3 className="title1-bodySA">Program Populer</h3>
-        <CardStudyAbroad />
+        <CarouselStudyAbroad />
         <h3 className="title2-bodySA">Program Tersedia</h3>
+        <Manggil/>
       </div>
       <Footer/>
     </div>

@@ -6,7 +6,7 @@ import styled from "styled-components";
 import FilterMini from "../components/FilterMini";
 import Navbar from "../components/general/Navbar2";
 import Footer from "../components/general/Footer";
-import CardPB from "../components/CardPB";
+import CardPB from "../components/Card/CardPB";
 import PaginationPB from "../components/Carousel/PaginationPB";
 import BoxInputFilter from "../components/BoxInputFilter";
 

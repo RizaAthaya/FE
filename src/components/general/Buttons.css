@@ -95,3 +95,28 @@
     color: #192BC2;
 }
 
+.btn-daftar {
+    width: 190px;
+    height: 48px;
+    background: #192BC2;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #FAFAFF;
+    padding: 12px 24px;
+    margin-top: 48px;
+}
+
+.btn-ib {
+    width: 230px;
+    height: 48px;
+    padding: 12px 24px;
+    background: #192BC2;
+    border: 1px solid #FAFAFF;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 8px;
+    margin-top: 96px;
+}

@@ -1,47 +1,42 @@
-.sec3 {
-    background-color: #C0C0C0;
-    width: 100vw;
-    height: 15.4%;
-    font-family: 'Poppins';
-    padding: 52px 0px 103px 0px;
-    /* align-content: center;
-    align-items: center; */
-    justify-content: space-around;
+.home-sec3 {
+    width: 100%;
+    min-height: 1475px;
+    background-color: #fff;
+    background-image: url('../../assets/backgroundHome.svg');
+    background-size: cover;
+    padding: 81px 7% 167px 7%;
 
 }
-
-.title-sec3 {
-    color: #121212;
-    margin: auto;
-    margin-bottom: 5rem;
-    font-style: normal;
+.whySWU{
+    margin: 0;
+    padding: 0%;
+}
+.titleSWU {
+    text-align: center;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #FAFAFF;
+    margin-bottom: 48px;
 }
-
-.isi-sec3 {
-    justify-content: space-around;
+.main-whySWU{
+    margin: 0 0%;
     display: flex;
-    margin: auto;
-    width: 87%;
-
 }
-
-.pict-sec3 {
-    width: 35%;
-    height: 256px;
-    background: #C0C0C0;
-    /* Neutral/50 */
-    /* margin: auto; */
-    /* margin-right: 20px; */
-    border: 2px solid #121212;
-    border-radius: 8px;
-
-
+.img-SWU{
+    margin: 104.5px 8.6% 0 0;
+    width: 38%;
+    height: auto;
 }
-
-.box-part {
-    display: block;
-    background-color: #121212;
+.infoBeasiswa{
+    text-align: center;
+}
+.title-IB{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #FAFAFF;
+    margin-bottom: 48px;
 }
