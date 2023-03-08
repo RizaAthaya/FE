@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CarouselStudyAbroad.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import axios from "axios";
+
 // import "./Carousel.css";
 
 import { dataCard2 } from "../utils/Datas2";
@@ -13,6 +16,17 @@ import { dataCard2 } from "../utils/Datas2";
 import Buttons from "../general/Buttons";
 
 const Carousel = (props) => {
+  const [newProgram, setNewProgram] = useState([]);
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios.get(
+        "http://103.189.235.157:10015/api/programs/new"
+      );
+      setNewProgram(response.data.data);
+      console.log(response.data);
+    }
+    fetchData();
+  }, []);
   const settings = {
     dots: true,
     infinite: false,
@@ -52,19 +66,19 @@ const Carousel = (props) => {
       <div className="carousel">
         <div className="ch1">
           <Slider {...settings}>
-            {dataCard2.map((item) => (
+            {newProgram.map((item) => (
               <div className="card-car">
                 <div className="card-top">
                   <div className="card-sa">
-                    <img className="img-sa" src={item.linkImg}></img>
+                    <img className="img-sa" src=""></img>
                     <div className="text-part">
                       <div className="tag-part">
-                        <h5 className="tag-sa">{item.tag1}</h5>
-                        <h5 className="tag-sa">{item.tag2}</h5>
+                        <h5 className="tag-sa">{item.tag_level.name}</h5>
+                        <h5 className="tag-sa">{item.tag_cost.name}</h5>
                       </div>
                       <div className="main-saCard">
-                        <h6 className="title-saCard">{item.title}</h6>
-                        <h6 className="harga-saCard">{item.harga}</h6>
+                        <h6 className="title-saCard">{item.name}</h6>
+                        <h6 className="harga-saCard">{item.price}</h6>
                         <Buttons
                           label="Daftar mentoring"
                           styleBtn="btn-sa1"

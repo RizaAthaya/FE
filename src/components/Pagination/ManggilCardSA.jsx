@@ -7,11 +7,11 @@ import CardSAList from "../Card/CardSAList";
 import PaginationCardSA from "./PaginationCardSA";
 
 const ManggilCardSA = () => {
-  const [beasiswaData, setBeasiswaData] = useState([]);
+  // const [beasiswaData, setBeasiswaData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(9);
-  const [tagLevel, setTagLevel] = useState([]);
-  const [tagCost, setTagCost] = useState([]);
+  const [postsPerPage, setPostsPerPage] = useState(2);
+  // const [tagLevel, setTagLevel] = useState([]);
+  // const [tagCost, setTagCost] = useState([]);
   // const [tagCountries, setTagCountries] = useState([]);
 
   // // ini ambil semua tag cost (tidak jadi di pakai)
@@ -42,28 +42,38 @@ const ManggilCardSA = () => {
   //   }
   // }, []);
   // ini ambil semua tagCountries
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await createAxiosInstance().get("api/tagLevels/1")
+  //     console.log(response.data);
+  //   }
+  //   console.log("Ambil data");
+  //   fetchData();
+  // }, [])
+  const [Program, setProgram] = useState([]);
   useEffect(() => {
     async function fetchData() {
-      const response = await createAxiosInstance().get("api/tagLevels/1")
+      const response = await axios.get(
+        "http://103.189.235.157:10015/api/programs/new"
+      );
+      setProgram(response.data.data);
       console.log(response.data);
     }
-    console.log("Ambil data");
     fetchData();
-  }, [])
+  }, []);
 
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
-  const currentPosts = beasiswaData.slice(firstPostIndex, lastPostIndex);
+  const currentPosts = Program.slice(firstPostIndex, lastPostIndex);
 
   return (
     <div className="manggilCardSA">
-      <CardSAList
-        beasiswaData={currentPosts}
-        tagCost={tagCost}
-        tagLevel={tagLevel}
-      />
+      <div className="semuanya-cardSA">
+        <CardSAList beasiswaData={currentPosts} />
+      </div>
+
       <PaginationCardSA
-        totalPosts={beasiswaData.length}
+        totalPosts={Program.length}
         postsPerPage={postsPerPage}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}

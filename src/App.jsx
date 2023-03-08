@@ -18,6 +18,9 @@ import Home2 from "./pages/Home2";
 import Dashboard from "./pages/DashboardKelasSaya";
 import DashboardKonsultasi from "./pages/DashboardKonsultasi";
 import Profile from "./pages/Profile";
+import Pembayaran from "./pages/Pembayaran";
+import PembayaranSpesifik from "./pages/PembayaranSpesifik";
+import PembayaranSpesifikQris from "./pages/PembayaranQris";
 
 function App() {
   return (
@@ -34,8 +37,11 @@ function App() {
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/kelas" element={<Dashboard />} />
-        <Route path="/dashboard/konsultasi" element={<DashboardKonsultasi/>} />
+        <Route path="/dashboard/konsultasi" element={<DashboardKonsultasi />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/pembayaran" element={<Pembayaran />} />
+        <Route path="/pembayaran/spesifik" element={<PembayaranSpesifik />} />
+        <Route path="/pembayaran/qris" element={<PembayaranSpesifikQris />} />
       </Routes>
     </div>
   );

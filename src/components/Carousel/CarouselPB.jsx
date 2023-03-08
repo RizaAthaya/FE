@@ -21,7 +21,7 @@ const Carousel = (props) => {
       const response = await axios.get(
         "http://103.189.235.157:10015/api/scholarships/new"
       );
-      setNewPB(response.data);
+      setNewPB(response.data.data);
       console.log(response.data);
     }
     fetchData();
@@ -101,29 +101,29 @@ const Carousel = (props) => {
       <div className="carousel">
         <div className="ch1">
           <Slider {...settings}>
-            {items.map((item) => (
+            {newPB.map((item) => (
               <div className="card-car">
                 <div className="card-top">
                   <div className="card-pb">
                     <div className="tagpb-part">
-                      <h5 className="pb-tag1">Non Degree</h5>
+                      <h5 className="pb-tag1">{item.tag_level.name}</h5>
                       <h5 className="pb-tag2">Multiple Countries</h5>
-                      <h5 className="pb-tag3">Fully Funded</h5>
+                      <h5 className="pb-tag3">{item.tag_cost.name}</h5>
                     </div>
                     <div className="textpb-part">
-                      <div className="pb-text1">Kemdikbud indonesia</div>
+                      <div className="pb-text1">{item.scholarship_provider}</div>
                       {/* ini pemberi beasiswa */}
                       <div className="pb-text2">{item.name}</div>
                     </div>
                     <div className="datepb-part">
                       <div className="open-part">
                         <h5 className="open-left">Open Registration</h5>
-                        <h5 className="open-right">24 Jan 2023</h5>
+                        <h5 className="open-right">{item.open_registration}</h5>
                         {/* ini tanggal open regist */}
                       </div>
                       <div className="close-part">
                         <h5 className="close-left">Close Registration</h5>
-                        <h5 className="close-right">24 Jan 2023</h5>
+                        <h5 className="close-right">{item.close_registration}</h5>
                         {/* ini tanggal closed regist */}
                       </div>
                     </div>

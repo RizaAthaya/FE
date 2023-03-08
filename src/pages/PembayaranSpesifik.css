@@ -1,0 +1,131 @@
+.pagePaySpesifik {
+    width: 100vw;
+    height: 100vh;
+    background: #FAFAFF;
+    color: #121216;
+    background-image: url("../assets/backgroundPembayaran.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+
+}
+
+.isi-pagePaySpesifik {
+    display: grid;
+    justify-content: center;
+}
+
+.title-paySpesifik {
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    /* identical to box height, or 48px */
+    margin-bottom: 48px;
+    letter-spacing: -0.015em;
+}
+
+.card-paySpesifik {
+    padding: 48px;
+    width: 610px;
+    height: 479px;
+    background: #FAFAFF;
+    border: 1px solid #192BC2;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 16px;
+}
+
+.atas-paySpesifik {
+
+    width: 514px;
+    height: 103px;
+
+}
+
+.bottom-cardSpesfik {
+    justify-content: space-between;
+    margin-bottom: 24px;
+    display: flex;
+    width: 514px;
+    height: 160px;
+}
+
+.title-cardSpesifik {
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #121216;
+    margin-bottom: 16px;
+
+}
+
+.jam-cardSpesifik {
+    justify-content: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    /* Primary/50 */
+
+    color: #192BC2;
+}
+
+.line-paySpesifik {
+    margin: 12px 0;
+}
+
+.left-cardSpesifik {
+    margin: 12px 0;
+    padding: 0px;
+    width: 232px;
+    height: 138px;
+}
+
+.btn-konfirmasiPay {
+    margin-top: 24px;
+    width: 514px;
+    height: 48px;
+    background: #C0C0C5;
+    border-radius: 8px;
+
+}
+
+.right-cardSpesifik {
+    width: 213.33px;
+    height: 160px;
+    float: right;
+}
+
+.title-bBox {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    /* Neutral/70 */
+
+    color: #4C4C50;
+
+}
+
+.desc-bBox {
+    margin-bottom: 16px;
+}
+
+.logo-bank {}

@@ -4,6 +4,7 @@ import { usePagination, DOTS } from '../';
 // import './pagination.scss';
 
 const Pagination = props => {
+  
   const {
     onPageChange,
     totalCount,

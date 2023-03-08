@@ -1,0 +1,38 @@
+.nav-pay {
+    height: 88px;
+    width: 100vw;
+    padding: 24px 100px;
+}
+
+.btn-pay {
+    border: 1px solid #192BC2;
+    border-radius: 8px;
+    width: 123px;
+    height: 40px;
+    padding: 8px 16px 8px 12px;
+    float: left;
+    background-color: transparent;
+    display: flex;
+}
+
+.img-pay {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.text-pay {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #192BC2;
+
+}
+
+.logo-navPay {
+    margin-right: 80px;
+    width: 95.22px;
+    height: 40px;
+    float: right;
+}
