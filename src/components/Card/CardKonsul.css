@@ -1,0 +1,36 @@
+.card-kon {
+    width: 280px;
+    height: 208px;
+    padding: 24px;
+    background: #A9B1F4;
+    border: 1px solid #192BC2;
+    border-radius: 16px;
+}
+
+.judul-cardK {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #080E41;
+    margin-bottom: 16px;
+}
+
+.part-cardK {
+    display: flex;
+}
+
+.text-partCardK {
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #080E41;
+    margin-bottom: 9.5px;
+}
+.icon-carK{
+    width: 24px;
+    height: 24px;    
+}

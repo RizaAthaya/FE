@@ -1,53 +1,76 @@
-.slick-arrow {
+.CarouselSA .slick-prev {
+    left: -80px;
+}
+
+.CarouselSA .slick-next {
+    right: 0px;
+}
+
+.CarouselSA .slick-dots li button:before {
+    content: url("../../assets/Dots.svg");
+    width: 16px;
+    height: 16px;
+
+}
+
+.CarouselSA .slick-arrow {
     color: #192BC2;
     background-color: #fff;
 }
-.slick-prev:before, .slick-next:before{
+
+.CarouselSA .slick-prev:before,
+.slick-next:before {
     width: 10px;
-    color: #192BC2;;
+    color: #192BC2;
+    ;
     font-size: 50px;
 }
 
-.card-saFull{
-    margin-left: 100px;
+.CarouselSA .card-saFull {
+    margin-left: 30px;
     width: 90vw;
 }
-.card-sa {
+
+.CarouselSA .card-sa {
     width: 400px;
-    height: 544px;
+    height: 448px;
     /* background: #FAFAFF; */
     border-radius: 16px;
     font-family: 'Inter';
 }
 
-.img-sa {
+.CarouselSA .img-sa {
     width: 400px;
     height: 200px;
     border-radius: 16px 16px 0px 0px;
 }
 
-.text-part{
+.CarouselSA .text-part {
     padding: 24px;
     text-align: left;
 }
-.tag-part {
+
+.CarouselSA .tag-part {
     display: flex;
 }
 
-.tag-sa {
+.CarouselSA .tag-sa {
     font-family: 'Inter';
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     height: 24px;
-    width: 123px;
+    width: auto;
     background-color: #C0C0C5;
     border-radius: 16px;
     color: black;
     padding: 3px 9px;
+    margin-right: 8px;
 }
 
-.title-saCard {
+.CarouselSA .title-saCard {
+    width: 352px;
+    height: 48px;
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
@@ -57,7 +80,7 @@
     margin: 16px 0 8px 0;
 }
 
-.rating-saCard {
+.CarouselSA .rating-saCard {
     display: flex;
     font-weight: 400;
     font-size: 16px;
@@ -69,7 +92,7 @@
     width: 352px;
 }
 
-.harga-saCard {
+.CarouselSA .harga-saCard {
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.css";
+import logo from "../assets/LogoSWU.svg";
 import { Link } from "react-router-dom";
 
 //components
@@ -14,7 +15,7 @@ const Login = () => {
       <div className="whole-sec">
         <div className="left-sec">
           <div className="main-leftSec">
-            <Link to='/'>
+            <Link to="/">
               <div className="button-login">
                 <img src={Back} className="logo-btnHome"></img>
                 <div className="btn-home">Kembali</div>
@@ -25,6 +26,7 @@ const Login = () => {
           </div>
         </div>
         <div className="right-sec">
+          
           <div className="form-part">
             <h2 className="title-form">Selamat datang</h2>
             <h3 className="desc-form">Masuk dengan akun.</h3>
@@ -34,6 +36,9 @@ const Login = () => {
               Belum punya akun? <a href="/register">Buat akun</a> disini
             </h3>
           </div>
+          <Link to="/">
+            <img src={logo} className="logo-login"></img>
+          </Link>
         </div>
       </div>
     </>

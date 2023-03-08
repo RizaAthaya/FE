@@ -12,29 +12,55 @@ import axios from "axios";
 
 const Carousel = (props) => {
   const [newPB, setNewPB] = useState([]);
-  const [tagLevel, setTagLevel] = useState([]);
-  const [tagCost, setTagCost] = useState([]);
-  const [tagCountries, setTagCountries] = useState([]);
+  // const [tagLevel, setTagLevel] = useState([]);
+  // const [tagCost, setTagCost] = useState([]);
+  // const [tagCountries, setTagCountries] = useState([]);
   // ini ambil 9 beasiswa terbaru
-  useEffect(async () => {
-    const response = await axios.get("http://127.0.0.1:8000/api/scholarships/new");
-    setNewPB(response.data);
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios.get(
+        "http://103.189.235.157:10015/api/scholarships/new"
+      );
+      setNewPB(response.data);
+      console.log(response.data);
+    }
+    fetchData();
   }, []);
-  // ini ambil semua tagCost
-  useEffect(async () => {
-    const response = await axios.get("http://127.0.0.1:8000/api/tagCosts/");
-    setTagCost(response.data);
-  });
-  // ini ambil semua tagLevel
-  useEffect(async () => {
-    const response = await axios.get("http://127.0.0.1:8000/api/tagLevels/");
-    setTagLevel(response.data);
-  }, []);
-  // ini ambil semua tagCountries
-  useEffect(async () => {
-    const response = await axios.get("http://127.0.0.1:8000/api/tagCountries/");
-    setTagCountries(response.data);
-  }, []);
+  // // ini ambil semua tagCost
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get(
+  //       "http://103.189.235.157:10015/api/tagCosts/4"
+  //     );
+  //     setTagCost(response.data);
+  //     console.log(response.data);
+  //   }
+
+  //   fetchData();
+  // }, []);
+  // // ini ambil semua tagLeve
+
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get(
+  //       "http://103.189.235.157:10015/api/tagLevels/2"
+  //     );
+  //     setTagLevel(response.data);
+  //     console.log(response.data);
+  //   }
+  //   fetchData();
+  // }, []);
+  // // ini ambil semua tagCountries
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get(
+  //       "http://103.189.235.157:10015/api/tagCountries/3"
+  //     );
+  //     setTagCountries(response.data);
+  //     console.log(response.data);
+  //   }
+  //   fetchData();
+  // }, []);
 
   const settings = {
     dots: true,
@@ -71,41 +97,42 @@ const Carousel = (props) => {
     ],
   };
   return (
-    <div className="carousel">
-      <div className="ch1">
-        <Slider {...settings}>
-          {newPB.map((item) => (
-            
-            <div className="card-car">
-              <div className="card-top">
-                <div className="card-pb">
-                  <div className="tagpb-part">
-                    <h5 className="pb-tag1">Non Degree</h5>
-                    <h5 className="pb-tag2">Multiple Countries</h5>
-                    <h5 className="pb-tag3">Fully Funded</h5>
-                  </div>
-                  <div className="textpb-part">
-                    <div className="pb-text1">Kemdikbud indonesia</div>{" "}
-                    {/* ini pemberi beasiswa */}
-                    <div className="pb-text2">{item.name}</div>
-                  </div>
-                  <div className="datepb-part">
-                    <div className="open-part">
-                      <h5 className="open-left">Open Registration</h5>
-                      <h5 className="open-right">24 Jan 2023</h5>
-                      {/* ini tanggal open regist */}
+    <div className="carousel-PB">
+      <div className="carousel">
+        <div className="ch1">
+          <Slider {...settings}>
+            {items.map((item) => (
+              <div className="card-car">
+                <div className="card-top">
+                  <div className="card-pb">
+                    <div className="tagpb-part">
+                      <h5 className="pb-tag1">Non Degree</h5>
+                      <h5 className="pb-tag2">Multiple Countries</h5>
+                      <h5 className="pb-tag3">Fully Funded</h5>
                     </div>
-                    <div className="close-part">
-                      <h5 className="close-left">Close Registration</h5>
-                      <h5 className="close-right">24 Jan 2023</h5>
-                      {/* ini tanggal closed regist */}
+                    <div className="textpb-part">
+                      <div className="pb-text1">Kemdikbud indonesia</div>
+                      {/* ini pemberi beasiswa */}
+                      <div className="pb-text2">{item.name}</div>
+                    </div>
+                    <div className="datepb-part">
+                      <div className="open-part">
+                        <h5 className="open-left">Open Registration</h5>
+                        <h5 className="open-right">24 Jan 2023</h5>
+                        {/* ini tanggal open regist */}
+                      </div>
+                      <div className="close-part">
+                        <h5 className="close-left">Close Registration</h5>
+                        <h5 className="close-right">24 Jan 2023</h5>
+                        {/* ini tanggal closed regist */}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

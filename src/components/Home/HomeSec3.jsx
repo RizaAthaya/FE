@@ -11,6 +11,7 @@ import Harga from "../../assets/Harga.svg";
 import Buttons from "../general/Buttons";
 import BoxSWU from "../box/BoxSWU";
 import CarouselPB from "../Carousel/CarouselPB";
+import ManggilCardSA from "../Pagination/ManggilCardSA";
 
 const HomeSec3 = (props) => {
   return (
@@ -40,7 +41,7 @@ const HomeSec3 = (props) => {
       </div>
       <div className="infoBeasiswa">
         <h2 className="title-IB"> Informasi Beasiswa</h2>
-        <CarouselPB />
+        
         <Buttons label="Liat Beasiswa Lainnya" styleBtn="btn-ib" />
       </div>
     </div>

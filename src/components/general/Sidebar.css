@@ -1,0 +1,85 @@
+.logo-secDash {
+    padding: 17px 24px;
+    width: 240px;
+    height: 74px;
+    margin-bottom: 24px;
+}
+
+.sidebarDash {
+    width: 17vw;
+    height: 100vh;
+    background: #FAFAFF;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    position: fixed;
+    z-index: 10;
+
+}
+
+.nama-side1 {
+    padding: 10px 24px;
+    width: 240px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 0.25em;
+    color: #C0C0C5;
+}
+
+.logo-dash {
+    width: 95.22px;
+    height: 40px;
+    margin-top: 17;
+}
+
+.nama-side1 {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 150%;
+    letter-spacing: 0.25em;
+    color: #C0C0C5;
+}
+
+.menu1 {}
+
+.after-click {
+    background-color: transparent;
+    width: 240px;
+    height: 48px;
+    padding: 12px 24px;
+    border-right: 2px solid #192BC2;
+    color: #192BC2;
+    border-radius: 0%;
+    border-color:transparent ;
+}
+
+.menu2 {}
+
+.before-click {
+    border-color:transparent ;
+    border-radius: 0%;
+    background-color: transparent;
+    padding: 12px 24px;
+    width: 240px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #86868B;
+}
+
+.img1-menu1 {
+    margin-right: 16px;
+}
+
+.img2-menu1 {
+    margin-right: 16px;
+}
+
+.dash-menu {
+    background: transparent;
+    padding: 0%;
+}

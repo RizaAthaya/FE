@@ -29,11 +29,11 @@ const Register = () => {
       <div className="right-sec2">
         <div className="form-part2">
           <h2 className="title-form2">Buat Akun</h2>
-          <h3 className="desc-form2">Bergabung dengan kami</h3>
+          <h3 className="desc-form2">Bergabung untuk mendapatkan bimbingan bersama mentor-mentor yang handal.</h3>
           <FormRegister />
           <h3 className="register2">
-            Dengan mendaftar, anda setuju dengan Syarat dan Ketentuan serta
-            Kebijakan Privasi yang berlaku.
+            Dengan mendaftar, anda setuju dengan <a>Syarat dan Ketentuan</a> serta 
+            <a> Kebijakan Privasi</a> yang berlaku.
           </h3>
           <h3 className="penutup2">
             Sudah punya akun? <a href="/login">Masuk</a> di sini.

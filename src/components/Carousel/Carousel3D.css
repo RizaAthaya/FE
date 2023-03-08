@@ -2,48 +2,48 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 .Carousel3D {
-  width: 80vw;
+  width: 55vw;
   margin: 0rem;
   
 }
 
-.slide img {
+.Carousel3D .slide img {
   width: 100%;
   margin: auto;
 }
 
-.slide {
-  transform: scale(0.9);
+.Carousel3D .slide {
+  transform: scale(0.8);
   transition: transform 300ms;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
-.activeSlide {
+.Carousel3D .activeSlide {
   transform: scale(1);
   opacity: 1;
 }
 
-.arrow {
+.Carousel3D .arrow {
   background-color: #fff;
   position: absolute;
   cursor: pointer;
   z-index: 10;
 }
 
-.arrow svg {
+.Carousel3D .arrow svg {
   transition: color 300ms;
 }
 
-.arrow svg:hover {
+.Carousel3D .arrow svg:hover {
   color: #68edff;
 }
 
-.next {
+.Carousel3D .next {
   right: -7%;
   top: 50%;
 }
 
-.prev {
+.Carousel3D .prev {
   left: 0%;
   top: 50%;
 }

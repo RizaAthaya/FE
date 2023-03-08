@@ -1,12 +1,13 @@
-.whole-sec2{
+.whole-sec2 {
     display: flex;
     background-color: #fff;
     background-position: cover;
     width: 100vw;
     height: 100vh;
-    
+
 }
-.left-sec2{
+
+.left-sec2 {
     /* padding-left: 1%; */
     display: flex;
     flex-basis: 50%;
@@ -17,74 +18,72 @@
     height: 100%;
 }
 
-.img-register{
+.img-register {
     display: flex;
     /* margin: auto; */
     padding-top: 13%;
     width: 95%;
-    
+
 }
-.box-imgRegister{
+
+.box-imgRegister {
     width: 50vw;
     padding-left: 13%;
     padding-right: 5%;
 }
-.right-sec2{
+
+.right-sec2 {
     display: flex;
     flex-basis: 50%;
     background-color: #fff;
     width: 50%;
     height: 100%;
-    
+
 }
-.form-part2{
+
+.form-part2 {
     color: black;
     padding-top: 18%;
     width: 100%;
     text-align: center;
 }
-.title-form2{
-    
-/* H2/Bold */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 60px;
+.title-form2 {
+    color: #192BC2;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
 }
-.desc-form2{
-    
-/* B1/Regular */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-margin-bottom: 3rem;
-margin-top: 0.5rem;
+.desc-form2 {
+    display: inline-block;
+    justify-content: center;
+    width: 400px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
 }
-.register2{
+
+.register2 {
     /* text-align: center; */
     /* width: 25rem; */
     margin: auto;
     width: 25rem;
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 3rem;
 }
 
-.penutup2{
+.penutup2 {
 
-/* B1/Regular */
-color: black;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
+    /* B1/Regular */
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
 }

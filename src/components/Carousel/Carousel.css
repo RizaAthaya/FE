@@ -1,6 +1,6 @@
 .carousel{
     margin: auto;
-    width: 95%;
+    width: 90%;
 }
 
 .slick-slide > div {
@@ -46,7 +46,7 @@
     background-color: #D9D9D9;
 }
 .slick-prev {
-    left: -65px;
+    left: -75px;
     content: url('../../assets/Left.png');
 }
 .slick-next{

@@ -41,15 +41,13 @@ const AllCourse = (props) => {
             </button>
           </div>
           <div className="filter-bar2">
-            <FilterMini title="Negara tujuan" />
-            <FilterMini title="Tipe pendanaan" />
-            <FilterMini title="Jenjang" />
+            
           </div>
           <div className="filter-bar3">
-            <FilterMini className="filter-beda" title="Urutkan" />
+            
           </div>
           <div className="main-bottom">
-            <PaginationPB/>
+            
           </div>
         </div>
       </div>

@@ -1,0 +1,10 @@
+.nav-dashboard{
+    background: #192BC2;
+    padding: 12px 32px;
+    height: 72px;
+    width: 100vw;
+    position: fixed;
+}
+.right-navDash{
+    float: right;
+}

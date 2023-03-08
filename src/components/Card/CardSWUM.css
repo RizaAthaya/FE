@@ -1,0 +1,43 @@
+.card-swum {
+    padding: 24px;
+    width: 400px;
+    height: 341px;
+    background: #FAFAFF;
+    border-radius: 16px;
+    margin-right: 0.7vw;
+    margin-left: 0.7vw;
+}
+
+.judul-cardSWUM {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+    text-align: center;
+    letter-spacing: -0.015em;
+    margin-top: 24px;
+    /* Primary/50 */
+    margin-bottom: 8px;
+    color: #192BC2;
+}
+
+.desc-cardSWUM {
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    /* Neutral/70 */
+
+    color: #4C4C50;
+}
+
+.img-cardSWUM {
+    width: 320px;
+    height: 160px;
+}

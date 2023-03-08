@@ -1,3 +1,7 @@
+.logo-login{
+    margin-top: 20px;
+}
+
 .whole-sec {
     display: flex;
     background-color: #fff;
@@ -25,7 +29,7 @@
     background-color: #fff;
     width: 50%;
     height: 100%;
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 .main-leftSec {
@@ -85,9 +89,7 @@
 
     margin: auto;
     width: auto;
-    color: black;
-    font-family: 'Poppins';
-    font-style: normal;
+    color: #192BC2;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -104,8 +106,6 @@
     /* height: 3rem; */
     /* margin-left: 20%; */
     color: black;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -117,8 +117,6 @@
     margin: auto;
     text-align: right;
     margin-bottom: 3rem;
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -134,8 +132,6 @@
     /* display:list-item; */
     /* B1/Regular */
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;

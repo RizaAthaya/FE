@@ -1,10 +1,11 @@
-
-.card-saFull{
+.card-saFull {
     width: 100vw;
 }
+
 .card-sa {
+
     width: 400px;
-    height: 544px;
+    height: 448px;
     /* background: #FAFAFF; */
     border-radius: 16px;
     font-family: 'Inter';
@@ -16,10 +17,11 @@
     border-radius: 16px 16px 0px 0px;
 }
 
-.text-part{
+.text-part {
     padding: 24px;
     text-align: left;
 }
+
 .tag-part {
     display: flex;
 }

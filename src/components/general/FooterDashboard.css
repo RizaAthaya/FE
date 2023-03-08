@@ -1,0 +1,18 @@
+.footerDash {
+    width: 1200px;
+    height: 56px;
+    padding: 16px 32px 16px 273px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.text-footDash {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #86868B;
+}

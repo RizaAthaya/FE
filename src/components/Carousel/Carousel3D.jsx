@@ -2,10 +2,10 @@ import "./Carousel3D.css";
 import { useState } from "react";
 import Slider from "react-slick";
 import CardforPM from "../utils/Datas4";
-import '../Card/CardPM.css'
+import "../Card/CardPM.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import Right from '../../assets/Right.svg';
-import Left from '../../assets/Left.png';
+import Right from "../../assets/Right.svg";
+import Left from "../../assets/Left.png";
 
 function Carousel3D() {
   const NextArrow = ({ onClick }) => {
@@ -42,33 +42,16 @@ function Carousel3D() {
     <div className="Carousel3D">
       <Slider {...settings}>
         {CardforPM.map((item) => (
-          <div className={(item.id-1) === imageIndex ? "slide activeSlide" : "slide"}>
-            <div className="card-pm">
-              <div className="icons-pm">
-                <img src={item.linkImg1} alt="icon-pm" className="icon-pm"></img>
-              </div>
-              <div className="text-pm">
-                <br /> <br /> <br />
-                <h3 className="text1-pm">
-                  {item.textPM}
-                </h3>
-              </div>
-
-              <hr className="line-profile" />
-              <div className="profile-pm">
-                <img
-                  className="pict-pm"
-                  src={item.LinkImg2}
-                  alt="Profile-pict"
-                ></img>
-                <div className="text-profile">
-                  <h2 className="title-profile"> {item.title} </h2>
-                  <div className="desc-profile">
-                    <h4 className="tag1-profile"> {item.tag1} </h4>
-                    <h4 className="tag2-profile"> {item.tag2} </h4>
-                  </div>
-                </div>
-              </div>
+          <div
+            className={
+              item.id - 1 === imageIndex ? "slide activeSlide" : "slide"
+            }
+          >
+            <div className="card-PM">
+              <img className="img-PM" src={item.linkImg1}></img>
+              <h3 className="nama-PM">{item.title}</h3>
+              <h3 className="tag-PM">{item.tag1}</h3>
+              <h3 className="uni-PM">{item.tag2}</h3>
             </div>
           </div>
         ))}

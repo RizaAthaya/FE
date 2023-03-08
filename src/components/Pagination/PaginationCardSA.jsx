@@ -13,7 +13,7 @@ const PaginationCardSA = ({
     pages.push(i);
   }
   return (
-    <div className="paginationCarsSA">
+    <div className="paginationCardSA">
       {pages.map((page, index) => {
         return (
           <button
@@ -28,3 +28,4 @@ const PaginationCardSA = ({
     </div>
   );
 };
+export default PaginationCardSA;

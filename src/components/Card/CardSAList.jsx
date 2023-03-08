@@ -10,7 +10,7 @@ const CardSAList = ({ beasiswaData, tagCost, tagLevel }) => {
         {
           tagLevel((tags) => {
             // ini nyari mana yang id tagaLevel di programs == id di array tagLevel
-            const getTags = "";
+            let getTags = "";
             for (let i = 0; i <= tagLevel.length(); i++) {
               if (tags.id == items.tag_level_id) {
                 getTags = tags.name;
@@ -19,7 +19,7 @@ const CardSAList = ({ beasiswaData, tagCost, tagLevel }) => {
             {
               tagCost((tags2) => {
                 // ini nyari mana yang id tagaLevel di programs == id di array tagCost
-                const getTags2 = "";
+                let getTags2 = "";
                 for (let i = 0; i<=tagCost.length(); i++){
                     if (tags2.id == items.tag_cost_id){
                         getTags2 = tags.name;

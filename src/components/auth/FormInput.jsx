@@ -19,17 +19,17 @@ const FormInput = (props) => {
     event.preventDefault();
 
     axios
-      .post("http://127.0.0.1:8000/api/login", {
+      .post("http://103.189.235.157:10015/api/login", {
         email: email,
         password: password,
       })
       .then((response) => {
-        window.localStorage.setItem("token", JSON.stringify(response.data.data.token));
+        window.localStorage.setItem("token", response.data.data.token);
         console.log(response);
 
-        setTimeout(() => {
-          window.location.reload();
-        }, 1000);
+        // setTimeout(() => {
+        //   window.location.reload();
+        // }, 1000);
       })
       .catch((error) => {
         console.log(error);
