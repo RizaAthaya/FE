@@ -58,6 +58,7 @@
     display: flex;
     margin: auto;
     margin-left: 30vw;
+    margin-bottom: 32px;
 }
 
 /* kasih @madia nya  */
@@ -83,4 +84,8 @@
     height: 48px;
     /* margin: auto; */
 
+}
+.whole-sec4 .nav-filter{
+    /* justify-content: center; */
+    float: none;
 }

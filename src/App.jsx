@@ -15,12 +15,16 @@ import Komunitas from "./pages/Komunitas";
 import StudyAbroad from "./pages/StudyAbroad";
 import Artikel from "./pages/Artikel";
 import Home2 from "./pages/Home2";
-import Dashboard from "./pages/DashboardKelasSaya";
+import DashboardLama from "./pages/DashboardKelasSaya";
 import DashboardKonsultasi from "./pages/DashboardKonsultasi";
 import Profile from "./pages/Profile";
 import Pembayaran from "./pages/Pembayaran";
-import PembayaranSpesifik from "./pages/PembayaranSpesifik";
+import PembayaranBRI from "./pages/PembayaranBRI";
+import PembayaranBNI from "./pages/PembayaranBNI";
+import PembayaranBCA from "./pages/PembayaranBCA";
+import PembayaranPermata from "./pages/PembayaranPermata";
 import PembayaranSpesifikQris from "./pages/PembayaranQris";
+import DashboardNew from "./pages/DashboardNew";
 
 function App() {
   return (
@@ -35,13 +39,16 @@ function App() {
         <Route path="/komunitas" element={<Komunitas />} />
         <Route path="/studyabroad" element={<StudyAbroad />} />
         <Route path="/artikel" element={<Artikel />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/dashboard/kelas" element={<Dashboard />} />
+        <Route path="/dashboard" element={<DashboardNew />} />
+        <Route path="/dashboard/kelas" element={<DashboardLama />} />
         <Route path="/dashboard/konsultasi" element={<DashboardKonsultasi />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/pembayaran" element={<Pembayaran />} />
-        <Route path="/pembayaran/spesifik" element={<PembayaranSpesifik />} />
+        <Route path="/pembayaran/permata" element={<PembayaranPermata />} />
+        <Route path="/pembayaran/bca" element={<PembayaranBCA />} />
+        <Route path="/pembayaran/bni" element={<PembayaranBNI />} />
         <Route path="/pembayaran/qris" element={<PembayaranSpesifikQris />} />
+        <Route path="/pembayaran/bri" element={<PembayaranBRI />} />
       </Routes>
     </div>
   );

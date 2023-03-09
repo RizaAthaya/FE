@@ -43,6 +43,7 @@
 }
 
 .title2-bodySA {
+    margin-bottom: 32px;
     padding: 0% 5%;
     text-align: left;
     margin-top: 128px;
@@ -62,9 +63,13 @@
 
     color: #FFFFFF;
 }
+.nav-tengah{
+    position: absolute;
+}
 .nav-sa2{
     display: flow-root;
     padding-right: 5%;
+    width: 100vw;
 
 }
 .search-filter{
@@ -73,4 +78,7 @@
 .nav-filter{
     display: flex;
     float:right;
+}
+.semua-pagination{
+    margin-top: 148px;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { createAxiosInstance } from "../api/api";
+import "./ManggilCardSA.css";
 
 import "./ManggilCardSA.css";
 import CardSAList from "../Card/CardSAList";
@@ -72,12 +73,14 @@ const ManggilCardSA = () => {
         <CardSAList beasiswaData={currentPosts} />
       </div>
 
-      <PaginationCardSA
-        totalPosts={Program.length}
-        postsPerPage={postsPerPage}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-      />
+      <div className="angka-pagination">
+        <PaginationCardSA
+          totalPosts={Program.length}
+          postsPerPage={postsPerPage}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        />
+      </div>
     </div>
   );
 };

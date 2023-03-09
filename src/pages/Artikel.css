@@ -5,12 +5,28 @@
     background-color: #fff;
 }
 
-.atas-artikel{
-    padding: 6% 0;
+.title-mainArtikel {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    color: #121216;
+
 }
-.bread-crumb{
+
+.tags-artikel {
+    display: flex;
+}
+
+.atas-artikel {
+    padding: 6% 0 0 0;
+}
+
+.bread-crumb {
     margin: 20px 100px;
 }
+
 .header-artikel {
     padding: 15% 100px;
     background-image: url("../assets/Rectangle.svg");
@@ -40,6 +56,7 @@
     line-height: 120%;
     color: #000000;
 }
-.main-artikel{
+
+.main-artikel {
     padding: 0 5%;
 }

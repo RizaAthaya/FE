@@ -13,7 +13,7 @@ function Carousel3D() {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "http://103.189.235.157:10015/api/mentors/new"
+        "https://reyhafiz.aenzt.tech/api/mentors/new"
       );
       setNewMentor(response.data.data);
       console.log(response.data);

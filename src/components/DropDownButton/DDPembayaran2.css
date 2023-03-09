@@ -1,45 +1,35 @@
-.ddb-pembayaran .menu-trigger {
-    position: absolute;
+.ddb-pembayaran2 .menu-trigger {
     width: 820px;
     height: 80px;
     border-width: 0.5px 1px 1px 1px;
     border-style: solid;
     border-color: #192BC2;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 0px 0px 16px 16px;
     display: flex;
     justify-content: space-between;
     padding: 24px 48px;
     transition: 0.5s;
 }
-.ddb-pembayaran .menu-trigger.active {
-    position: relative;
+
+.ddb-pembayaran2 .menu-trigger.active {
+    border-radius: 0%;
     background: rgba(169, 177, 244, 0.2);
     border-bottom: rgba(169, 177, 244, 0.2);
-    border-width: 1px 1.6px 0 2px;
+    border-width: 1px 1px 0 1px;
 }
 
-.ddb-pembayaran .menu-container.inactive{
-    transition: 0.5s;
-    height: 85px;
-}
-
-.ddb-pembayaran .menu-container.active{
-    height: 224px;
-}
-
-
-.ddb-pembayaran .img-ddb1 {
-    width: 32px;
-    height: 32px;
+.ddb-pembayaran2 .img-ddb1 {
+    width: 100%;
+    /* height: 32px; */
     margin-right: 20px;
 }
 
-.ddb-pembayaran .img-ddb2 {
+.ddb-pembayaran2 .img-ddb2 {
     width: 24px;
     height: 24px;
 }
 
-.ddb-pembayaran .text-ddbp {
+.ddb-pembayaran2 .text-ddbp {
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
@@ -54,29 +44,30 @@
     color: #121216;
 }
 
-.ddb-pembayaran .left-trigger {
+.ddb-pembayaran2 .left-trigger {
     display: flex;
 }
 
-.ddb-pembayaran .dropdown-menu.active {
-    margin-left: 1px;
-    width: 819px;
+.ddb-pembayaran2 .dropdown-menu.active {
+    margin-left: -1px;
+    width: 821px;
     height: 144px;
     background: rgba(169, 177, 244, 0.2);
     border-color: #192BC2;
     border-style: solid;
-    border-width: 0px 1px 0.5px 1px;
+    border-width: 0px 2px 1px 2px;
+    border-radius: 0px 0px 16px 16px;
 }
-.ddb-pembayaran .dropdown-menu.inactive {
+.ddb-pembayaran2 .dropdown-menu.inactive {
     transition: 0.5s;
 }
-.ddb-pembayaran .dropdownItem {
+.ddb-pembayaran2 .dropdownItem {
     box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
     justify-content: space-between;
     display: flex;
 }
 
-.ddb-pembayaran .dropdownItem .btn-ilang {
+.ddb-pembayaran2 .dropdownItem .btn-ilang {
     margin-top: 10px;
     width: 169px;
     height: 120px;
@@ -84,7 +75,7 @@
     /* Neutral/10 */
     background: #FAFAFF;
     /* Shadow/Base */
-    
+
     border-radius: 8px;
     margin-right: 16px;
     justify-content: center;
@@ -92,12 +83,12 @@
 
 }
 
-.ddb-pembayaran .dropdownItem img {
+.ddb-pembayaran2 .dropdownItem img {
     width: 135px;
     height: 120px;
 }
 
-.ddb-pembayaran .dropdown-menu>ul {
+.ddb-pembayaran2 .dropdown-menu>ul {
     display: flex;
 
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import "./PembayaranSpesifik.css";
+import "./PembayaranBCA.css";
 
 //assets
 import Background from "../assets/backgroundPayment.svg";
-import BCA from "../assets/BCA.svg";
+import BNI from "../assets/BNI.svg";
 import NavbarPay from "../components/general/NavbarPay";
 
-const PembayaranSpesifik = (props) => {
+const PembayaranBNI = (props) => {
   return (
     <div className="pagePaySpesifik">
       <NavbarPay />
@@ -28,7 +28,7 @@ const PembayaranSpesifik = (props) => {
               <h3 className="desc-bBox">Rp 500.000</h3>
             </div>
             <div className="right-cardSpesifik">
-              <img className="logo-bank" src={BCA}></img>
+              <img className="logo-bank" src={BNI}></img>
             </div>
           </div>
           <button className="btn-konfirmasiPay">Konfirmasi Pembayaran</button>
@@ -38,4 +38,4 @@ const PembayaranSpesifik = (props) => {
   );
 };
 
-export default PembayaranSpesifik;
+export default PembayaranBNI;

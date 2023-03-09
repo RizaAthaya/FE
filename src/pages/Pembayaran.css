@@ -1,18 +1,25 @@
 .payment-page {
     background-color: #fff;
-    width: 1440px;
-    height: 900px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .title-payment {
+    margin-top: 10%;
     font-weight: 700;
     font-size: 40px;
     line-height: 120%;
     letter-spacing: -0.015em;
     text-align: center;
     color: #000000;
+    margin-bottom: 72px;
 }
-
+.isi-choosePayment{
+    justify-content:stretch;
+}
+.left-boxPay{
+    margin-right: 20px;
+}
 .right-boxPay {
     padding: 0px;
     gap: 20px;
@@ -74,6 +81,11 @@
 }
 .atas-Rbox, .bawah-Rbox{
     display: flex;
+}
+.full-boxPay{
+    padding: 0 7%;
+    display: flex;
+    justify-content: center;
 }
 .left-RB {
     font-weight: 600;

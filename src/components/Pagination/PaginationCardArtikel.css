@@ -1,8 +1,10 @@
-.paginationCardSA{
+.paginationCardArtikel {
     margin-bottom: 120px;
 }
-.paginationCardSA button {
+
+.paginationCardArtikel button {
     background: #192BC2;
     border-radius: 8px;
     margin-right: 8px;
+
 }

@@ -10,6 +10,10 @@ import CardPB from "../components/Card/CardPB";
 import PaginationPB from "../components/Carousel/PaginationPB";
 import BoxInputFilter from "../components/BoxInputFilter";
 
+import ManggilCardPB from "../components/Pagination/ManggilCardPB";
+import DropDown from "../components/DropDownButton/DDBFilter";
+import DropDown2 from "../components/DropDownButton/DDBFilter2";
+import DropDown3 from "../components/DropDownButton/DDBFilter3";
 
 // const FilterMini = styled.nav`
 //   padding: 8px 16px;
@@ -40,16 +44,15 @@ const AllCourse = (props) => {
               Cari
             </button>
           </div>
-          <div className="filter-bar2">
-            
-          </div>
-          <div className="filter-bar3">
-            
-          </div>
-          <div className="main-bottom">
-            
+          <div className="nav-section">
+            <div className="nav-filter">
+              <DropDown />
+              <DropDown3 />
+              <DropDown2 />
+            </div>
           </div>
         </div>
+        <ManggilCardPB/>
       </div>
 
       <Footer />

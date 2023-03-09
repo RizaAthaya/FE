@@ -1,0 +1,30 @@
+.tag-artikel.inactive {
+    
+    width: auto;
+    height: 40px;
+    border: 1px solid #192BC2;
+    border-radius: 8px;
+    color: #192BC2;
+
+}
+.tag-artikel{
+    margin-right: 16px;
+    padding: 8px 16px;
+}
+
+.tag-artikel.active {
+    height: 40px;
+    width: auto;
+    background: #192BC2;
+    border-radius: 8px;
+    color: #FAFAFF;
+}
+
+.text-tagArtikel {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+}

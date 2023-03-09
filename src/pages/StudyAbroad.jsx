@@ -2,6 +2,7 @@ import React from "react";
 import "./StudyAbroad.css";
 
 // components
+// import Manggil from "../Pagination/Manggil"
 import Navbar from "../components/general/Navbar2";
 import CarouselStudyAbroad from "../components/Carousel/CarouselStudyAbroad";
 import Footer from "../components/general/Footer";
@@ -28,22 +29,24 @@ const StudyAbroad = (props) => {
         </div>
       </div>
       <div className="body-sa">
-        <div className="nav-sa2">
-          <div className="search-filter">
-            <Search />
-          </div>
-
-          <div className="nav-filter">
-            <DropDown />
-            <DropDown3 />
-            <DropDown2 />
-          </div>
-        </div>
-
-        <h3 className="title1-bodySA">Program Populer</h3>
+        <h3 className="title1-bodySA">Program Terbaru</h3>
         <CarouselStudyAbroad />
         <h3 className="title2-bodySA">Program Tersedia</h3>
-        <ManggilCardSA />
+        <div className="nav-tengah">
+          <div className="nav-sa2">
+            <div className="search-filter">
+              <Search />
+            </div>
+            <div className="nav-filter">
+              <DropDown />
+              <DropDown3 />
+              <DropDown2 />
+            </div>
+          </div>
+        </div>
+        <div className="semua-pagination">
+          <ManggilCardSA />
+        </div>
       </div>
       <Footer />
     </div>
