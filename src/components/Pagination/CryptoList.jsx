@@ -1,7 +1,7 @@
 import React from "react";
 
 import CryptoCard from "./CryptoCard";
-import "./CryptoList.css";
+import "../../css/CryptoList.css";
 
 const CryptoList = ({ coinsData }) => {
     return (

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./TagArtikel.css";
+import "../../css/TagArtikel.css";
 
 const TagArtikel = props => {
     const [On, setOn] = useState(false);

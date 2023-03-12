@@ -1,5 +1,5 @@
 import React from "react";
-import "./Artikel.css";
+import "../css/Artikel.css";
 
 //components
 // import TagArtikel from "../components/general/TagArtikel";

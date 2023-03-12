@@ -1,5 +1,5 @@
 import React from "react";
-import "./BoxSWU.css";
+import "../css/BoxSWU.css";
 
 const BoxIB = (props) => {
   return (

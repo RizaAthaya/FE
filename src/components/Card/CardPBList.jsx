@@ -1,7 +1,7 @@
 import React from 'react';
 import CardPB from './CardPB';
-import "./CardPB.css";
-import './CardPBList.css';
+import "../../css/CardPB.css";
+import '../../css/CardPBList.css';
 
 const CardPBList = ({CardBeasiswa}) => {
     return (
@@ -11,7 +11,7 @@ const CardPBList = ({CardBeasiswa}) => {
             return (
                 <CardPB
                     key={index}
-                    tag_lovel={item.tag_level.name}
+                    tag_level={item.tag_level.name}
                     tag_cost={item.tag_cost.name}
                     scholarship_provider={item.scholarship_provider}
                     name={item.name}

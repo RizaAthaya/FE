@@ -1,31 +1,40 @@
 import React from "react";
-import "./DashboardNew.css";
+import "../css/DashboardNew.css";
 
 //components
 import NavbarDashboard from "../components/general/NavbarDashboard";
 import Review from "../assets/ReviewKonsul.svg";
+import CardKonsul from "../components/Card/CardKonsul";
+import CardKelas from "../components/Card/CardKelas";
 
 //assets
 import Question from "../assets/questionLAgi.svg";
 import Review2 from "../assets/ReviewLagu.svg";
+import Aktivitas from "../assets/Aktivitas.svg";
+import { Card } from "@mui/material";
 
 const DashboardNew = (props) => {
   return (
     <div className="new-Dash">
       <NavbarDashboard />
       <div className="whole-newDash">
-        <h2 className="title-newDash">Selamat datang Anda Bagas Aprianto!</h2>
-        <h3 className="desc-newDash">
-          Semoga aktivitas belajarmu menyenangkan.
-        </h3>
+        <div className="titlepart-newDash">
+          <h2 className="title-newDash">Selamat datang Anda Bagas Aprianto!</h2>
+          <h3 className="desc-newDash">
+            Semoga aktivitas belajarmu menyenangkan.
+          </h3>
+        </div>
+
         <div className="boxes-dash">
           <div className="box-fullClass">
             <div className="title-fullClass">
-              <img></img>
+              <img src={Aktivitas} className="fullClassLogo"></img>
               <h3>Aktivitas Belajar</h3>
             </div>
             <hr />
-            <div className="cards-class"></div>
+            <div className="cards-class">
+              <CardKelas />
+            </div>
           </div>
           <div className="boxes-konsultasi">
             <div className="box-pengajuan">
@@ -47,11 +56,14 @@ const DashboardNew = (props) => {
             </div>
             <div className="box-announce">
               <div className="title-announce">
-                <img className="img-title" src={Review2}></img>
+                <img className="img-title" src={Review}></img>
                 <h3>Konsultasi Mendatang</h3>
               </div>
               <hr />
-              <div className="cards-consultation"></div>
+
+              <div className="cards-consultation">
+                <CardKonsul />
+              </div>
             </div>
           </div>
         </div>

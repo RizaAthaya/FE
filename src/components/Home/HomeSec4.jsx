@@ -13,7 +13,7 @@ const HomeSec4 = (props) => {
         Kami Hadir Bersama Mentor-Mentor yang Berpengalaman
       </h2>
       <div className="carousel-3dnya">
-        <Carousel3D />
+        <Carousel3D/>
       </div>
     </div>
   );

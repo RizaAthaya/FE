@@ -1,9 +1,9 @@
 import React from "react";
-import './CarouselCardPromo.css';
+import '../../css/CarouselCardPromo.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Carousel.css';
+import '../../css/Carousel.css';
 import { dataCard2 } from "../utils/Datas2";
 
 const Carousel = (props) => {

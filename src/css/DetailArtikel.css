@@ -1,0 +1,65 @@
+.detail-artikel2 {
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+}
+
+.header2-artikel {
+    padding: 5% 0 0 0;
+    text-align: center;
+    background: linear-gradient(93.39deg, #192BC2 0%, #5363E9 100%);
+    width: 100vw;
+    height: 400px;
+}
+
+.tag2-artikel {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #FAFAFF;
+    margin-bottom: 8px;
+}
+
+.title2-artikel {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #FAFAFF;
+}
+
+.body2-artikel {
+    transform: translateY(-5%);
+    padding: 0 21.5%;
+}
+
+.imgBig2-artikel {
+    width: 57vw;
+    height: auto;
+}
+
+.tanggal2-artikel {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #FAFAFF;
+}
+
+.isi2-artikel {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #000000;
+    margin-bottom: 10%;
+}
+.title-sec2{
+    margin-top: 5%;
+}
+.semua-hasil{
+    display: flex;
+    justify-content: space-around;
+}

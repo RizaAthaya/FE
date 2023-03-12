@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./TagArtikel.css";
-import "./ButtonGroup.css";
+import "../../css/TagArtikel.css";
+import "../../css/ButtonGroup.css";;
 
 // useEffect(() => {
 //   async function fetchData(props) {

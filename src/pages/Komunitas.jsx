@@ -1,13 +1,13 @@
 import React from "react";
-import "./Komunitas.css";
+import "../css/Komunitas.css";
 import styled from "styled-components";
 
 //components
 import Navbar from "../components/general/Navbar2";
-import BoxInputFilter from "../components/BoxInputFilter";
-import FilterMini from "../components/FilterMini";
-import CardKomunitas from "../components/Card/CardKomunitas";
+import BoxInputFilter from "../components/box/BoxInputFilter";
 import Footer from "../components/general/Footer";
+
+import ManggilKomunitas from "../components/Pagination/ManggilKomunitas";
 
 const Komunitas = (props) => {
   return (
@@ -33,14 +33,11 @@ const Komunitas = (props) => {
             </button>
           </div>
         </div>
-        <div className="filter-bar3">
-          <FilterMini className="filter-beda" title="Urutkan" />
-        </div>
       </div>
       <div className="main-cardK">
-      <CardKomunitas/>
+        <ManggilKomunitas/>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

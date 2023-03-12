@@ -1,25 +1,64 @@
-import React from "react";
-import "./StudyAbroad.css";
+import React, { useState, useCallback } from "react";
+import "../css/StudyAbroad.css";
+import axios from "axios";
 
 // components
 // import Manggil from "../Pagination/Manggil"
 import Navbar from "../components/general/Navbar2";
 import CarouselStudyAbroad from "../components/Carousel/CarouselStudyAbroad";
 import Footer from "../components/general/Footer";
-import Manggil from "../components/Pagination/Manggil";
 import ManggilCardSA from "../components/Pagination/ManggilCardSA";
-import FilterMini from "../components/FilterMini";
-import Search from "../components/Search";
+import Search from "../components/general/Search";
 import DropDown from "../components/DropDownButton/DDBFilter";
 import DropDown2 from "../components/DropDownButton/DDBFilter2";
 import DropDown3 from "../components/DropDownButton/DDBFilter3";
 
+//assets
+import Cari from "../assets/Search.svg";
+
 const StudyAbroad = (props) => {
+  // const [searchProgram, setSearchProgram] = useState([]);
+  // const [program, setProgram] = useState([]);
+
+  // useEffect(() => {
+  //   handleSearch("");
+  // }, []);
+
+  // const handleSearch = (title) => {
+  //   const response = axios.get(
+  //     `http://127.0.0.1:8000/api/programs/search?name=${title}`
+  //   );
+
+  //   setProgram(response.data);
+  //   console.log(response.data);
+  // };
+  const [suggestions, setSuggestions] = useState("");
+
+  const debounce = (func) => {
+    let timer;
+    return function (...args) {
+      const context = this;
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        timer = null;
+        func.apply(context, args);
+      }, 500);
+    };
+  };
+
+  const handleChange = (value) => {
+    fetch(`https://reyhafiz.aenzt.tech/api/programs/search?name=${title}`)
+      .then((res) => res.json())
+      .then((json) => setSuggestions(json.data.items));
+  };
+
+  const optimizedFn = useCallback(debounce(handleChange), []);
+
   return (
     <div className="whole-sa">
       <Navbar />
       <div className="atasan-sa">
-        <div className="bread-crumb">Page - Page</div>
+        <div className="bread-crumb">Home - Study Abroad</div>
         <div className="header-sa">
           <div className="title-sa">Study Abroad</div>
           <div className="desc-sa">
@@ -35,7 +74,8 @@ const StudyAbroad = (props) => {
         <div className="nav-tengah">
           <div className="nav-sa2">
             <div className="search-filter">
-              <Search />
+              {/** Search */}
+             <Search/>
             </div>
             <div className="nav-filter">
               <DropDown />
@@ -45,7 +85,7 @@ const StudyAbroad = (props) => {
           </div>
         </div>
         <div className="semua-pagination">
-          <ManggilCardSA />
+         
         </div>
       </div>
       <Footer />

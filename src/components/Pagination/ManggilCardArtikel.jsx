@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import "./ManggilCardPB.css";
+import "../../css/ManggilCardPB.css";
 import CryptoList from "./CryptoList";
 // import Pagination from "./PaginationPB";
 import CardArtikelList from "../Card/CardArtikelList";

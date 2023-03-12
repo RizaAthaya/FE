@@ -1,14 +1,12 @@
 import React from "react";
-import "./PojokBeasiswa.css";
+import "../css/PojokBeasiswa.css";
 import styled from "styled-components";
 
 //components
-import FilterMini from "../components/FilterMini";
 import Navbar from "../components/general/Navbar2";
 import Footer from "../components/general/Footer";
 import CardPB from "../components/Card/CardPB";
-import PaginationPB from "../components/Carousel/PaginationPB";
-import BoxInputFilter from "../components/BoxInputFilter";
+import BoxInputFilter from "../components/box/BoxInputFilter";
 
 import ManggilCardPB from "../components/Pagination/ManggilCardPB";
 import DropDown from "../components/DropDownButton/DDBFilter";

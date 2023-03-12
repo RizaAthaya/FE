@@ -1,0 +1,77 @@
+.profile {
+    display: grid;
+    width: 100vw;
+    height: 1652px;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.atas-profile {
+    width: 400px;
+}
+.file-box{
+    width: 48px;
+    height: 48px;
+    left: 780px;
+    top: 430px;
+    background: #192BC2;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 500px;
+    /* transform: translateX(-60px); */
+    transform: translate(-50px, 150px);
+}
+.semua-profileIsi {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+.whole-profile {
+    width: 400px;
+    height: 976px;
+    padding-top: 150px;
+}
+
+.title-profile {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    align-items: center;
+    letter-spacing: -0.015em;
+    margin-bottom: 48px;
+}
+
+.img-profile {
+    width: 240px;
+    height: 240px;
+    border-radius: 500px;
+    background-color: antiquewhite;
+}
+
+.edit-img {
+    width: 48px;
+    height: 48px;
+    left: 780px;
+    top: 430px;
+    background: #192BC2;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 500px;
+    /* transform: translateX(-60px); */
+    transform: translate(-50px, 150px);
+}
+
+.pict-partProfile {
+    margin-left: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    width: 400px;
+    height: auto;
+}
+
+.box-profile {
+    justify-content: center;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./PembayaranBCA.css";
+import "../css/PembayaranBCA.css";
 
 //assets
 import Background from "../assets/backgroundPayment.svg";

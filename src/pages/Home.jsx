@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "../css/Home.css";
 
 //compnents
 import Navbar from "../components/general/Navbar";
@@ -19,8 +19,8 @@ const Home = () => {
       <div className="whole-HomeSec">
         <HomeSec1 />
         <HomeSec2 />
-        <HomeSec3/>
-        <HomeSec4/>
+        <HomeSec3 />
+        <HomeSec4 />
         <Footer />
       </div>
     </div>

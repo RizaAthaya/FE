@@ -1,5 +1,5 @@
 import React from "react";
-import './CardSA.css';
+import '../../css/CardSA.css';
 
 import Buttons from "../general/Buttons";
 const CardSA = ({linkImg, tag1, tag2, title, harga}) => {

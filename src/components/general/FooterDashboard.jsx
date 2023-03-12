@@ -1,5 +1,5 @@
 import React from 'react';
-import './FooterDashboard.css';
+import '../../css/FooterDashboard.css';
 
 const FooterDashboard = props => {
     return (

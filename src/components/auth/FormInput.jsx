@@ -1,5 +1,5 @@
 import React from "react";
-import "./FormInput.css";
+import "../../css/FormInput.css";
 import axios from "axios";
 import { useState } from "react";
 import { Typography, TextField, Button, Link } from "@mui/material";
@@ -19,7 +19,7 @@ const FormInput = (props) => {
     event.preventDefault();
 
     axios
-      .post("http://103.189.235.157:10015/api/login", {
+      .post("https://reyhafiz.aenzt.tech/api/login", {
         email: email,
         password: password,
       })

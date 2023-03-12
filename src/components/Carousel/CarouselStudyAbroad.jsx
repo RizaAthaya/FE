@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./CarouselStudyAbroad.css";
+import "../../css/CarouselStudyAbroad.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,7 +20,7 @@ const Carousel = (props) => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "http://103.189.235.157:10015/api/programs/new"
+        "https://reyhafiz.aenzt.tech/api/programs/new"
       );
       setNewProgram(response.data.data);
       console.log(response.data);
@@ -78,7 +78,7 @@ const Carousel = (props) => {
                       </div>
                       <div className="main-saCard">
                         <h6 className="title-saCard">{item.name}</h6>
-                        <h6 className="harga-saCard">{item.price}</h6>
+                        <h6 className="harga-saCard">Rp. {item.price.toLocaleString()}</h6>
                         <Buttons
                           label="Daftar mentoring"
                           styleBtn="btn-sa1"

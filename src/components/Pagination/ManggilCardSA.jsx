@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { createAxiosInstance } from "../api/api";
-import "./ManggilCardSA.css";
 
-import "./ManggilCardSA.css";
+import "../../css/ManggilCardSA.css";
 import CardSAList from "../Card/CardSAList";
 import PaginationCardSA from "./PaginationCardSA";
 
-const ManggilCardSA = () => {
+const ManggilCardSA = ({ datanya }) => {
   // const [beasiswaData, setBeasiswaData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(2);
@@ -52,17 +50,17 @@ const ManggilCardSA = () => {
   //   fetchData();
   // }, [])
   const [Program, setProgram] = useState([]);
-  useEffect(() => {
-    async function fetchData() {
-      const response = await axios.get(
-        "http://103.189.235.157:10015/api/programs/new"
-      );
-      setProgram(response.data.data);
-      console.log(response.data);
-    }
-    fetchData();
-  }, []);
-
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get(
+  //       "https://reyhafiz.aenzt.tech/api/programs/new"
+  //     );
+  //     setProgram(response.data.data);
+  //     console.log(response.data);
+  //   }
+  //   fetchData();
+  // }, []);
+  setProgram(datanya);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = Program.slice(firstPostIndex, lastPostIndex);

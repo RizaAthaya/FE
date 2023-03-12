@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import "./DDPembayaran.css";
+import "../../css/DDPembayaran.css";
 
 //assets
 import BCA from "../../assets/BCA.svg";

@@ -1,5 +1,5 @@
 import React from "react";
-import './CardPB.css';
+import '../../css/CardPB.css';
 
 const CardPB = ({tag_level, tag_cost, scholarship_provider, name, close_registration, open_registration}) => {
   return (

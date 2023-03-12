@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CardPM.css";
+import "../../css/CardPM.css";
 
 const CardPM = ({img, nama, tag, uni}) => {
     return (

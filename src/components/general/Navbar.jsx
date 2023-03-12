@@ -1,6 +1,6 @@
 import React from "react";
 import Buttons from "./Buttons";
-import "./Navbar.css";
+import "../../css/Navbar.css";
 import { Navigate, Outlet } from "react-router-dom";
 import logo from "../../assets/LogoSWU.svg";
 import { Link } from "react-router-dom";

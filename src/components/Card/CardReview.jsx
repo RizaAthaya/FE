@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardReview.css";
+import "../../css/CardReview.css";
 
 //assets
 import ProfilePhoto from "../../assets/ProfilePhoto.svg";

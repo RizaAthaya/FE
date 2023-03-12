@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import "./manggil.css";
+import "../../css/manggil.css";
 import CryptoList from "./CryptoList";
 import Pagination from "./Pagination";
 

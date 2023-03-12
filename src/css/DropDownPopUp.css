@@ -1,0 +1,38 @@
+.ddPopUp .tulisannya {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.005em;
+
+    /* Neutral/90 */
+
+    color: #121216;
+}
+
+.ddPopUp .menu-trigger {
+    width: 368px;
+    height: 48px;
+    padding: 12px 24px;
+    border: 1px solid #86868B;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ddPopUp .dropdown-menu {
+    position: absolute;
+}
+
+.ddPopUp .dropdown-menu ul {
+    transform: translateX(-40px);
+    list-style: none;
+    background-color: #fff;
+}
+
+.ddPopUp .dropdownItem .btn-ilang {
+    padding-left: 20px;
+    text-align: left;
+    width: 368px;
+}

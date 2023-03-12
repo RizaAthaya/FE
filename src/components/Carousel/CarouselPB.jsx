@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./CarouselPB.css";
+import "../../css/CarouselPB.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.css";
-import "../Card/CardPB.css";
+import "../../css/Carousel.css";
+import "../../css/CardPB.css";
 
 //utils
 import { items } from "../utils/Datas3";
@@ -19,7 +19,7 @@ const Carousel = (props) => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "http://103.189.235.157:10015/api/scholarships/new"
+        "https://reyhafiz.aenzt.tech/api/scholarships/new"
       );
       setNewPB(response.data.data);
       console.log(response.data);

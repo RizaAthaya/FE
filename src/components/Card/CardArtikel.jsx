@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardArtikel.css";
+import "../../css/CardArtikel.css";
 
 //assets
 import Clock from '../../assets/Clock.svg';

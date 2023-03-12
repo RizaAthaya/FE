@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 // import { dataCard } from "../utils/Datas";
-import "./CarouselBoxPromo.css";
+import "../../css/CarouselBoxPromo.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.css";
+import "../../css/Carousel.css";
 import axios from "axios";
 import Poster from "../../assets/poster.svg";
 
@@ -13,7 +13,7 @@ const Carousel = (props) => {
   useEffect(() => {
     async function fetchData() {
       // ini hanya akan mengambil artikel yang punya index tagLevl id tertentu. disini kumasukin 2
-      const response = await axios.get("http://127.0.0.1:8000/api/articles/");
+      const response = await axios.get("https://reyhafiz.aenzt.tech/articles/");
       // cari tau tag promo itu idnya berapa?
       // salah ding, ini harusnya pake get yang artikel terbaru. tagnya promo
       if (response.data.id == 2) {

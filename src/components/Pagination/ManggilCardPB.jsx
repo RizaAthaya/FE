@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import "./ManggilCardPB.css";
+import "../../css/ManggilCardPB.css";
 import CryptoList from "./CryptoList";
 import Pagination from "./PaginationPB";
 import CardPBList from "../Card/CardPBList";
@@ -14,7 +14,7 @@ const ManggilCardPB = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "http://103.189.235.157:10015/api/programs"
+        "https://reyhafiz.aenzt.tech/api/scholarships"
       );
       setPBData(response.data.data);
       console.log(response.data);

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Scroll from "react-scroll";
-import "./DashboardKelasSaya.css";
+import "../css/DashboardKelasSaya.css";
 
 //components
 import NavbarDashboard from "../components/general/NavbarDashboard";

@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./PaginationCardSA.css";
-import './PaginationPB.css';
+import "../../css/PaginationCardSA.css";
+import "../../css/PaginationPB.css";
 
 const PaginationPB = ({
     totalPosts,

@@ -1,7 +1,7 @@
 import React from "react";
 
 import CardSA from "./CardSA";
-import "./CardSAList.css";
+import "../../css/CardSAList.css";
 
 const CardSAList = ({ beasiswaData}) => {
   return (
@@ -30,8 +30,8 @@ const CardSAList = ({ beasiswaData}) => {
                   <CardSA
                     key={index}
                     linkImg=""
-                    tag1=""
-                    tag2=""
+                    tag1={items.tag_level.name}
+                    tag2={items.tag_cost.name}
                     title={items.name}
                     harga={items.price}
                   />

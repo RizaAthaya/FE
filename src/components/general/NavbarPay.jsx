@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavbarPay.css";
+import "../../css/NavbarPay.css";
 
 //assets
 import Logo from "../../assets/LogoSWU.svg";

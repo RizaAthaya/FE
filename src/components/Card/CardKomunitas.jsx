@@ -1,36 +1,48 @@
 import React from "react";
-import "./CardKomunitas.css";
+import "../../css/CardKomunitas.css";
 
 //assets
 import Clock from "../../assets/Clock.svg";
 import Profile from "../../assets/Profile.svg";
 import Chat from "../../assets/Chat.svg";
 
-const CardKomunitas = (props) => {
+const CardKomunitas = ({nama, waktu, judul, desc, tag1, tag2, reply}) => {
   return (
-    <div className="card-k">
-      <h3 className="text1-k">
-        Apa yang perlu dipersiapkan ketika mengikuti beasiswa IISMA ?
-      </h3>
-      <div className="part1-cardk">
-        <img className="people-icon" src={Profile}></img>
-        <h6 className="text2-k">Riza Athaya</h6>
-        <img className="clock-icon" src={Clock}></img>
-        <h6 className="text2-k">5 menit yang lalu</h6>
+    <div className="all-cardKomunitas">
+      <div className="profile-komunitas">
+        <img src="" className="profilepart-komunitas"></img>
       </div>
-      <h5 className="desc-cardK">
-        Lorem ipsum dolor sit amet consectetur. Dignissim nec elit enim a varius
-        sapien. Lectus cum pretium viverra sagittis auctor consectetur. Enim ut
-        purus urna viverra arcu. Velit vel in et pellentesque commodo lectus
-        dolor amet.
-      </h5>
-      <div className="tags-cardK">
-      <h6 className="tag-cardK">#iisma</h6>
-      <h6 className="tag-cardK">#tips-trik</h6>
-      </div>
-      <div className="akhir-cardK">
-      <img className="chat-icon" src={Chat}></img>
-      <h5 className="text3-k">5 Pembahasan</h5>
+      <div className="card-k">
+        <div className="part1-cardk">
+          <img className="people-icon" src={Profile}></img>
+          <h6 className="text2-k">{nama}</h6>
+          <img className="clock-icon" src={Clock}></img>
+          <h6 className="text2-k">{waktu}</h6>
+        </div>
+        <h3 className="text1-k">
+        {judul}
+        </h3>
+        <h5 className="desc-cardK">
+          {desc}
+        </h5>
+        <div className="tags-cardK">
+          <h6 className="tag-cardK">{tag1}</h6>
+          <h6 className="tag-cardK">{tag2}</h6>
+        </div>
+        <div className="akhir-box">
+          <div className="akhir-cardK">
+            <div className="leftAkhir-cardK">
+              <img className="chat-icon" src={Chat}></img>
+              <h5 className="text3-k">{reply}</h5>
+            </div>
+            <div className="rightAkhir-cardK">
+              <button className="tambah-diskusi">
+                <img className="logoPlus"></img>
+                <h3 className="tambah-text">Jawaban</h3>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

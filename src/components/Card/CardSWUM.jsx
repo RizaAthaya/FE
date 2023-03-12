@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardSWUM.css';
+import '../../css/CardSWUM.css';
 
 const CardSWUM = ({src, judul, desc}) => {
     return (

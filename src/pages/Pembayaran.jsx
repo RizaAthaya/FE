@@ -1,5 +1,5 @@
 import React from "react";
-import "./Pembayaran.css";
+import "../css/Pembayaran.css";
 
 //components
 import NavbarPay from "../components/general/NavbarPay";

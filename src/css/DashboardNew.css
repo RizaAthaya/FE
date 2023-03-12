@@ -1,0 +1,145 @@
+.new-Dash {
+    color: black;
+    width: 100vw;
+    height: 100vh;
+    background: #FAFAFF;
+}
+
+.whole-newDash {
+    
+    /* display: flex; */
+    /* padding: 8% 100px 0 100px; */
+    justify-content: center;
+}
+
+.title-newDash {
+    
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+    margin-bottom: 8px;
+    letter-spacing: -0.015em;
+
+    /* Primary/50 */
+
+    color: #192BC2;
+}
+.titlepart-newDash{
+    padding: 7% 0 0 6%;
+    margin-bottom: 2%;
+}
+.fullClassLogo{
+    margin-right: 12px;
+}
+
+.desc-newDash {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #4C4C50;
+    margin-bottom: 24px;
+}
+
+.box-fullClass {
+    background: #FAFAFF;
+    width:58%;
+    height: 612px;
+    border: 1px solid #86868B;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+.cards-class{
+    padding: 24px;
+}
+.box-pengajuan {
+    /* padding: 24px; */
+    background: #FAFAFF;
+    border: 1px solid #86868B;
+    border-radius: 16px;
+    width: 100%;
+    height: 264px;
+    margin-bottom: 20px;
+}
+
+.boxes-dash {
+    display: flex;
+    justify-content: center;
+}
+
+.title-fullClass{
+    display: flex;
+    height: 72px;
+    padding: 24px;
+}
+.box-announce {
+    width: 100%;
+    height: 328px;
+    background: #FAFAFF;
+    border: 1px solid #86868B;
+    border-radius: 16px;
+    display: block;
+}
+
+.title-pengajuan {
+    display: flex;
+    height: 72px;
+    padding: 24px;
+}
+
+.img-title {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    
+}
+
+.title-announce {
+    display: flex;
+    height: 72px;
+    padding: 24px;
+}
+
+.card-pengajuan1 {
+    padding: 24px;
+    margin-right: 16px;
+    width: 50%;
+    height: 144px;
+    background: linear-gradient(93.39deg, #ED1C24 0%, #F3686D 100%);
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #FAFAFF;
+}
+
+.card-pengajuan2 {
+    padding: 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.005em;
+
+    /* Neutral/10 */
+
+    color: #FAFAFF;
+    width: 50%;
+    height: 144px;
+    background: linear-gradient(93.39deg, #10C707 0%, #44F83B 100%);
+    border-radius: 16px;
+
+}
+.logo-pengajuan{
+    margin-bottom: 16px;
+}
+.cards-pengajuan {
+    display: flex;
+    margin: 4% 6%;
+}
+.boxes-konsultasi{
+    width: 30%;
+}

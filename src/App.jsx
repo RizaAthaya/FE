@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../src/css/App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/general/Navbar";
 
@@ -25,6 +25,8 @@ import PembayaranBCA from "./pages/PembayaranBCA";
 import PembayaranPermata from "./pages/PembayaranPermata";
 import PembayaranSpesifikQris from "./pages/PembayaranQris";
 import DashboardNew from "./pages/DashboardNew";
+import Nyoba from "./pages/Nyoba";
+import DetailArtikel from "./pages/DetailArtikel";
 
 function App() {
   return (
@@ -49,6 +51,9 @@ function App() {
         <Route path="/pembayaran/bni" element={<PembayaranBNI />} />
         <Route path="/pembayaran/qris" element={<PembayaranSpesifikQris />} />
         <Route path="/pembayaran/bri" element={<PembayaranBRI />} />
+        <Route path="/nyoba" element={<Nyoba />} />
+        <Route path="/detailartikel" element={<DetailArtikel />} />
+
       </Routes>
     </div>
   );

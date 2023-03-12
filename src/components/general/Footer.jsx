@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../../css/Footer.css";
 
 //assets
 import Call from "../../assets/Call.svg";

@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import '../../components/Carousel/BuatCarousel2.css'
+import '../../css/BuatCarousel2.css'
 
 //utils
 import CardforPM from "../utils/Datas4";
 
 //components
-import "../../components/Card/CardPM.css";
+import "../../css/CardPM.css";
 
 
 export default class CenterMode extends Component {

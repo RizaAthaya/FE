@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Pagination.css";
+import "../../css/Pagination.css";
 
 const Pagination = ({
     totalPosts,

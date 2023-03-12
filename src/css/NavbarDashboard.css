@@ -1,0 +1,18 @@
+.nav-dashboard {
+    display: flex;
+    justify-content: space-between;
+    background: #FAFAFF;
+    border: 1px solid #A9B1F4;
+    padding: 0.9% 2%;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+}
+.logo-navDash{
+    margin-left: 5%;
+}
+
+
+.right-navDash {
+    margin-right: 5%;
+}

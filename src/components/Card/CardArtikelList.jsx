@@ -1,7 +1,7 @@
 import React from 'react';
 // import CardPB from './CardPB';
-import "./CardArtikel.css";
-import './CardArtikelList.css';
+import "../../css/CardArtikel.css";
+import '../../css/CardArtikelList.css';
 
 import CardArtikel from './CardArtikel';
 

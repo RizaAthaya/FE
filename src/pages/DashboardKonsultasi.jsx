@@ -1,6 +1,6 @@
 import React from "react";
-import "./DashboardKelasSaya.css";
-import "./DashboardKonsultasi.css";
+import "../css/DashboardKelasSaya.css";
+import "../css/DashboardKonsultasi.css";
 
 //components
 import NavbarDashboard from "../components/general/NavbarDashboard";

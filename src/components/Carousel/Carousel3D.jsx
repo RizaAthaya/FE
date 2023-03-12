@@ -1,8 +1,8 @@
-import "./Carousel3D.css";
+import "../../css/Carousel3D.css";
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import CardforPM from "../utils/Datas4";
-import "../Card/CardPM.css";
+import "../../css/CardPM.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Right from "../../assets/Right.svg";
 import Left from "../../assets/Left.png";
@@ -16,10 +16,12 @@ function Carousel3D() {
         "https://reyhafiz.aenzt.tech/api/mentors/new"
       );
       setNewMentor(response.data.data);
-      console.log(response.data);
+      console.log(response.data.data);
+      
     }
     fetchData();
   }, []);
+  console.log(newMentor);
   const NextArrow = ({ onClick }) => {
     return (
       <div className="arrow next" onClick={onClick}>

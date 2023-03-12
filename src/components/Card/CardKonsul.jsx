@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardKonsul.css";
+import "../../css/CardKonsul.css";
 
 //assets
 import user from "../../assets/UserKonsul.svg";
@@ -7,7 +7,7 @@ import kalender from "../../assets/CalendarKonsul.svg";
 import map from "../../assets/MapKonsul.svg";
 import clock from "../../assets/ClockKonsul2.svg";
 
-const CardKonsul = (props) => {
+const CardKonsul = () => {
   return (
     // stylenya pake lewat props aja. cssnya ganti name pake $
     <div className="card-kon">

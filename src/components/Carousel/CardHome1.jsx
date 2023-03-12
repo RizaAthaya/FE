@@ -4,7 +4,7 @@ import { dataCard } from "../utils/Datas";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.css";
+import "../../css/Carousel.css";
 
 const Carousel = (props) => {
   const settings = {

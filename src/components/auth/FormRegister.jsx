@@ -1,4 +1,4 @@
-import "./FormRegister.css";
+import "../../css/FormRegister.css";
 import React from "react";
 import axios from "axios";
 import { useState } from "react";
@@ -22,7 +22,7 @@ const FormRegister = (props) => {
     const handleRegister = (e) => {
         e.preventDefault()
 
-        axios.post('http://103.189.235.157:10015/api/register', {
+        axios.post('https://reyhafiz.aenzt.tech/api/register', {
             name: name,
             email: email,
             password: password
