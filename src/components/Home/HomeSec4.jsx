@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeSec4.css";
+import "../../css/HomeSec4.css";
 
 //components
 import CardPM from "../Card/CardPM";

@@ -8,6 +8,21 @@
     padding: 4% 5%;
 }
 
+.atasan-sa .bread-crumb {
+    margin-left: 2.5%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+}
+
+.atasan-sa .bread-crumb h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #86868B;
+}
+
 .header-sa {
     padding-top: 4%;
     background: url('../assets/headline.svg');
@@ -63,22 +78,27 @@
 
     color: #FFFFFF;
 }
-.nav-tengah{
+
+.nav-tengah {
     position: absolute;
 }
-.nav-sa2{
+
+.nav-sa2 {
     display: flow-root;
     padding-right: 5%;
     width: 100vw;
 
 }
-.search-filter{
+
+.search-filter {
     float: left;
 }
-.nav-filter{
+
+.nav-filter {
     display: flex;
-    float:right;
+    float: right;
 }
-.semua-pagination{
+
+.semua-pagination {
     margin-top: 148px;
 }

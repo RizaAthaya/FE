@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeSec3.css";
+import "../../css/HomeSec3.css";
 
 //assets
 import WSWU from "../../assets/WSWU.svg";

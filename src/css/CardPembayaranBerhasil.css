@@ -1,0 +1,37 @@
+.pembayaran-berhasil {
+    width: 496px;
+    height: 428px;
+    background: #FAFAFF;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 16px;
+    padding: 10%;
+}
+
+.gambar-berhasil {
+    margin: 0 10%;
+    width: 320px;
+    height: 206px;
+}
+
+.title-berhasil {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #10C707;
+}
+
+.text-berhasil {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #121216;
+
+}

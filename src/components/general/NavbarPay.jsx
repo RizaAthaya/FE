@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const NavbarPay = () => {
   return (
     <div className="nav-pay">
-      <Link to="/pembayaran">
+      <Link to="/studyabroadLogin">
         <button className="btn-pay">
           <img src={Left} className="img-pay"></img>
           <h3 className="text-pay">Kembali</h3>

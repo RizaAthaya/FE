@@ -1,0 +1,8 @@
+.manggilKomunitas{
+    justify-content: center;
+    display: grid;
+}
+.manggilKomunitas .angka-pagination{
+    margin-top: 48px;
+    margin-bottom: 100px;
+}

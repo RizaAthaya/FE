@@ -5,8 +5,32 @@
 }
 
 .atas-komunitas {
-    padding-top: 8%;
+    padding-top: 5%;
     margin: auto;
+}
+
+.diskusi-false {
+    display: none;
+}
+
+.diskusi-true {
+    position: absolute;
+    display: block;
+}
+
+.whole-komunitas .bread-crumb {
+    margin-left: 6.5%;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.whole-komunitas .bread-crumb h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #86868B;
 }
 
 .header-komunitas {
@@ -17,7 +41,7 @@
     background: linear-gradient(93.39deg, #192BC2 0%, #5363E9 100%);
     border-radius: 24px;
     padding-top: 4%;
-    
+
 }
 
 .desc-komunitas {
@@ -44,25 +68,39 @@
 .filter-komunitas {
     margin-top: 48px;
     display: flex;
-    float: left;
-    
+
 }
-.filter-barKomunitas{
+
+.filter-barKomunitas {
     display: flex;
     margin: auto;
     margin-left: 20px;
 }
+
 .btn-diskusi {
-    width: 295px;
+    width: 190px;
     height: 48px;
     background: #192BC2;
     border-radius: 8px;
 }
 
-.fullFilter{
+.fullFilter {
     margin: 0px 5%;
+    justify-content: center;
+    display: flex;
 }
-.main-cardK{
-    margin-top: 10%;
+
+.main-cardK {
+    margin-top: 2%;
     padding: 0 5%;
+}
+.diskusi-false , .diskusi-true{
+    transition: 1s;
+}
+.btn-exitDiskusi {
+    /* border: 2px solid #121216; */
+    width: 24px;
+    height: 24px;
+    transform: translateX(750px)
+    translateY(80px);
 }

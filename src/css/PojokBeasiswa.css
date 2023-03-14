@@ -1,17 +1,26 @@
 .whole-sec4 {
     width: 100vw;
     height: 2616px;
-
     background-color: #fff;
 }
 
-.bread-crumb {
-    text-align: left;
-    margin-left: 5%;
-    font-weight: 600;
-    font-size: 20px;
+.semua-bawah-filter{
+    justify-content: center;
+    display: flex;
+}
+.whole-sec4 .bread-crumb {
+    margin-left: 2.5%;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.whole-sec4 .bread-crumb h3 {
+    font-weight: 400;
+    font-size: 18px;
     line-height: 120%;
-    color: #192BC2;
+    letter-spacing: -0.015em;
+    color: #86868B;
 }
 
 .body-sec4 {

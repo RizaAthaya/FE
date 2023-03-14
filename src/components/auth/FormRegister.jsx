@@ -8,6 +8,8 @@ import { createAxiosInstance } from "../api/api";
 const FormRegister = (props) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [konfirmasiPassword, setKonfirmasiPassword] = useState('');
+
     // const [firstname, setFirstname] = useState('');
     // const [lastname, setLastname] = useState('');
     const [name, setName] = useState('');
@@ -25,7 +27,8 @@ const FormRegister = (props) => {
         axios.post('https://reyhafiz.aenzt.tech/api/register', {
             name: name,
             email: email,
-            password: password
+            password: password,
+            password_confirmation: konfirmasiPassword
         })
         .then((response) => {
             console.log(response);
@@ -68,6 +71,15 @@ const FormRegister = (props) => {
           type="password"
           onChange={(e) => {
             setPassword(e.target.value);
+          }}
+        ></input> <br/>
+        <h3 className="input-title">Konfirmasi Password</h3>
+        <input
+          label="Konfirmasi Password"
+          className="input-box"
+          type="password"
+          onChange={(e) => {
+            setKonfirmasiPassword(e.target.value);
           }}
         ></input> <br/>
         <button className="btn-submit" type="submit" >SUBMIT</button>

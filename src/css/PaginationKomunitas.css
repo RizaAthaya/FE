@@ -1,0 +1,22 @@
+.paginationKomunitas button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+
+    /* Neutral/10 */
+
+    color: #FAFAFF;
+    width: 48px;
+    height: 48px;
+
+    /* Primary/50 */
+
+    background: #192BC2;
+    border-radius: 8px;
+
+}

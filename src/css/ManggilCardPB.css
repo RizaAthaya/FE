@@ -1,9 +1,27 @@
-.manggilCardPB .angka-pagination{
+.manggilCardPB .angka-pagination {
     margin: 100px 0 0 0;
     justify-content: center;
     display: flex;
 }
-.manggilCardPB{
-   justify-content: center;
-   
+
+.manggilCardPB {
+    margin-left: 1%;
+    justify-content: center;
+    display: grid;
+}
+
+.manggilCardPB .paginationKomunitas {
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    background: #192BC2;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #FAFAFF;
+
 }

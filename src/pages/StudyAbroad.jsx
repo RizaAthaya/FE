@@ -4,7 +4,7 @@ import axios from "axios";
 
 // components
 // import Manggil from "../Pagination/Manggil"
-import Navbar from "../components/general/Navbar2";
+import Navbar from "../components/general/Navbar";
 import CarouselStudyAbroad from "../components/Carousel/CarouselStudyAbroad";
 import Footer from "../components/general/Footer";
 import ManggilCardSA from "../components/Pagination/ManggilCardSA";
@@ -15,6 +15,7 @@ import DropDown3 from "../components/DropDownButton/DDBFilter3";
 
 //assets
 import Cari from "../assets/Search.svg";
+import { Link } from "react-router-dom";
 
 const StudyAbroad = (props) => {
   // const [searchProgram, setSearchProgram] = useState([]);
@@ -58,7 +59,11 @@ const StudyAbroad = (props) => {
     <div className="whole-sa">
       <Navbar />
       <div className="atasan-sa">
-        <div className="bread-crumb">Home - Study Abroad</div>
+        <div className="bread-crumb">
+          <h3>
+            <Link to="/">Home</Link> - Study Abroad
+          </h3>
+        </div>
         <div className="header-sa">
           <div className="title-sa">Study Abroad</div>
           <div className="desc-sa">
@@ -75,7 +80,7 @@ const StudyAbroad = (props) => {
           <div className="nav-sa2">
             <div className="search-filter">
               {/** Search */}
-             <Search/>
+              <Search />
             </div>
             <div className="nav-filter">
               <DropDown />
@@ -84,9 +89,7 @@ const StudyAbroad = (props) => {
             </div>
           </div>
         </div>
-        <div className="semua-pagination">
-         
-        </div>
+        <div className="semua-pagination"></div>
       </div>
       <Footer />
     </div>

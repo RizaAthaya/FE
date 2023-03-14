@@ -1,6 +1,6 @@
 .detail-artikel2 {
     width: 100vw;
-    height: auto;
+    height: 2906px;
     background-color: #fff;
 }
 
@@ -56,10 +56,12 @@
     color: #000000;
     margin-bottom: 10%;
 }
-.title-sec2{
+
+.title-sec2 {
     margin-top: 5%;
 }
-.semua-hasil{
+
+.semua-hasil {
     display: flex;
     justify-content: space-around;
 }

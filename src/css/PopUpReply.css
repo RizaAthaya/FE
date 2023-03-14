@@ -1,0 +1,61 @@
+.popup-reply {
+    width: 800px;
+    height: 472px;
+    background: #FAFAFF;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 16px;
+    padding: 48px;
+}
+
+.title-reply {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.title-boxReply {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #121216;
+}
+
+.boxinput-reply {
+    background: transparent;
+    width: 704px;
+    height: 160px;
+    border: 1px solid #86868B;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin-bottom: 8px;
+}
+
+.desc-boxinput {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #4C4C50;
+    margin-bottom: 48px;
+}
+
+.btn-tambahkan {
+    display: flex;
+    float: right;
+    width: 214px;
+    height: 48px;
+    background: #192BC2;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #FAFAFF;
+
+}

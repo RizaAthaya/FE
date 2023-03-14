@@ -4,7 +4,9 @@
     /* height: 56.1rem; */
     height: 25%;
     background-color: #fff;
-    padding: 10.5% 7%;
+    padding: 10.5% 0%;
+    justify-content: center;
+    display: flex;
 
 }
 
@@ -24,13 +26,13 @@
     line-height: 76px;
     color: #192BC2;
     /* margin-top: 24.5rem; */
-    padding-top: 6.5rem;
+    margin-top: 6.5rem;
     height: 9.5rem;
     width: 609px;
 }
 
 .desc-sec1 {
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
     text-align: left;
     width: 609px;
     color: black;
@@ -39,7 +41,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    padding-top: 12rem ;
+    padding-top: 7rem ;
     /* or 140% */
 }
 

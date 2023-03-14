@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeSec3N.css";
+import "../../css/HomeSec3N.css";
 
 //cmponents
 import CardSWUM from "../Card/CardSWUM";

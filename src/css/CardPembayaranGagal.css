@@ -1,0 +1,37 @@
+.pembayaran-gagal {
+    width: 496px;
+    height: 428px;
+    background: #FAFAFF;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 16px;
+    padding: 10%;
+}
+
+.gambar-gagal {
+    display: flex;
+    margin: auto;
+    width: 222.1px;
+    height: 206px;
+    margin-bottom: 24px;
+}
+
+.title-gagal {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #ED1C24;
+
+}
+
+.text-gagal {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #121216;
+}

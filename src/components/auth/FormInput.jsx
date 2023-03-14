@@ -2,6 +2,7 @@ import React from "react";
 import "../../css/FormInput.css";
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Typography, TextField, Button, Link } from "@mui/material";
 
 const FormInput = (props) => {
@@ -11,7 +12,7 @@ const FormInput = (props) => {
     message: "",
     status: "",
   });
-
+  const navigate = useNavigate();
   const handleLogin = (event) => {
     event.preventDefault();
 
@@ -26,10 +27,9 @@ const FormInput = (props) => {
       .then((response) => {
         window.localStorage.setItem("token", response.data.data.token);
         console.log(response);
-
-        // setTimeout(() => {
-        //   window.location.reload();
-        // }, 1000);
+        setTimeout(() => {
+          navigate("/home");
+        }, 1000);
       })
       .catch((error) => {
         console.log(error);

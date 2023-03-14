@@ -19,28 +19,28 @@ const Navbar = () => {
           <Buttons
             label="Study Abroad"
             styleBtn="btn-navWhite"
-            ke="/studyabroad"
+            ke="/studyabroadlogin"
           ></Buttons>
         </li>
         <li className="list-part">
           <Buttons
             label="Pojok Beasiswa"
             styleBtn="btn-navWhite"
-            ke="/pojokbeasiswa"
+            ke="/pojokbeasiswalogin"
           ></Buttons>
         </li>
         <li className="list-part">
           <Buttons
             label="Komunitas"
             styleBtn="btn-navWhite"
-            ke="/komunitas"
+            ke="/komunitaslogin"
           ></Buttons>
         </li>
         <li className="list-part">
           <Buttons
             label="Artikel"
             styleBtn="btn-navWhite"
-            ke="/artikel"
+            ke="/artikellogin"
           ></Buttons>
         </li>
       </ul>

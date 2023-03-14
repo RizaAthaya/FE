@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeSec1.css";
+import "../../css/HomeSec1.css";
 
 //components
 import Buttons from "../general/Buttons";
@@ -20,7 +20,7 @@ const HomeSec1 = () => {
               beasiswa ke perguruan tinggi terbaik di seluruh dunia.
             </h6>
           </div>
-          <Buttons label="Daftar Sekarang" styleBtn="btn-daftar"></Buttons>
+          <Buttons label="Daftar Sekarang" styleBtn="btn-daftar" ke="/register"></Buttons>
         </div>
 
         <img className="img-sec1" src={pana}></img>

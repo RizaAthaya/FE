@@ -80,6 +80,7 @@ const Carousel = (props) => {
                         <h6 className="title-saCard">{item.name}</h6>
                         <h6 className="harga-saCard">Rp. {item.price.toLocaleString()}</h6>
                         <Buttons
+                          ke="/login"
                           label="Daftar mentoring"
                           styleBtn="btn-sa1"
                         ></Buttons>

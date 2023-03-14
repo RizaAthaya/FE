@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../css/DashboardNew.css";
+import axios from "axios";
 
 //components
 import NavbarDashboard from "../components/general/NavbarDashboard";
@@ -11,15 +12,40 @@ import CardKelas from "../components/Card/CardKelas";
 import Question from "../assets/questionLAgi.svg";
 import Review2 from "../assets/ReviewLagu.svg";
 import Aktivitas from "../assets/Aktivitas.svg";
-import { Card } from "@mui/material";
 
 const DashboardNew = (props) => {
+  const [Nama, setNama] = useState("");
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const localStore = localStorage.getItem("token");
+    const token = localStore;
+    async function fetchData() {
+      const response = await axios
+        .get("https://reyhafiz.aenzt.tech/api/users", null, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        .then((response) => {
+          // console.log(response);
+          const data = response.data.data;
+          setNama(data.name);
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+      console.log(response);
+    }
+    fetchData();
+  }, []);
   return (
     <div className="new-Dash">
       <NavbarDashboard />
       <div className="whole-newDash">
         <div className="titlepart-newDash">
-          <h2 className="title-newDash">Selamat datang Anda Bagas Aprianto!</h2>
+          <h2 className="title-newDash">Selamat datang {Nama}!</h2>
           <h3 className="desc-newDash">
             Semoga aktivitas belajarmu menyenangkan.
           </h3>

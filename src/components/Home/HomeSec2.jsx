@@ -1,5 +1,5 @@
 import React from "react";
-import "./HomeSec2.css";
+import "../../css/HomeSec2.css";
 
 //components
 // import Swiper from "../../components/Carousel/Swiper"
@@ -8,6 +8,7 @@ import { Card } from "@mui/material";
 import CarouselCardPromo from "../Carousel/CarouselCardPromo";
 import CarouselBoxPromo from "../Carousel/CarouselBoxPromo";
 import CarouselPB from "../Carousel/CarouselPB";
+import { Link } from "react-router-dom";
 
 const HomeSec2 = (props) => {
   return (
@@ -16,7 +17,9 @@ const HomeSec2 = (props) => {
       <div className="carousel-program">
         <CarouselPB />
       </div>
+      <Link to="/pojokbeasiswa">
       <button className="btn-ibN">Lihat beasiswa lainnya</button>
+      </Link>
     </div>
   );
 };

@@ -9,7 +9,7 @@ import Footer from "../components/general/Footer";
 
 //section
 import HomeSec1 from "../components/Home/HomeSec1"
-import HomeSec2 from "../components/Home/HomeSec2";
+import HomeSec2 from "../components/Home/HomeSec2Login";
 import HomeSec3 from '../components/Home/HomeSec3N';
 import HomeSec4 from "../components/Home/HomeSec4";
 
