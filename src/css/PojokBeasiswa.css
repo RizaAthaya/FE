@@ -32,7 +32,9 @@
     margin: auto;
     width: 90vw;
     height: 224px;
-    background: linear-gradient(93.39deg, #192BC2 0%, #5363E9 100%);
+    background: url('../assets/headline.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 24px;
     margin-top: 24px;
     margin-bottom: 24px;

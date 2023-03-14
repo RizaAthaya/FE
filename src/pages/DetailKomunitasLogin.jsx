@@ -2,7 +2,7 @@ import React from "react";
 import "../css/DetailKomunitas.css";
 
 //components
-import Navbar from "../components/general/Navbar";
+import Navbar from "../components/general/Navbar2";
 
 //assets
 import back from "../assets/Back.svg";
@@ -10,7 +10,7 @@ import chat from "../assets/Chat.svg";
 import plus from "../assets/Plus.svg";
 import { Link } from "react-router-dom";
 
-const DetailKomunitas = (props) => {
+const DetailKomunitasLogin = (props) => {
   return (
     <div className="detail-komunitas">
       <Navbar />
@@ -84,4 +84,4 @@ const DetailKomunitas = (props) => {
   );
 };
 
-export default DetailKomunitas;
+export default DetailKomunitasLogin;

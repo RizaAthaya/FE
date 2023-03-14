@@ -35,7 +35,7 @@
 
 .ddb-dash .img-ddb1 {
     width: 42px;
-
+    margin-right: 24px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;

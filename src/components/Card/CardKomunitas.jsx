@@ -1,12 +1,18 @@
 import React from "react";
 import "../../css/CardKomunitas.css";
+import { useNavigate } from "react-router";
 
 //assets
 import Clock from "../../assets/Clock.svg";
 import Profile from "../../assets/Profile.svg";
 import Chat from "../../assets/Chat.svg";
+import plus from "../../assets/Plus.svg";
 
-const CardKomunitas = ({nama, waktu, judul, desc, tag1, tag2, reply}) => {
+const CardKomunitas = ({ nama, waktu, judul, desc, tag1, tag2, reply }) => {
+  let navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/detailKomunitaslogin");
+  };
   return (
     <div className="all-cardKomunitas">
       <div className="profile-komunitas">
@@ -19,12 +25,8 @@ const CardKomunitas = ({nama, waktu, judul, desc, tag1, tag2, reply}) => {
           <img className="clock-icon" src={Clock}></img>
           <h6 className="text2-k">{waktu}</h6>
         </div>
-        <h3 className="text1-k">
-        {judul}
-        </h3>
-        <h5 className="desc-cardK">
-          {desc}
-        </h5>
+        <h3 className="text1-k">{judul}</h3>
+        <h5 className="desc-cardK">{desc}</h5>
         <div className="tags-cardK">
           <h6 className="tag-cardK">{tag1}</h6>
           <h6 className="tag-cardK">{tag2}</h6>
@@ -36,8 +38,8 @@ const CardKomunitas = ({nama, waktu, judul, desc, tag1, tag2, reply}) => {
               <h5 className="text3-k">{reply}</h5>
             </div>
             <div className="rightAkhir-cardK">
-              <button className="tambah-diskusi">
-                <img className="logoPlus"></img>
+              <button className="tambah-diskusi" onClick={handleClick}>
+                <img className="logoPlus" src={plus}></img>
                 <h3 className="tambah-text">Jawaban</h3>
               </button>
             </div>

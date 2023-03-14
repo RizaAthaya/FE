@@ -67,8 +67,7 @@ const StudyAbroadLogin = (props) => {
         <div className="header-sa">
           <div className="title-sa">Study Abroad</div>
           <div className="desc-sa">
-            Lorem ipsum dolor sit amet consectetur. Dictum vestibulum habitant
-            libero morbi placerat eleifend.
+          Dapatkan bimbingan dari mentor berpengalaman untuk membantumu meraih beasiswa impianmu.
           </div>
         </div>
       </div>

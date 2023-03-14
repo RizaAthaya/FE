@@ -2,10 +2,21 @@ import React from "react";
 import "../../css/CardArtikel.css";
 
 //assets
-import Clock from '../../assets/Clock.svg';
+import Clock from "../../assets/Clock.svg";
 import Profile from "../../assets/Profile.svg";
+import { Link } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom"
+import { useNavigate } from 'react-router';
 
-const CardArtikel = ({tag_artikel, title, penulis, created, description}) => {
+const CardArtikel = ({ tag_artikel, title, penulis, created, description }) => {
+  let navigate = useNavigate();
+  const handleClick = () => {
+    if(window.localStorage.getItem('token')){
+      navigate('/detailartikelLogin')
+    } else{
+      navigate('/detailartikel')
+    }
+  }
   return (
     <div className="card-artikel">
       <img className="img-artikel"></img>
@@ -18,10 +29,9 @@ const CardArtikel = ({tag_artikel, title, penulis, created, description}) => {
           <img className="clock-icon" src={Clock}></img>
           <h6 className="text-a">{created}</h6>
         </div>
-        <h6 className="desc-artikel">
-         {description}
-        </h6>
-        <button className="btn-artikel">Baca lebih lanjut</button>
+        <h6 className="desc-artikel">{description}</h6>
+
+        <button className="btn-artikel" onClick={handleClick}>Baca lebih lanjut</button>
       </div>
     </div>
   );

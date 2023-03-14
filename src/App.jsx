@@ -19,6 +19,7 @@ import Komunitas from "./pages/Komunitas";
 import StudyAbroad from "./pages/StudyAbroad";
 import Artikel from "./pages/Artikel";
 import DetailArtikel from "./pages/DetailArtikel";
+import DetailKomunitas from "./pages/DetailKomunitas";
 
 // auth
 import Login from "./pages/Login";
@@ -39,19 +40,21 @@ import KomunitasLogin from "./pages/KomunitasLogin";
 import ArtikelLogin from "./pages/ArtikelLogin";
 import StudyAbroadLogin from "./pages/StudyAbroadLogin";
 import DetailArtikelLogin from "./pages/DetailArtikelLogin";
+import DetailKomunitasLogin from "./pages/DetailKomunitasLogin";
 
 function App() {
   return (
     <div className="App">
       <Routes>
+      <Route path="/nyoba" element={<Nyoba />} />
         <Route element={<AuthRoute />}>
           <Route path="/" element={<Home />} />
+          <Route path="/detailkomunitas" element={<DetailKomunitas />} />
           <Route path="/pojokbeasiswa" element={<PojokBeasiswa />} />
           <Route path="/komunitas" element={<Komunitas />} />
           <Route path="/studyabroad" element={<StudyAbroad />} />
           <Route path="/artikel" element={<Artikel />} />
           <Route path="/detailartikel" element={<DetailArtikel />} />
-          <Route path="/nyoba" element={<Nyoba />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Route>
@@ -70,6 +73,8 @@ function App() {
           <Route path="/komunitaslogin" element={<KomunitasLogin />} />
           <Route path="/pojokbeasiswalogin" element={<AllCourse />} />
           <Route path="/studyabroadlogin" element={<StudyAbroadLogin />} />
+          <Route path="/detailkomunitaslogin" element={<DetailKomunitasLogin />} />
+          
         </Route>
       </Routes>
     </div>

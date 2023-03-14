@@ -1,0 +1,18 @@
+.popUp-berhasilKonsul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popUp-konsultasiBerhasil {
+    padding: 12px 24px;
+    width: 400px;
+    height: 48px;
+    background: #10C707;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+    border-radius: 8px;
+}
+
+.logo-exitBerhasil {
+    Width: 3.18px;
+    Height: 13.18px
+}

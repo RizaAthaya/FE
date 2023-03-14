@@ -37,8 +37,7 @@ const AllCourse = (props) => {
         <div className="main-img">
           <h3 className="title-pb">Pojok Beasiswa</h3>
           <h5 className="desc-pb">
-            Lorem ipsum dolor sit amet consectetur. Dictum vestibulum habitant
-            libero morbi placerat eleifend.
+          Temukan ratusan informasi beasiswa terlengkap dan terbaru dari berbagai negara di Pojok Beasiswa kami.
           </h5>
         </div>
         <div className="main-part">

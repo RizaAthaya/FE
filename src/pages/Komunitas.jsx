@@ -23,8 +23,7 @@ const Komunitas = (props) => {
         <div className="header-komunitas">
           <h3 className="title-komunitas">Komunitas</h3>
           <h5 className="desc-komunitas">
-            Lorem ipsum dolor sit amet consectetur. Dictum vestibulum habitant
-            libero morbi placerat eleifend.
+          Tanyakan pertanyaan, bagikan pengalaman, dan temukan teman sejalan di perjalanan pendidikanmu.
           </h5>
         </div>
       </div>

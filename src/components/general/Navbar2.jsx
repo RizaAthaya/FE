@@ -13,7 +13,6 @@ const Navbar = () => {
       <Link to="/">
         <img src={logo} className="logo-nav"></img>
       </Link>
-
       <ul className="nav-list">
         <li className="list-part">
           <Buttons
@@ -41,6 +40,13 @@ const Navbar = () => {
             label="Artikel"
             styleBtn="btn-navWhite"
             ke="/artikellogin"
+          ></Buttons>
+        </li>
+        <li className="list-part">
+          <Buttons
+            label="Dashboard"
+            styleBtn="btn-navWhite"
+            ke="/dashboard"
           ></Buttons>
         </li>
       </ul>

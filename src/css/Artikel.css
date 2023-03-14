@@ -10,11 +10,12 @@
     line-height: 40px;
     margin-top: 60px;
     margin-bottom: 24px;
-    color: #121216;
+    color: #FAFAFF;
 }
 
 .tags-artikel {
     display: flex;
+    margin-bottom: 24px;
 }
 
 .atas-artikel {
@@ -63,7 +64,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 120%;
-    color: #000000;
+    color: #FAFAFF;
 }
 
 .main-artikel {

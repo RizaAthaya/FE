@@ -89,17 +89,11 @@ function DropDown() {
           }}
         >
           <img src={pp} className="img-ddb1"></img>
-          <h1 className="nama-ddb1">{Nama}</h1>
           <img src={Down} className="img-ddb2"></img>
         </div>
 
         <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul>
-            <DropdownItem
-              img={Dashboard}
-              text={"Dashboard"}
-              ke={"/dashboard"}
-            />
             <DropdownItem img={Myprofile} text={"My Profile"} ke={"/profile"} />
             <DropdownItem img={Keluar} text={"Logout"} onClick={handleLogout} />
           </ul>
