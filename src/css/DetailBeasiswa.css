@@ -1,0 +1,202 @@
+.detailBeasiswa {
+    width: 100vw;
+    height: 2616px;
+    background: #FAFAFF;
+}
+
+.whole-beasiswa {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.header-fullBeasiswa {
+    width: 925px;
+    height: 197px;
+}
+
+.penyelenggara-beasiswa {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #4C4C50;
+}
+
+.nama-beasiswa {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #121216;
+}
+
+.mid-fullBeasiswa {
+    margin: 24px 0;
+}
+
+.tags-beasiswa {}
+
+.tentang-beasiswa {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+
+    letter-spacing: -0.015em;
+
+    /* Neutral/90 */
+
+    color: #121216;
+
+
+}
+
+.img-fullBeasiswa {
+    width: 400px;
+    height: 240px;
+}
+
+.isi-textBeasiswa {
+    width: 820px;
+}
+
+.isi-midBeasiswa {
+    display: flex;
+}
+
+.main-midBeasiswa {
+    margin-bottom: 48px;
+    width: 100%;
+    display: flex;
+}
+
+.left-midBeasiswa {
+    width: 50%;
+}
+
+.right-midBeasiswa {
+    padding-left: 5%;
+    width: 50%;
+}
+
+.univ-leftBeasiswa {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+
+    color: #121216;
+}
+
+.listUniv-leftBeassiwa {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.005em;
+
+    color: #000000;
+}
+
+.prodi-rightBeasiswa {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #121216;
+
+}
+
+.listProdi-rightBeasiswa {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.akhir-midBeasiswa {
+    display: flex;
+    padding: 16px 32px;
+    width: 100%;
+    height: 88px;
+    background: rgba(169, 177, 244, 0.2);
+    border: 1px solid #192BC2;
+    border-radius: 8px;
+}
+
+.open-beasiswa {
+    width: 50%;
+}
+
+.close-beasiswa {
+    padding-left: 5%;
+    width: 50%;
+}
+
+.desc-beasiswafull {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    margin-bottom: 24px;
+
+    color: #121216;
+}
+
+.title-openBeasiswa {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #111D81;
+}
+
+.tanggal-openBeasiswa {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #111D81;
+
+}
+
+.title-closeBeasiswa {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #A40D13;
+}
+
+.tanggal-closeBeasiswa {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #A40D13;
+}
+
+.title-tambahan {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+.kunjungi-page {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.005em;
+
+    color: #000000;
+
+}

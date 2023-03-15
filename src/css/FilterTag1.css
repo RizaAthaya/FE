@@ -1,0 +1,28 @@
+.nama-ddb11 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #86868B;
+}
+
+.menu-triggerTag {
+    justify-content: space-between;
+    display: flex;
+    padding: 8px 16px;
+    width: 247px;
+    height: 40px;
+    background: #FAFAFF;
+    border: 1px solid #86868B;
+    border-radius: 8px;
+}
+
+.img-ddb21 {
+    height: 20px;
+    width: 20px;
+    border-radius: 0px;
+    
+}
+.menu-containerTag{
+    position: absolute;
+}

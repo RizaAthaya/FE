@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../css/PembayaranBCA.css";
 
 //assets
@@ -7,6 +7,38 @@ import BNI from "../assets/BNI.svg";
 import NavbarPay from "../components/general/NavbarPay";
 
 const PembayaranBNI = (props) => {
+  const [bni, setBNI] = useState("");
+  const [error, setError] = useState("");
+  const token = localStorage.getItem("token");
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios
+        .post(
+          "https://reyhafiz.aenzt.tech/api/programs/1/buy",
+          {
+            payment_type: "bni",
+          },
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        )
+        .then((response) => {
+          // console.log(response);
+          setBNI(response.data.data);
+          console.log(response.data)
+
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+      console.log(response);
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className="pagePaySpesifik">
       <NavbarPay />

@@ -22,7 +22,6 @@
 .slick-next:before {
     width: 10px;
     color: #192BC2;
-    ;
     font-size: 50px;
 }
 
@@ -32,7 +31,7 @@
 }
 
 .CarouselSA .card-sa {
-    width: 400px;
+    height: 512px;
     height: 448px;
     /* background: #FAFAFF; */
     border-radius: 16px;
@@ -67,7 +66,12 @@
     padding: 3px 9px;
     margin-right: 8px;
 }
-
+.CarouselSA .card-car{
+    height: auto;
+}
+.CarouselSA .card-top{
+    height: 600px;
+}
 .CarouselSA .title-saCard {
     width: 352px;
     height: 48px;

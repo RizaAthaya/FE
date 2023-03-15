@@ -4,6 +4,8 @@
     background: #FAFAFF;
     border-radius: 16px;
     padding: 48px;
+    box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
+
 }
 
 .title-popUp1 {

@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 function DropDown() {
   const [open, setOpen] = useState(false);
   const [Nama, setNama] = useState("");
+  const [error,setError] = useState("");
 
   let menuRef = useRef();
   useEffect(() => {

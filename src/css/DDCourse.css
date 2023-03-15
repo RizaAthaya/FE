@@ -1,0 +1,9 @@
+.tulisannya{
+    color: black;
+}
+.ddCourse .menu-trigger{
+    display: flex;
+}
+.ddCourse .dropdown-menu.active{
+    display:block;
+}

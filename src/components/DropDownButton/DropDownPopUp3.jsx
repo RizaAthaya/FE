@@ -48,7 +48,6 @@ const DropDownPopUp3 = (props) => {
           </div>
         </div>
       </div>
-      );
     </div>
   );
 };

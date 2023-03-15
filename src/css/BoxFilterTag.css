@@ -40,10 +40,21 @@
 }
 
 .btn-terapkan {
+    transform: translateY(-150px);
     width: 105px;
     height: 40px;
     background: #192BC2;
     border-radius: 8px;
     display: flex;
     float: right;
+}
+
+.ddb-filter-each {}
+
+.ke2 {
+    transform: translateY(50px);
+}
+
+.ke3 {
+    transform: translateY(-80px);
 }

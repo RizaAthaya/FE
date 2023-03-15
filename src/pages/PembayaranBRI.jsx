@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "../css/PembayaranBCA.css";
+
 
 //assets
 import Background from "../assets/backgroundPayment.svg";
@@ -7,6 +8,37 @@ import BRI from "../assets/BRI.svg";
 import NavbarPay from "../components/general/NavbarPay";
 
 const PembayaranBRI = (props) => {
+  const [bri, setBRI] = useState("");
+  const [error, setError] = useState("");
+  const token = localStorage.getItem("token");
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios
+        .post(
+          "https://reyhafiz.aenzt.tech/api/programs/1/buy",
+          {
+            payment_type: "bri",
+          },
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        )
+        .then((response) => {
+          // console.log(response);
+          setBRI(response.data.data);
+          console.log(response.data)
+
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+      console.log(response);
+    }
+    fetchData();
+  }, []);
   return (
     <div className="pagePaySpesifik">
       <NavbarPay />

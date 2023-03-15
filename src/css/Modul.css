@@ -1,0 +1,50 @@
+.modul-kelas {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    background: #FAFAFF;
+}
+
+.modul-isi {
+    display: flex;
+    padding-top: 8%;
+}
+
+.left-modul {
+    width: 80%;
+    padding: 0% 5% 8% 5%;
+}
+
+.right-modul {
+    padding: 24px;
+    width: 340px;
+    height: 828px;
+}
+
+.foto-materi{
+    display: flex;
+    margin: auto;
+    margin-bottom: 48px;
+    width: 80%;
+    height: auto;
+}
+.title-materi {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+    margin-bottom: 24px;
+    letter-spacing: -0.015em;
+
+    /* Neutral/90 */
+
+    color: #121216;
+}
+
+.text-descMateri {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #4C4C50;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../css/CardKelas.css";
 
 const CardKelas = (props) => {
@@ -10,7 +11,9 @@ const CardKelas = (props) => {
           <h2 className="text-kelas">Topik Pembelajaran</h2>
           <div className="bar-kelas"></div>
         </div>
-        <button className="btn-cardKelas">Mulai Belajar</button>
+        <Link to="/modul">
+          <button className="btn-cardKelas">Mulai Belajar</button>
+        </Link>
       </div>
     </div>
   );

@@ -84,7 +84,7 @@ const Carousel = (props) => {
                           label="Daftar mentoring"
                           styleBtn="btn-sa1"
                         ></Buttons>
-                        
+                        <Buttons ke="/detailProgram" label="Lihat detail" styleBtn="btn-sa2"></Buttons>
                       </div>
                     </div>
                   </div>

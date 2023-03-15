@@ -10,6 +10,10 @@ import Navbar from "../components/general/Navbar";
 import Footer from "../components/general/Footer";
 import ManggilCardArtikel from "../components/Pagination/ManggilCardArtikel";
 
+//assets
+import profile from "../assets/ProfileWhite.svg";
+import clock from "../assets/ClockWhite.svg";
+
 const Artikel = (props) => {
   return (
     <div className="whole-artikel">
@@ -23,6 +27,16 @@ const Artikel = (props) => {
         <div className="header-artikel">
           <h5 className="tag-artikel">Tips dan Trik</h5>
           <h3 className="title-artikel">7 Persiapan Kuliah di Luar Negeri</h3>
+          <div className="whole-textArtikel">
+            <div className="pembuat-artikel">
+              <img className="logo-pembuatArtikel" src={profile}></img>
+              <h3>Riza Athaya</h3>
+            </div>
+            <div className="pembuat-artikel">
+              <img className="logo-pembuatArtikel" src={clock}></img>
+              <h3>13 Jan 2023</h3>
+            </div>
+          </div>
         </div>
       </div>
       <div className="main-artikel">

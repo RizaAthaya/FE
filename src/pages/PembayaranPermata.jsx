@@ -7,12 +7,42 @@ import Permata from "../assets/Permata.svg";
 import NavbarPay from "../components/general/NavbarPay";
 
 const PembayaranPermata = (props) => {
+  const [permata, setPermata] = useState("");
+  const [error, setError] = useState("");
+  const token = localStorage.getItem("token");
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios
+        .post(
+          "https://reyhafiz.aenzt.tech/api/programs/1/buy",
+          {
+            payment_type: "permata",
+          },
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        )
+        .then((response) => {
+          // console.log(response);
+          setBRI(response.data.data);
+          console.log(response.data);
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+      console.log(response);
+    }
+    fetchData();
+  }, []);
   return (
     <div className="pagePaySpesifik">
       <NavbarPay />
       <div className="isi-pagePaySpesifik">
         <div className="title-paySpesifik">
-        <h3>Pembayaran</h3>
+          <h3>Pembayaran</h3>
         </div>
         <div className="card-paySpesifik">
           <div className="atas-cardSpesifik">

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/PembayaranBCA.css";
+import axios from "axios";
 
 //assets
 import Background from "../assets/backgroundPayment.svg";
@@ -7,6 +8,38 @@ import BCA from "../assets/BCA.svg";
 import NavbarPay from "../components/general/NavbarPay";
 
 const PembayaranBCA = (props) => {
+  const [bca, setBCA] = useState("");
+  const [error, setError] = useState("");
+  const token = localStorage.getItem("token");
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios
+        .post(
+          "https://reyhafiz.aenzt.tech/api/programs/1/buy",
+          {
+            payment_type: "bca",
+          },
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        )
+        .then((response) => {
+          // console.log(response);
+          setBCA(response.data.data);
+          console.log(response.data)
+
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+      console.log(response);
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className="pagePaySpesifik">
       <NavbarPay />

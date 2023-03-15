@@ -1,4 +1,4 @@
-.pagePaySpesifikQris  {
+.pagePaySpesifikQris {
     width: 100vw;
     height: 1072px;
     background: #FAFAFF;
@@ -10,12 +10,17 @@
 
 }
 
-.pagePaySpesifikQris  .isi-pagePaySpesifik {
+.gambar-qris {
+    width: 400px;
+    height: 400px;
+}
+
+.pagePaySpesifikQris .isi-pagePaySpesifik {
     display: grid;
     justify-content: center;
 }
 
-.pagePaySpesifikQris  .title-paySpesifik {
+.pagePaySpesifikQris .title-paySpesifik {
     margin-top: 24px;
     text-align: center;
     font-weight: 700;
@@ -36,14 +41,14 @@
     border-radius: 16px;
 }
 
-.pagePaySpesifikQris  .atas-paySpesifik {
+.pagePaySpesifikQris .atas-paySpesifik {
 
     width: 514px;
     height: 103px;
 
 }
 
-.pagePaySpesifikQris  .bottom-cardSpesfik {
+.pagePaySpesifikQris .bottom-cardSpesfik {
     justify-content: space-between;
     margin-bottom: 24px;
     display: flex;
@@ -51,7 +56,7 @@
     height: 160px;
 }
 
-.pagePaySpesifikQris  .title-cardSpesifik {
+.pagePaySpesifikQris .title-cardSpesifik {
     justify-content: center;
     font-weight: 700;
     font-size: 24px;
@@ -65,7 +70,7 @@
 
 }
 
-.pagePaySpesifikQris  .jam-cardSpesifik {
+.pagePaySpesifikQris .jam-cardSpesifik {
     justify-content: center;
     font-weight: 700;
     font-size: 48px;
@@ -82,19 +87,19 @@
     color: #192BC2;
 }
 
-.pagePaySpesifikQris  .line-paySpesifik {
+.pagePaySpesifikQris .line-paySpesifik {
     margin: 12px 0;
 }
 
-.pagePaySpesifikQris  .left-cardSpesifik {
+.pagePaySpesifikQris .left-cardSpesifik {
     margin: 12px 0;
     padding: 0px;
     width: 232px;
     height: 138px;
 }
 
-.pagePaySpesifikQris  .btn-konfirmasiPay {
-    margin-top: 24px;
+.pagePaySpesifikQris .btn-konfirmasiPay {
+    margin-top: 50%;
     width: 514px;
     height: 48px;
     background: #C0C0C5;
@@ -102,7 +107,7 @@
 
 }
 
-.pagePaySpesifikQris  .right-cardSpesifik {
+.pagePaySpesifikQris .right-cardSpesifik {
     width: 213.33px;
     height: 160px;
     float: right;
@@ -127,4 +132,3 @@
 .pagePaySpesifikQris .desc-bBox {
     margin-bottom: 16px;
 }
-

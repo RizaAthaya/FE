@@ -12,11 +12,13 @@ import BoxFilterTag from '../components/box/BoxFilterTag';
 import PopUpBerhasil from '../components/box/PopUpBerhasil';
 // import PopUpDiskusi from '../components/box/PopUpDiskusi';
 import PopUpDiskusiBerhasil from '../components/box/PopUpDiskusiBerhasil';
+import DDCourse from "../components/DropDownButton/DDCourse";
+import SidebarModul from '../components/general/SidebarModul';
 
 const Nyoba = props => {
     return (
         <div>
-            <PopUpDiskusiBerhasil/>
+            <SidebarModul/>
         </div>
     );
 };

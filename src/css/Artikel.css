@@ -70,3 +70,17 @@
 .main-artikel {
     padding: 0 5%;
 }
+.pembuat-artikel{
+    margin-right: 11px;
+    display: flex;
+}
+.logo-pembuatArtikel{
+    display: flex;
+    margin-top: 3%;
+    margin-right: 11px;
+    width: 14px;
+    height: 18px;
+}
+.whole-textArtikel{
+    display: flex;
+}

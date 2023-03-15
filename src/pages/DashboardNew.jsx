@@ -1,14 +1,18 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../css/DashboardNew.css";
 import axios from "axios";
 
 //components
-import NavbarDashboard from "../components/general/NavbarDashboard";
+// import NavbarDashboard from "../components/general/NavbarDashboard";
+import Navbar2 from "../components/general/Navbar2";
 import Review from "../assets/ReviewKonsul.svg";
 import CardKonsul from "../components/Card/CardKonsul";
 import CardKelas from "../components/Card/CardKelas";
+import CardPopUp from "../components/Card/CardPopUp";
+import CardPopUp2 from "../components/Card/CardPopUp2";
 
 //assets
+import exit from "../assets/VectorExit.svg";
 import Question from "../assets/questionLAgi.svg";
 import Review2 from "../assets/ReviewLagu.svg";
 import Aktivitas from "../assets/Aktivitas.svg";
@@ -16,7 +20,14 @@ import Aktivitas from "../assets/Aktivitas.svg";
 const DashboardNew = (props) => {
   const [Nama, setNama] = useState("");
   const [error, setError] = useState("");
-
+  const [Show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(!Show);
+  };
+  const [Show2, setShow2] = useState(false);
+  const handleClick2 = () => {
+    setShow2(!Show2);
+  };
   useEffect(() => {
     const localStore = localStorage.getItem("token");
     const token = localStore;
@@ -42,7 +53,7 @@ const DashboardNew = (props) => {
   }, []);
   return (
     <div className="new-Dash">
-      <NavbarDashboard />
+      <Navbar2/>
       <div className="whole-newDash">
         <div className="titlepart-newDash">
           <h2 className="title-newDash">Selamat datang {Nama}!</h2>
@@ -62,6 +73,14 @@ const DashboardNew = (props) => {
               <CardKelas />
             </div>
           </div>
+          <div className={`tanyaMentor-${Show}`}>
+            <img className="btn-exitTM" src={exit} onClick={handleClick}></img>
+            <CardPopUp />
+          </div>
+          <div className={`reviewDokumen-${Show2} RD`}>
+            <img className="btn-exitTM" src={exit} onClick={handleClick2}></img>
+            <CardPopUp2 />
+          </div>
           <div className="boxes-konsultasi">
             <div className="box-pengajuan">
               <div className="title-pengajuan">
@@ -69,12 +88,14 @@ const DashboardNew = (props) => {
                 <h3>Ajukan Konsultasi</h3>
               </div>
               <hr />
+
               <div className="cards-pengajuan">
-                <div className="card-pengajuan1">
+                <div className="card-pengajuan1" onClick={handleClick}>
                   <img className="logo-pengajuan" src={Question}></img>
                   <h3>Tanya Mentor</h3>
                 </div>
-                <div className="card-pengajuan2">
+
+                <div className="card-pengajuan2" onClick={handleClick2}>
                   <img className="logo-pengajuan" src={Review2}></img>
                   <h3>Review Dokumen</h3>
                 </div>

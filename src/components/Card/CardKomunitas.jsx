@@ -11,7 +11,11 @@ import plus from "../../assets/Plus.svg";
 const CardKomunitas = ({ nama, waktu, judul, desc, tag1, tag2, reply }) => {
   let navigate = useNavigate();
   const handleClick = () => {
-    navigate("/detailKomunitaslogin");
+    if(window.localStorage.getItem('token')){
+      navigate('/detailkomunitasLogin')
+    } else{
+      navigate('/detailkomunitas')
+    }
   };
   return (
     <div className="all-cardKomunitas">

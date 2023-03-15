@@ -1,0 +1,270 @@
+.detailpage-SA {
+    width: 100vw;
+    height: 1812px;
+    background: #FAFAFF;
+}
+
+.bread-crumbSA {
+    color: #86868B;
+    padding-top: 8%;
+    margin-bottom: 1%;
+}
+
+.img-detailSA {
+    width: 505px;
+    height: 253px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.title-tentangMentor {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #000000;
+
+}
+
+.whole-detailSA {
+    padding: 0 7%;
+}
+
+.main-detailSA {
+    display: flex;
+}
+
+.tags-detailSA {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.tag-detailSA {
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #111D81;
+    padding: 4px 16px;
+    width: auto;
+    height: 26px;
+    background: #A9B1F4;
+    border-radius: 16px;
+}
+
+.header-detailSA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-detailSA {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #121216;
+}
+
+.btn-daftarMentoring {
+    padding: 12px 24px;
+    width: auto;
+    height: 48px;
+    background: #192BC2;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #FAFAFF;
+
+}
+
+.title-kontenProgram {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #121216;
+    margin-bottom: 24px;
+}
+
+.akhir-headerSA {
+    /* justify-content:space-around; */
+    align-items: center;
+    display: flex;
+}
+
+.harga-mentoring {
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #192BC2;
+}
+
+.jumlah-anggota {
+    margin-left: 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #86868B;
+
+}
+
+.box-descProgram {
+    margin-top: 24px;
+    padding: 48px;
+    background: #FAFAFF;
+    /* Neutral/90 */
+    width: 85%;
+    border: 1px solid #121216;
+    border-radius: 16px;
+}
+
+.title-descProgram {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #121216;
+}
+
+.desc-descProgram {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #121216;
+}
+
+.atas-kontenProgram {
+    display: flex;
+}
+
+.bawah-kontenProgram {
+    display: flex;
+}
+
+.box-kontenProgram {
+    margin-top: 24px;
+    width: 85%;
+    padding: 48px;
+    display: block;
+    background: #FAFAFF;
+    border: 1px solid #121216;
+    border-radius: 16px;
+    background: #FAFAFF;
+}
+
+.text-konten {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #121216;
+    /* width: 156px; */
+    margin-left: 13px;
+}
+
+.box-tentangMentor {
+    margin-top: 24px;
+    padding: 48px;
+    width: 85%;
+    height: 269px;
+    background: #FAFAFF;
+    border: 1px solid #121216;
+    border-radius: 16px;
+}
+
+.bagian-konten {
+    display: flex;
+    width: 30%;
+}
+
+.isi-tentangMentor {
+    display: flex;
+}
+
+.img-tentangMentor {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-right: 24px;
+}
+.img-bagianKonten{
+    width: 18px;
+    height: auto;
+}
+.mentor-name {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #121216;
+}
+
+.mentor-lulusan {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #4C4C50;
+
+}
+
+.mentor-tag {
+    margin-bottom: 8px;
+    padding: 3px 9px;
+    display: flex;
+    width: auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #080E41;
+    background: #A9B1F4;
+    border-radius: 16px;
+}
+
+
+.box-kananSA {
+    background: rgba(169, 177, 244, 0.2);
+    margin-top: 24px;
+    padding: 48px;
+    width: 35%;
+    height: 216px;
+    border: 1px solid #192BC2;
+    border-radius: 16px;
+}
+
+.title-boxKanan {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #192BC2;
+}
+
+.btn-boxKanan {
+    padding: 12px 24px;
+    width: 304px;
+    height: 48px;
+    background: #192BC2;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #FAFAFF;
+}

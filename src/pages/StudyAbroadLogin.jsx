@@ -67,7 +67,8 @@ const StudyAbroadLogin = (props) => {
         <div className="header-sa">
           <div className="title-sa">Study Abroad</div>
           <div className="desc-sa">
-          Dapatkan bimbingan dari mentor berpengalaman untuk membantumu meraih beasiswa impianmu.
+            Dapatkan bimbingan dari mentor berpengalaman untuk membantumu meraih
+            beasiswa impianmu.
           </div>
         </div>
       </div>
@@ -88,7 +89,9 @@ const StudyAbroadLogin = (props) => {
             </div>
           </div>
         </div>
-        <div className="semua-pagination"></div>
+        <div className="semua-pagination">
+          
+        </div>
       </div>
       <Footer />
     </div>
