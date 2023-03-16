@@ -4,7 +4,7 @@ import Navbar from "../components/general/Navbar";
 
 //assets
 import Konten1 from "../assets/Konten1.svg";
-import Konten2 from "../assets/Konten2.svg";
+// import Konten2 from "../assets/Konten2.svg";
 import Konten3 from "../assets/Konten3.svg";
 import Konten4 from "../assets/Konten4.svg";
 import Konten5 from "../assets/Konten5.svg";
@@ -60,7 +60,7 @@ const DetailSA = (props) => {
                   <h3 className="text-konten">Modul Pembelajaran</h3>
                 </div>
                 <div className="bagian-konten">
-                  <img src={Konten2} className="img-bagianKonten"></img>
+                  <img src="" className="img-bagianKonten"></img>
                   <h3 className="text-konten">Video Pembelajaran</h3>
                 </div>
                 <div className="bagian-konten">
