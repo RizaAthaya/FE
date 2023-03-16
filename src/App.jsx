@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../src/css/App.css";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/general/Navbar";
@@ -45,13 +45,18 @@ import DetailArtikelLogin from "./pages/DetailArtikelLogin";
 import DetailKomunitasLogin from "./pages/DetailKomunitasLogin";
 import Modul from "./pages/Modul";
 import DetailSALogin from "./pages/DetailSALogin";
-// import DetailBeasiswa from "./pages/DetailBeasiswa";
+import DetailBeasiswaLogin from "./pages/DetailBeasiswaLogin";
 
 function App() {
+  console.log(window.location.origin)
+
+  // useEffect(() => {
+  //   window.location.replace('http://localhost:5173/register');
+  // }, [])
+
   return (
     <div className="App">
       <Routes>
-      <Route path="/nyoba" element={<Nyoba />} />
         <Route element={<AuthRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/detailkomunitas" element={<DetailKomunitas />} />
@@ -83,6 +88,7 @@ function App() {
           <Route path="/detailkomunitaslogin" element={<DetailKomunitasLogin />} />
           <Route path="/modul" element={<Modul />} />
           <Route path="/detailprogramlogin" element={<DetailSALogin />} />
+          <Route path="/detailbeasiswalogin" element={<DetailBeasiswaLogin />} />
         </Route>
       </Routes>
     </div>

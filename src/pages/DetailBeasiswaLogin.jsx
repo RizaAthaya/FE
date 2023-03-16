@@ -8,7 +8,7 @@ import Footer from "../components/general/Footer";
 //assets
 import iisma from "../assets/imageIISMA.svg";
 
-const DetailBeasiswa = (props) => {
+const DetailBeasiswaLogin = (props) => {
   return (
     <div className="detailBeasiswa">
       <Navbar />
@@ -75,4 +75,4 @@ const DetailBeasiswa = (props) => {
   );
 };
 
-export default DetailBeasiswa;
+export default DetailBeasiswaLogin;

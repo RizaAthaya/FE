@@ -4,7 +4,7 @@ const ProtectedRoute = () => {
     if(window.localStorage.getItem('token'))
         return <Outlet/>
 
-        return <Navigate to="/login"/>
+        window.location.replace(`${window.location.origin}/login`)
 }
 
 export default ProtectedRoute
