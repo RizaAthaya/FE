@@ -70,7 +70,8 @@ const Carousel = (props) => {
               <div className="card-car">
                 <div className="card-top">
                   <div className="card-sa">
-                    <img className="img-sa" src=""></img>
+                  
+                    <img className="img-sa" src={`https://reyhafiz.aenzt.tech${item.image}`}></img>
                     <div className="text-part">
                       <div className="tag-part">
                         <h5 className="tag-sa">{item.tag_level.name}</h5>

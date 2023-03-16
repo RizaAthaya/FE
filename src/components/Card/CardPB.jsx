@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../css/CardPB.css";
+import { useNavigate } from "react-router";
 
 const CardPB = ({
   tag_level,
@@ -10,6 +11,14 @@ const CardPB = ({
   close_registration,
   open_registration,
 }) => {
+  let navigate = useNavigate();
+  const handleClick = () => {
+    if (window.localStorage.getItem("token")) {
+      navigate("/detailprogramLogin");
+    } else {
+      navigate("/detailprogram");
+    }
+  };
   return (
     <div className="card-pb">
       <div className="tagpb-part">
@@ -19,9 +28,9 @@ const CardPB = ({
       </div>
       <div className="textpb-part">
         <div className="pb-text1">{scholarship_provider}</div>
-        <Link to="/detailProgramLogin">
-          <div className="pb-text2">{name}</div>
-        </Link>
+        <div className="pb-text2" onClick={handleClick}>
+          {name}
+        </div>
       </div>
       <div className="datepb-part">
         <div className="open-part">

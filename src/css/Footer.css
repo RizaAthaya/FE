@@ -6,6 +6,7 @@
 }
 
 .footer-parts {
+    justify-content: space-between;
     padding: 48px 100px;
     display: flex;
 }
@@ -77,4 +78,5 @@
 }
 .akhir-footer{
     margin: 24px 0;
+    justify-content: center;
 }

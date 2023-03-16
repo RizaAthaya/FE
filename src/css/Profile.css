@@ -1,7 +1,7 @@
 .profile {
     display: grid;
     width: 100vw;
-    height: 1652px;
+    height: auto;
     background-color: #fff;
     justify-content: center;
 }

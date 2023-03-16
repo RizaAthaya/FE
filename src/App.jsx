@@ -21,6 +21,7 @@ import Artikel from "./pages/Artikel";
 import DetailArtikel from "./pages/DetailArtikel";
 import DetailKomunitas from "./pages/DetailKomunitas";
 import DetailBeasiswa from "./pages/DetailBeasiswa";
+import DetailSA from "./pages/DetailSA";
 
 // auth
 import Login from "./pages/Login";
@@ -43,7 +44,6 @@ import StudyAbroadLogin from "./pages/StudyAbroadLogin";
 import DetailArtikelLogin from "./pages/DetailArtikelLogin";
 import DetailKomunitasLogin from "./pages/DetailKomunitasLogin";
 import Modul from "./pages/Modul";
-import DetailSA from "./pages/DetailSA";
 import DetailSALogin from "./pages/DetailSALogin";
 // import DetailBeasiswa from "./pages/DetailBeasiswa";
 
@@ -63,7 +63,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/detailbeasiswa" element={<DetailBeasiswa />} />
-          <Route path="/detailProgram" element={<DetailSA />} />
+          <Route path="/detailprogram" element={<DetailSA />} />
         </Route>
         <Route element={<ProtectedRoute />}>
           <Route path="/home" element={<Home2 />} />
@@ -82,7 +82,7 @@ function App() {
           <Route path="/studyabroadlogin" element={<StudyAbroadLogin />} />
           <Route path="/detailkomunitaslogin" element={<DetailKomunitasLogin />} />
           <Route path="/modul" element={<Modul />} />
-          <Route path="/detailProgramLogin" element={<DetailSALogin />} />
+          <Route path="/detailprogramlogin" element={<DetailSALogin />} />
         </Route>
       </Routes>
     </div>
