@@ -16,6 +16,26 @@
 .tags-artikel {
     display: flex;
     margin-bottom: 24px;
+    /* justify-content: space-around; */
+}
+
+.tag-artikelfalse {
+    margin-right: 16px;
+    background: transparent;
+    width: auto;
+    height: 40px;
+    border: 1px solid #192BC2;
+    border-radius: 8px;
+    color: #192BC2;
+}
+
+.tag-artikeltrue {
+    margin-right: 16px;
+    height: 40px;
+    width: auto;
+    background: #192BC2;
+    border-radius: 8px;
+    color: #FAFAFF;
 }
 
 .atas-artikel {
@@ -70,17 +90,20 @@
 .main-artikel {
     padding: 0 5%;
 }
-.pembuat-artikel{
+
+.pembuat-artikel {
     margin-right: 11px;
     display: flex;
 }
-.logo-pembuatArtikel{
+
+.logo-pembuatArtikel {
     display: flex;
     margin-top: 3%;
     margin-right: 11px;
     width: 14px;
     height: 18px;
 }
-.whole-textArtikel{
+
+.whole-textArtikel {
     display: flex;
 }

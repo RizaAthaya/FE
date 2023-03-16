@@ -3,10 +3,10 @@
     translateX(-40px);
     position: absolute;
     width: 340px;
-    height: 828px;
+    height: 100%;
     border-left: 1px solid #A9B1F4;
     padding: 0 1%;
-    background: #fff;
+    background: transparent;
 }
 
 .title-sideBar {

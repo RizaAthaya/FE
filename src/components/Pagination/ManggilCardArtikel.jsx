@@ -7,7 +7,7 @@ import CryptoList from "./CryptoList";
 import CardArtikelList from "../Card/CardArtikelList";
 import PaginationCardArtikel from "./PaginationCardArtikel";
 
-const ManggilCardArtikel = () => {
+const ManggilCardArtikel = ({datanyaLagi}) => {
   const [ArtikelData, setArtikelData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(3);
@@ -15,14 +15,16 @@ const ManggilCardArtikel = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "https://reyhafiz.aenzt.tech/api/articles"
+        datanyaLagi
       );
       setArtikelData(response.data.data);
       console.log(response.data);
     }
     fetchData();
-  }, []);
+    // setArtikelData(datanya);
 
+  }, [datanyaLagi]);
+  // setArtikelData(datanya);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = ArtikelData.slice(firstPostIndex, lastPostIndex);

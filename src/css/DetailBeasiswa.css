@@ -1,20 +1,30 @@
 .detailBeasiswa {
     width: 100vw;
-    height: 2616px;
+    height: auto;
     background: #FAFAFF;
 }
 
+.detailBeasiswa .bread-crumb {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #86868B;
+}
+
 .whole-beasiswa {
-    padding-top: 5%;
-    padding-left: 5%;
+    padding: 5%;
 }
 
 .header-fullBeasiswa {
-    width: 925px;
+    width: 90vw;
     height: 197px;
 }
 
 .penyelenggara-beasiswa {
+    margin-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
@@ -34,9 +44,26 @@
     margin: 24px 0;
 }
 
-.tags-beasiswa {}
+.tags-beasiswa {
+    margin: 16px 0;
+    display: flex;
+}
+
+.tag-beasiswa {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #111D81;
+    background: #A9B1F4;
+    border-radius: 16px;
+    padding: 4px 16px;
+    width: auto;
+    height: 32px;
+}
 
 .tentang-beasiswa {
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
@@ -52,6 +79,7 @@
 }
 
 .img-fullBeasiswa {
+    margin-right: 48px;
     width: 400px;
     height: 240px;
 }
@@ -199,4 +227,13 @@
 
     color: #000000;
 
+}
+
+.bottom-beasiswa {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tambahan-fullBeasiswa {
+    margin-top: 48px;
 }

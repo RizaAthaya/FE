@@ -48,7 +48,7 @@ import DetailSALogin from "./pages/DetailSALogin";
 import DetailBeasiswaLogin from "./pages/DetailBeasiswaLogin";
 
 function App() {
-  console.log(window.location.origin)
+  console.log(window.location.origin);
 
   // useEffect(() => {
   //   window.location.replace('http://localhost:5173/register');
@@ -57,22 +57,26 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="/nyoba" element={<Nyoba />} />
+        <Route path="/dashboard" element={<DashboardNew />} />
+        <Route path="/modul" element={<Modul />} />
+
         <Route element={<AuthRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/detailkomunitas" element={<DetailKomunitas />} />
           <Route path="/pojokbeasiswa" element={<PojokBeasiswa />} />
           <Route path="/komunitas" element={<Komunitas />} />
           <Route path="/studyabroad" element={<StudyAbroad />} />
-          <Route path="/artikel" element={<Artikel />} />
           <Route path="/detailartikel" element={<DetailArtikel />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/detailbeasiswa" element={<DetailBeasiswa />} />
           <Route path="/detailprogram" element={<DetailSA />} />
+          <Route path="/artikel" element={<Artikel />} />
+
         </Route>
         <Route element={<ProtectedRoute />}>
           <Route path="/home" element={<Home2 />} />
-          <Route path="/dashboard" element={<DashboardNew />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/pembayaran" element={<Pembayaran />} />
           <Route path="/pembayaran/permata" element={<PembayaranPermata />} />
@@ -85,10 +89,15 @@ function App() {
           <Route path="/komunitaslogin" element={<KomunitasLogin />} />
           <Route path="/pojokbeasiswalogin" element={<AllCourse />} />
           <Route path="/studyabroadlogin" element={<StudyAbroadLogin />} />
-          <Route path="/detailkomunitaslogin" element={<DetailKomunitasLogin />} />
-          <Route path="/modul" element={<Modul />} />
+          <Route
+            path="/detailkomunitaslogin"
+            element={<DetailKomunitasLogin />}
+          />
           <Route path="/detailprogramlogin" element={<DetailSALogin />} />
-          <Route path="/detailbeasiswalogin" element={<DetailBeasiswaLogin />} />
+          <Route
+            path="/detailbeasiswalogin"
+            element={<DetailBeasiswaLogin />}
+          />
         </Route>
       </Routes>
     </div>

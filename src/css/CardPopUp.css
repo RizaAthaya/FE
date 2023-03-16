@@ -7,7 +7,15 @@
     box-shadow: 0px 8px 24px rgba(8, 14, 65, 0.15);
 
 }
-
+.berhasil-true{
+    display: block;
+    position: absolute;
+    transform: translateY(-80px)
+    translateX(-20px);
+}
+.berhasil-false{
+    display: none;
+}
 .title-popUp1 {
     margin-bottom: 24px;
     font-weight: 700;

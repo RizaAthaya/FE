@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/Artikel.css";
 
@@ -14,51 +14,70 @@ import ManggilCardArtikel from "../components/Pagination/ManggilCardArtikel";
 import profile from "../assets/ProfileWhite.svg";
 // import clock from "../assets/ClockWhite.svg";
 
-//button grup
-
-const ButtonGroup = (props) => {
-  const allData = [
-    { id: 1, name: "Semua", link: "https://reyhafiz.aenzt.tech/api/articles"},
-    { id: 2, name: "Tips dan Trick", link: "https://reyhafiz.aenzt.tech/api/articles" },
-    { id: 3, name: "Inspirasi", link: "https://reyhafiz.aenzt.tech/api/articles" },
-    { id: 4, name: "Pendidikan", link: "https://reyhafiz.aenzt.tech/api/articles" },
-    { id: 5, name: "Kehidupan", link: "https://reyhafiz.aenzt.tech/api/articles" },
-    { id: 6, name: "Bahasa dan Budaya", link: "https://reyhafiz.aenzt.tech/api/articles" },
-  ];
-  const [Aktif, setAktif] = useState({
-    activeObject: allData[0],
-    objects: allData,
-  });
-  function toggleActive(index) {
-    setAktif({ ...Aktif, activeObject: Aktif.objects[index] });
-  }
-  function toggleActiveStyle(index) {
-    if (Aktif.objects[index] === Aktif.activeObject) {
-      return "tag-artikel active";
-    } else {
-      return "tag-artikel inactive";
-    }
-  }
-  return (
-    <div className="button-group">
-      {Aktif.objects.map((elements, index) => (
-        <div
-          key={index}
-          className={toggleActiveStyle(index)}
-          onClick={() => {
-            toggleActive(index);
-          }}
-        >
-          <h3 className="text-tagArtikel">{elements.name}</h3>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-//aslinya
 
 const Artikel = (props) => {
+  const [Show, setShow] = useState(false);
+  const [Show2, setShow2] = useState(false);
+  const [Show3, setShow3] = useState(false);
+  const [Show4, setShow4] = useState(false);
+  const [Show5, setShow5] = useState(false);
+  const [Show6, setShow6] = useState(false);
+  const [link, setLink] = useState("");
+
+  const handlerShow = () => {
+    setShow(true);
+    setShow2(false);
+    setShow3(false);
+    setShow4(false);
+    setShow5(false);
+    setShow6(false);
+    setLink("https://reyhafiz.aenzt.tech/api/articles");
+  };
+  const handlerShow2 = () => {
+    setShow(false);
+    setShow2(true);
+    setShow3(false);
+    setShow4(false);
+    setShow5(false);
+    setShow6(false);
+    setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/1");
+  };
+  const handlerShow3 = () => {
+    setShow(false);
+    setShow2(false);
+    setShow3(true);
+    setShow4(false);
+    setShow5(false);
+    setShow6(false);
+    setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/2");
+  };
+  const handlerShow4 = () => {
+    setShow(false);
+    setShow2(false);
+    setShow3(false);
+    setShow4(true);
+    setShow5(false);
+    setShow6(false);
+    setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/3");
+  };
+  const handlerShow5 = () => {
+    setShow(false);
+    setShow2(false);
+    setShow3(false);
+    setShow4(false);
+    setShow5(true);
+    setShow6(false);
+    setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/4");
+  };
+  const handlerShow6 = () => {
+    setShow(false);
+    setShow2(false);
+    setShow3(false);
+    setShow4(false);
+    setShow5(false);
+    setShow6(true);
+    setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/5");
+  };
   return (
     <div className="whole-artikel">
       <Navbar />
@@ -86,10 +105,32 @@ const Artikel = (props) => {
       <div className="main-artikel">
         <h3 className="title-mainArtikel">Artikel Lainnya</h3>
         <div className="tags-artikel">
-          <ButtonGroup />
-          
+          <button
+            className={`tag-artikel${Show}`}
+            onClick={handlerShow}
+          >Semua</button>
+          <button
+            className={`tag-artikel${Show2}`}
+            onClick={handlerShow2}
+          >Tips dan Trick</button>
+          <button
+            className={`tag-artikel${Show3}`}
+            onClick={handlerShow3}
+          >Inspirasi</button>
+          <button
+            className={`tag-artikel${Show4}`}
+            onClick={handlerShow4}
+          >Pendidikan</button>
+          <button
+            className={`tag-artikel${Show5}`}
+            onClick={handlerShow5}
+          >Kehidupan</button>
+          <button
+            className={`tag-artikel${Show6}`}
+            onClick={handlerShow6}
+          >Bahasa dan Budaya</button>
         </div>
-        <ManggilCardArtikel />
+        <ManggilCardArtikel datanyaLagi={link} />
       </div>
       <Footer />
     </div>

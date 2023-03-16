@@ -1,0 +1,46 @@
+.dddb1 {
+    margin-top: 48px;
+    width: 60vw;
+    background: transparent;
+    border: 1px solid #C0C0C5;
+    border-radius: 16px;
+    padding: 48px;
+}
+
+.title-dddb1 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #000000;
+
+}
+
+.dddb1-part {
+    /* justify-content: space-around; */
+    display: flex;
+}
+.left-boxDDDB1{
+    width: 50%;
+}
+.subTitle-dddb1 {
+    display: flex;
+    text-align: left;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+
+.descTitle-dddb1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+.line-dddb1{
+    margin: 24px 0;
+}

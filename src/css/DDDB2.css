@@ -1,0 +1,29 @@
+.dddb2 {
+    margin-top: 48px;
+    margin-right: 5%;
+    background: rgba(169, 177, 244, 0.2);
+    border: 1px solid #192BC2;
+    border-radius: 16px;
+    padding: 48px;
+    width: 25vw;
+}
+
+.title-dddb2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+.dddb2-container {
+    transform: translateX(-20px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+
+    color: #000000;
+
+}

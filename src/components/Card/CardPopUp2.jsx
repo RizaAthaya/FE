@@ -1,11 +1,12 @@
-import React from "react";
-import "../../css/CardPopUp2.css"
+import React, {useState} from "react";
+import "../../css/CardPopUp2.css";
 import DropDownPopUp from "../DropDownButton/DropDownPopUp";
 import DropDownPopUp2 from "../DropDownButton/DropDownPopUp2";
 import DropDownPopUp3 from "../DropDownButton/DropDownPopUp3";
 import ButtonPengajuan from "../general/ButtonPengajuan";
 import styled from "styled-components";
 import Unggah from "../../assets/Unggah.svg";
+import PopUpBerhasil from "../box/PopUpBerhasil";
 
 const BoxUnggah = styled.div`
   width: 368px;
@@ -16,8 +17,18 @@ const BoxUnggah = styled.div`
 `;
 
 const CardPopUp2 = (props) => {
+  const [Muncul, setMuncul] = useState(false);
+  const handleClick = () => {
+    setMuncul(!Muncul);
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+  };
   return (
     <div className="pop-up2">
+      <div className={`berhasil-${Muncul}`}>
+        <PopUpBerhasil />
+      </div>
       <div className="box-popUp2">
         <h3 className="title-popUp2">Review Dokumen</h3>
         <div className="drop-down-s">
@@ -46,7 +57,7 @@ const CardPopUp2 = (props) => {
           </BoxUnggah>
         </div>
       </div>
-      <button className="submit-popUp1">Ajukan Konsultasi</button>
+      <button className="submit-popUp1" onClick={handleClick}>Ajukan Konsultasi</button>
     </div>
   );
 };

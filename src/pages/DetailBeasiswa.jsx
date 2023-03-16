@@ -4,9 +4,12 @@ import "../css/DetailBeasiswa.css";
 //components
 import Navbar from "../components/general/Navbar";
 import Footer from "../components/general/Footer";
+import DDDB1 from "../components/DropDownButton/DDDB1";
+import DDDB2 from "../components/DropDownButton/DDDB2";
 
 //assets
 import iisma from "../assets/imageIISMA.svg";
+import { Link } from "react-router-dom";
 
 const DetailBeasiswa = (props) => {
   return (
@@ -14,20 +17,25 @@ const DetailBeasiswa = (props) => {
       <Navbar />
       <div className="whole-beasiswa">
         <div className="bread-crumb">
-          Home - Pojok Beasiswa - Detail Beasiswa
+          <h3>
+            <Link to="/">Home </Link>- <Link to="/pojokbeasiswa">Pojok Beasiswa</Link> - Detail
+            Beasiswa
+          </h3>
         </div>
         <div className="header-fullBeasiswa">
           <div className="penyelenggara-beasiswa">Kemdikbud</div>
           <div className="nama-beasiswa">
             IISMA : Indonesian International Student Mobility Awards
           </div>
-          <div className="tags-beasiswa"></div>
+          <div className="tags-beasiswa">
+          <h3 className="tag-beasiswa">Fully Funded</h3>
+          </div>
         </div>
         <hr />
         <div className="mid-fullBeasiswa">
           <h3 className="tentang-beasiswa">Tentang Beasiswa</h3>
           <div className="isi-midBeasiswa">
-            <img src={iisma} className="img-fullBEasiswa"></img>
+            <img src={iisma} className="img-fullBeasiswa"></img>
             <div className="isi-textBeasiswa">
               <h3 className="desc-beasiswafull">
                 IISMA adalah adalah skema beasiswa dari Kementerian Pendidikan,
@@ -62,8 +70,12 @@ const DetailBeasiswa = (props) => {
         </div>
         <hr />
         <div className="bottom-beasiswa">
-          <div className="ddBeasiswa1">Drop down1</div>
-          <div className="ddBeasiswa1"> Drop Down 2</div>
+          <div className="ddBeasiswa1">
+            <DDDB1 />
+          </div>
+          <div className="ddBeasiswa1">
+            <DDDB2 />
+          </div>
         </div>
         <div className="tambahan-fullBeasiswa">
           <h3 className="title-tambahan"> Lebih Banyak Informasi</h3>
