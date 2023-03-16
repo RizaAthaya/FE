@@ -12,7 +12,7 @@ import ManggilCardArtikel from "../components/Pagination/ManggilCardArtikel";
 
 //assets
 import profile from "../assets/ProfileWhite.svg";
-import clock from "../assets/ClockWhite.svg";
+// import clock from "../assets/ClockWhite.svg";
 
 const Artikel = (props) => {
   return (
@@ -33,7 +33,7 @@ const Artikel = (props) => {
               <h3>Riza Athaya</h3>
             </div>
             <div className="pembuat-artikel">
-              <img className="logo-pembuatArtikel" src={clock}></img>
+              <img className="logo-pembuatArtikel" src=""></img>
               <h3>13 Jan 2023</h3>
             </div>
           </div>
