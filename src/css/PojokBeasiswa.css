@@ -1,6 +1,6 @@
 .whole-sec4 {
     width: 100vw;
-    height: 2616px;
+    height: auto;
     background-color: #fff;
 }
 
@@ -99,4 +99,7 @@
 .whole-sec4 .nav-filter{
     /* justify-content: center; */
     float: none;
+}
+.footer-PB{
+
 }

@@ -37,7 +37,8 @@ const AllCourse = (props) => {
         <div className="main-img">
           <h3 className="title-pb">Pojok Beasiswa</h3>
           <h5 className="desc-pb">
-          Temukan ratusan informasi beasiswa terlengkap dan terbaru dari berbagai negara di Pojok Beasiswa kami.
+            Temukan ratusan informasi beasiswa terlengkap dan terbaru dari
+            berbagai negara di Pojok Beasiswa kami.
           </h5>
         </div>
         <div className="main-part">
@@ -55,8 +56,9 @@ const AllCourse = (props) => {
           <ManggilCardPB />
         </div>
       </div>
-
-      <Footer />
+      <div className="footerPB">
+        <Footer />
+      </div>
     </div>
   );
 };

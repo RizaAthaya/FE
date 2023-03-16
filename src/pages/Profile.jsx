@@ -8,12 +8,12 @@ import { createAxiosInstance } from "../components/api/api";
 
 const Profile = (props) => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    name: "",
+    email: "",
     age: 0,
-    phone_number: '',
+    phone_number: "",
     image: null,
-    gender: '',
+    gender: "",
   });
   //tanya kakaknya. soalnya ga cuma foto, tapi harus nangkep repon dari api juga
   // const [Pict, HandlePhoto] = useForm();
@@ -24,7 +24,7 @@ const Profile = (props) => {
   });
 
   const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value});
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   useEffect(() => {
@@ -49,7 +49,7 @@ const Profile = (props) => {
             gender: data.gender,
           };
 
-          console.log('data', data);
+          console.log("data", data);
           setFormData(currentData);
         })
         .catch((error) => {
@@ -63,7 +63,7 @@ const Profile = (props) => {
 
   useEffect(() => {
     console.log(formData.phone_number);
-  }, [formData])
+  }, [formData]);
 
   const HandleSubmit = (e) => {
     e.preventDefault();
@@ -71,15 +71,11 @@ const Profile = (props) => {
     axios;
     const token = localStorage.getItem("token");
     axios
-      .post(
-        `https://reyhafiz.aenzt.tech/api/users`,
-        formData,
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      )
+      .post(`https://reyhafiz.aenzt.tech/api/users`, formData, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
       .then((result) => {
         console.log(result);
 
@@ -107,7 +103,8 @@ const Profile = (props) => {
                     label="foto"
                     type="file"
                     className="file-box"
-                    onChange={handleChange}/>
+                    onChange={handleChange}
+                  />
                 </div>
               </div>
               <h3 className="input-title">Nama</h3>
@@ -137,10 +134,10 @@ const Profile = (props) => {
                 className="input-box"
                 type="password"
                 name="password"
-                value={'rahasia'}
+                value={"rahasia"}
                 disabled
                 required
-                ></input>
+              ></input>
               <h3 className="input-title">Nomor Telepon</h3>
               <input
                 placeholder="Nomor Telepon"
@@ -161,7 +158,7 @@ const Profile = (props) => {
                 name="age"
                 onChange={handleChange}
                 required
-                ></input>
+              ></input>
               <h3 className="input-title">Jenis Kelamin</h3>
               <input
                 placeholder="Jenis Kelamin"
@@ -172,7 +169,7 @@ const Profile = (props) => {
                 name="gender"
                 onChange={handleChange}
                 required
-                ></input>
+              ></input>
               <br />
               <button type="submit" className="btn-submit">
                 SUBMIT
@@ -181,7 +178,9 @@ const Profile = (props) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="footerProfile">
+        <Footer />
+      </div>
     </div>
   );
 };

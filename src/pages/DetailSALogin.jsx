@@ -71,7 +71,7 @@ const DetailSALogin = (props) => {
                   <img src={Konten3} className="img-bagianKonten"></img>
                   <h3 className="text-konten">Kelas Interaktif</h3>
                 </div>
-              </div>{" "}
+              </div>
               <br />
               <div className="bawah-kontenProgram">
                 <div className="bagian-konten">
