@@ -1,7 +1,15 @@
 import React from "react";
-import '../../css/CardPB.css';
+import { Link } from "react-router-dom";
+import "../../css/CardPB.css";
 
-const CardPB = ({tag_level, tag_cost, scholarship_provider, name, close_registration, open_registration}) => {
+const CardPB = ({
+  tag_level,
+  tag_cost,
+  scholarship_provider,
+  name,
+  close_registration,
+  open_registration,
+}) => {
   return (
     <div className="card-pb">
       <div className="tagpb-part">
@@ -11,16 +19,18 @@ const CardPB = ({tag_level, tag_cost, scholarship_provider, name, close_registra
       </div>
       <div className="textpb-part">
         <div className="pb-text1">{scholarship_provider}</div>
-        <div className="pb-text2">
-          {name}
-        </div>
+        <Link to="/detailProgramLogin">
+          <div className="pb-text2">{name}</div>
+        </Link>
       </div>
       <div className="datepb-part">
         <div className="open-part">
-          <h5 className="open-left">Open Registration</h5> <h5 className="open-right">{open_registration}</h5>
+          <h5 className="open-left">Open Registration</h5>{" "}
+          <h5 className="open-right">{open_registration}</h5>
         </div>
         <div className="close-part">
-          <h5 className="close-left">Close Registration</h5> <h5 className="close-right">{close_registration}</h5>
+          <h5 className="close-left">Close Registration</h5>{" "}
+          <h5 className="close-right">{close_registration}</h5>
         </div>
       </div>
     </div>

@@ -10,12 +10,11 @@ const CardKomunitasList = ({ KomunitasData }) => {
           <CardKomunitas
             key={index}
             nama={item.user.name}
-            waktu={item.user.created_at}
+            waktu={item.updated_at}
             judul={item.title}
             desc={item.comment}
-            tag1=""
-            tag2=""
-            reply=""
+            tags={item.tag_discussion}
+            reply={item.reply_count} 
           />
         );
       })}

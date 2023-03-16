@@ -33,21 +33,23 @@ const DashboardNew = (props) => {
     const token = localStore;
     async function fetchData() {
       const response = await axios
-        .get("https://reyhafiz.aenzt.tech/api/users", null, {
+        .get("https://reyhafiz.aenzt.tech/api/users", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         })
         .then((response) => {
           // console.log(response);
-          const data = response.data.data;
-          setNama(data.name);
+          const data = response.data;
+          // console.log(data)
+          setNama(data.data.name);
+          console.log(response.data);
         })
         .catch((error) => {
           console.log(error);
           setError(error.response.data);
         });
-      console.log(response);
+      
     }
     fetchData();
   }, []);
@@ -56,7 +58,7 @@ const DashboardNew = (props) => {
       <Navbar2/>
       <div className="whole-newDash">
         <div className="titlepart-newDash">
-          <h2 className="title-newDash">Selamat datang {Nama}!</h2>
+          <h2 className="title-newDash">{`Selamat datang ${Nama}!`} </h2>
           <h3 className="desc-newDash">
             Semoga aktivitas belajarmu menyenangkan.
           </h3>

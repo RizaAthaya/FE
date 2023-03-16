@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/DetailKomunitas.css";
 
 //components
 import Navbar from "../components/general/Navbar2";
+import PopUpReply from "../components/box/PopUpReply";
 
 //assets
+import exit from "../assets/VectorExit.svg";
 import back from "../assets/Back.svg";
 import chat from "../assets/Chat.svg";
 import plus from "../assets/Plus.svg";
 import { Link } from "react-router-dom";
 
 const DetailKomunitasLogin = (props) => {
+  const [Show, setShow] = useState(false);
+  const handleCLick = () => {
+    setShow(!Show);
+  };
   return (
     <div className="detail-komunitas">
       <Navbar />
@@ -22,6 +28,10 @@ const DetailKomunitasLogin = (props) => {
           </button>
         </Link>
         <div className="box-diskusiUtama">
+          <div className={`reply-${Show}`}>
+            <img className="btn-exitReply" src={exit} onClick={handleCLick}></img>
+            <PopUpReply />
+          </div>
           <div className="left-diskusiUtama">
             <img className="profpict-diskusiUtama"></img>
           </div>
@@ -48,7 +58,7 @@ const DetailKomunitasLogin = (props) => {
                 <img className="chat-logoDiskusi" src={chat}></img>
                 <h3 className="chat-textDiskusi">5 pembahasan</h3>
               </div>
-              <div className="right-akhirDU">
+              <div className="right-akhirDU" onClick={handleCLick}>
                 <img src={plus} className="plus-logoDiskusi"></img>
                 <h3 className="plus-textDiskusi">Jawaban</h3>
               </div>

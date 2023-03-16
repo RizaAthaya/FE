@@ -12,9 +12,7 @@
 .img-artikel {
     width: 400px;
     height: 240px;
-    background: url("");
     border-radius: 16px 16px 0px 0px;
-
 }
 
 .tag-artikel {
@@ -26,6 +24,7 @@
     color: #192BC2;
     /* margin-top: 24px; */
     margin-bottom: 8px;
+    transform: translateX(-15px);
 }
 
 .title-ca {

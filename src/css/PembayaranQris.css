@@ -1,6 +1,6 @@
 .pagePaySpesifikQris {
     width: 100vw;
-    height: 1072px;
+    height: 100vh;
     background: #FAFAFF;
     color: #121216;
     background-image: url("../assets/backgroundPembayaran.svg");
@@ -11,6 +11,7 @@
 }
 
 .gambar-qris {
+    margin: auto;
     width: 400px;
     height: 400px;
 }

@@ -1,5 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import "../css/PembayaranBCA.css";
+
+//components
+import CardPembayaranBerhasil from "../components/Card/CardPembayaranBerhasil";
 
 //assets
 import Background from "../assets/backgroundPayment.svg";
@@ -7,9 +12,18 @@ import BNI from "../assets/BNI.svg";
 import NavbarPay from "../components/general/NavbarPay";
 
 const PembayaranBNI = (props) => {
-  const [bni, setBNI] = useState("");
+  const [Open, setOpen] = useState(false);
+  const [bni, setBNI] = useState([]);
   const [error, setError] = useState("");
   const token = localStorage.getItem("token");
+  const navigate = useNavigate();
+
+  const handleKonfirmasi = () => {
+    setOpen(!Open);
+    setTimeout(() => {
+      navigate("/dashboard");
+    }, 3000);
+  };
   useEffect(() => {
     async function fetchData() {
       const response = await axios
@@ -26,9 +40,8 @@ const PembayaranBNI = (props) => {
         )
         .then((response) => {
           // console.log(response);
-          setBNI(response.data.data);
-          console.log(response.data)
-
+          setBNI(response.data.data.Virtual_Account_Number);
+          console.log(response.data);
         })
         .catch((error) => {
           console.log(error);
@@ -44,26 +57,34 @@ const PembayaranBNI = (props) => {
       <NavbarPay />
       <div className="isi-pagePaySpesifik">
         <div className="title-paySpesifik">
-        <h3>Pembayaran</h3>
+          <h3>Pembayaran</h3>
         </div>
         <div className="card-paySpesifik">
+          <div className={`berhasil-${Open}`}>
+            <CardPembayaranBerhasil />
+          </div>
           <div className="atas-cardSpesifik">
             <h3 className="title-cardSpesifik">Bayar Sebelum</h3>
             <h3 className="jam-cardSpesifik">24 : 00 : 00</h3>
           </div>
           <hr className="line-paySpesifik" />
-          <div className="bottom-cardSpesfik">
-            <div className="left-cardSpesifik">
-              <h3 className="title-bBox">Virtual Account</h3>
-              <h3 className="desc-bBox">1122334455667788</h3>
-              <h3 className="title-bBox">Total Pembayaran</h3>
-              <h3 className="desc-bBox">Rp 500.000</h3>
+          {bni.map((item) => (
+            <div className="bottom-cardSpesfik">
+              <div className="left-cardSpesifik">
+                <h3 className="title-bBox">Virtual Account</h3>
+                <h3 className="desc-bBox">{item.va_number}</h3>
+                <h3 className="title-bBox">Total Pembayaran</h3>
+                <h3 className="desc-bBox">Rp 500.000</h3>
+              </div>
+              <div className="right-cardSpesifik">
+                <img className="logo-bank" src={BNI}></img>
+              </div>
             </div>
-            <div className="right-cardSpesifik">
-              <img className="logo-bank" src={BNI}></img>
-            </div>
-          </div>
-          <button className="btn-konfirmasiPay">Konfirmasi Pembayaran</button>
+          ))}
+
+          <button className="btn-konfirmasiPay" onClick={handleKonfirmasi}>
+            Konfirmasi Pembayaran
+          </button>
         </div>
       </div>
     </div>

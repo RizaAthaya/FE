@@ -81,6 +81,7 @@
 }
 .atas-Rbox, .bawah-Rbox{
     display: flex;
+    justify-content: space-between;
 }
 .full-boxPay{
     padding: 0 7%;

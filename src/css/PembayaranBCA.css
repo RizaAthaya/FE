@@ -97,7 +97,7 @@
     margin-top: 24px;
     width: 514px;
     height: 48px;
-    background: #C0C0C5;
+    background:#192BC2;
     border-radius: 8px;
 
 }
@@ -129,3 +129,11 @@
 }
 
 .logo-bank {}
+
+.berhasil-false{
+    display: none;
+}
+.berhasil-true{
+    display: block;
+    position: absolute;
+}

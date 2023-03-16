@@ -13,10 +13,10 @@ const CardArtikelList = ({CardArtikels}) => {
             return (
                 <CardArtikel
                     key={index}
-                    tag_artikel = {item.tag_artikel}
+                    foto={item.image}
+                    tag_artikel = {item.tag_article.name}
                     title = {item.title}
-                    penulis = ""
-                    created=""
+                    created={item.created_at}
                     description={item.brief_description}
                 />
             );

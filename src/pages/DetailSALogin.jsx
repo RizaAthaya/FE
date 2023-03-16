@@ -17,7 +17,7 @@ const DetailSALogin = (props) => {
       <div className="whole-detailSA">
         <div className="bread-crumbSA">
           <h3>
-            <a>Home </a> - <a>Study Abroad</a> - Detail
+            <Link to="/home">Home </Link> - <Link to="/studyabroadlogin">Study Abroad</Link> - Detail
           </h3>
         </div>
         <div className="header-detailSA">
@@ -30,7 +30,11 @@ const DetailSALogin = (props) => {
               IISMA : Indonesian International Student Mobility Awards
             </div>
             <div className="akhir-headerSA">
-              <button className="btn-daftarMentoring">Daftar Mentoring</button>
+              <Link to="/pembayaran">
+                <button className="btn-daftarMentoring">
+                  Daftar Mentoring
+                </button>
+              </Link>
               <h3 className="harga-mentoring">Rp 500.000</h3>
               <h3 className="jumlah-anggota">15/20</h3>
             </div>

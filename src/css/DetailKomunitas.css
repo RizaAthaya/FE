@@ -246,3 +246,17 @@
     color: #FAFAFF;
     justify-content: center;
 }
+
+.reply-false {
+    display: none;
+}
+
+.reply-true {
+    display: block;
+    position: absolute;
+    transform: translateX(20%);
+}
+.btn-exitReply{
+    position: absolute;
+    transform: translateX(730px) translateY(50px);
+}

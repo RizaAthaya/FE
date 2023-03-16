@@ -90,7 +90,7 @@ const StudyAbroadLogin = (props) => {
           </div>
         </div>
         <div className="semua-pagination">
-          
+          <ManggilCardSA/>
         </div>
       </div>
       <Footer />

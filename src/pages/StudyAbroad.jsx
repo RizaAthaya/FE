@@ -88,7 +88,9 @@ const StudyAbroad = (props) => {
             </div>
           </div>
         </div>
-        <div className="semua-pagination"></div>
+        <div className="semua-pagination">
+        <ManggilCardSA/>
+        </div>
       </div>
       <Footer />
     </div>
