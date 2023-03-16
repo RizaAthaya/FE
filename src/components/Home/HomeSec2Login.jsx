@@ -2,8 +2,6 @@ import React from "react";
 import "../../css/HomeSec2.css";
 
 //components
-
-import { Card } from "@mui/material";
 import CarouselCardPromo from "../Carousel/CarouselCardPromo";
 import CarouselBoxPromo from "../Carousel/CarouselBoxPromo";
 import CarouselPB from "../Carousel/CarouselPB";

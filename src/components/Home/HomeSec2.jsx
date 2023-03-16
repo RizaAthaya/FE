@@ -4,7 +4,6 @@ import "../../css/HomeSec2.css";
 //components
 // import Swiper from "../../components/Carousel/Swiper"
 
-import { Card } from "@mui/material";
 import CarouselCardPromo from "../Carousel/CarouselCardPromo";
 import CarouselBoxPromo from "../Carousel/CarouselBoxPromo";
 import CarouselPB from "../Carousel/CarouselPB";

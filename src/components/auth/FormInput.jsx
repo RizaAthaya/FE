@@ -3,7 +3,6 @@ import "../../css/FormInput.css";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Typography, TextField, Button, Link } from "@mui/material";
 
 const FormInput = (props) => {
   const [email, setEmail] = useState("");
