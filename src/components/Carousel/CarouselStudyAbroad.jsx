@@ -58,7 +58,7 @@ const Carousel = (props) => {
     ],
   };
   return (
-    <div className="CarouselSA">
+    <div className="Carousel-PB">
       <div className="carousel">
         <div className="ch1">
           <Slider {...settings}>
@@ -97,7 +97,7 @@ const Carousel = (props) => {
 
 const CarouselStudyAbroad = (props) => {
   return (
-    <div className="card-saFull">
+    <div >
       <Carousel />
     </div>
   );

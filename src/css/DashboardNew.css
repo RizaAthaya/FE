@@ -1,6 +1,7 @@
 .new-Dash {
     color: black;
     width: 100vw;
+    min-height: 100vh;
     height: auto;
     background: #FAFAFF;
 }

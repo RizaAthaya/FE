@@ -61,11 +61,11 @@ const StudyAbroad = (props) => {
       <div className="atasan-sa">
         <div className="bread-crumb">
           <h3>
-            <Link to="/">Home</Link> - Study Abroad
+            <Link to="/">Home</Link> - Mentoring
           </h3>
         </div>
         <div className="header-sa">
-          <div className="title-sa">Study Abroad</div>
+          <div className="title-sa">Mentoring</div>
           <div className="desc-sa">
           Dapatkan bimbingan dari mentor berpengalaman untuk membantumu meraih beasiswa impianmu.
           </div>

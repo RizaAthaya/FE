@@ -1,9 +1,33 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../../css/DropDownPopUp.css";
+import axios from "axios";
 
 import { Link } from "react-router-dom";
 import Down from "../../assets/Down.svg";
 const DropDownPopUp = (props) => {
+  const [program, setProgram] = useState("");
+  const [error,setError] = useState("");
+  useEffect(() => {
+    const localStore = localStorage.getItem("token");
+    const token = localStore;
+    const handleUser = () => {
+      axios
+        .get("https://reyhafiz.aenzt.tech/api/users/programs", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        .then((response) => {
+          console.log(response.data.data);
+          setProgram(response.data.data);
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+    };
+    handleUser();
+  }, []);
   const [open, setOpen] = useState(false);
 
   let menuRef = useRef();
@@ -38,7 +62,7 @@ const DropDownPopUp = (props) => {
 
         <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul>
-          {/** Tempat mapping disini za */}
+            {/** Tempat mapping disini za */}
             <div className="semua-map">
               <DropdownItem img="" text={"Dashboard"} onClick="/dashboard" />
               <DropdownItem img="" text={"My Profile"} onClick="/profile" />

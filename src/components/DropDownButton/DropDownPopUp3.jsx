@@ -40,9 +40,8 @@ const DropDownPopUp3 = (props) => {
             <ul>
               {/** Tempat mapping disini za */}
               <div className="semua-map">
-                <DropdownItem img="" text={"Dashboard"} onClick="/dashboard" />
-                <DropdownItem img="" text={"My Profile"} onClick="/profile" />
-                <DropdownItem img="" text={"Logout"} />
+                <DropdownItem img="" text={"Motivation Letter"} />
+                <DropdownItem img="" text={"Essay"} />
               </div>
             </ul>
           </div>

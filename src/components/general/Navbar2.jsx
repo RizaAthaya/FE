@@ -16,7 +16,7 @@ const Navbar = () => {
       <ul className="nav-list">
         <li className="list-part">
           <Buttons
-            label="Study Abroad"
+            label="Mentoring"
             styleBtn="btn-navWhite"
             ke="/studyabroadlogin"
           ></Buttons>

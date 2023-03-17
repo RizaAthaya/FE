@@ -17,6 +17,7 @@
 }
 .carousel-3dnya{
     /* margin: 0 17%; */
+    height: 500px;
     display: flex;
     justify-content: center;
 }

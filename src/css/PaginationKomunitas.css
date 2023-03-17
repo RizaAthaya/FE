@@ -3,7 +3,7 @@
     font-size: 16px;
     line-height: 150%;
     /* identical to box height, or 24px */
-
+    margin-right: 8px;
     display: flex;
     align-items: center;
     letter-spacing: 0.005em;
@@ -19,4 +19,8 @@
     background: #192BC2;
     border-radius: 8px;
 
+}
+
+.paginationKomunitas {
+    display: flex;
 }

@@ -16,11 +16,14 @@ function Carousel3D() {
         "https://reyhafiz.aenzt.tech/api/mentors/new"
       );
       setNewMentor(response.data.data);
+      console.log("yang ini")
       console.log(response.data.data);
       
     }
+    console.log("yang ini lho")
     fetchData();
   }, []);
+  console.log("ini lagi")
   console.log(newMentor);
   const NextArrow = ({ onClick }) => {
     return (
@@ -55,7 +58,7 @@ function Carousel3D() {
   return (
     <div className="Carousel3D">
       <Slider {...settings}>
-        {newMentor.map((item) => (
+        {Object.values(newMentor).map((item) => (
           <div
             className={
               item.id - 1 === imageIndex ? "slide activeSlide" : "slide"
