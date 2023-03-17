@@ -70,7 +70,6 @@ const ManggilCardSA = () => {
       <div className="semuanya-cardSA">
         <CardSAList beasiswaData={currentPosts} />
       </div>
-
       <div className="angka-pagination">
         <PaginationCardSA
           totalPosts={Program.length}

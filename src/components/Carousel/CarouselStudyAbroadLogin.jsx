@@ -70,7 +70,7 @@ const Carousel = (props) => {
               <div className="card-car">
                 <div className="card-top">
                   <div className="card-sa">
-                    <img className="img-sa" src=""></img>
+                    <img className="img-sa" src={item.image}></img>
                     <div className="text-part">
                       <div className="tag-part">
                         <h5 className="tag-sa">{item.tag_level.name}</h5>
@@ -85,7 +85,6 @@ const Carousel = (props) => {
                           styleBtn="btn-sa1"
                         ></Buttons>
                         <Buttons ke="/detailProgramLogin" label="Lihat detail" styleBtn="btn-sa2"></Buttons>
-
                       </div>
                     </div>
                   </div>

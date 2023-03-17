@@ -1,13 +1,15 @@
 import React from "react";
 import "../../css/CardSA.css";
+import { useNavigate } from 'react-router';
+
 
 import Buttons from "../general/Buttons";
 const CardSA = ({ linkImg, tag1, tag2, title, harga }) => {
   const handleClick = () => {
     if (window.localStorage.getItem("token")) {
-      navigate("/detailprogram");
+      navigate("/detailprogramlogin");
     } else {
-      navigate("/detailprogramLogin");
+      navigate("/detailprogram");
     }
   };
   const handleClick2 = () => {
@@ -17,6 +19,8 @@ const CardSA = ({ linkImg, tag1, tag2, title, harga }) => {
       navigate("/login");
     }
   };
+  let navigate = useNavigate();
+
   return (
     <div>
       <div className="card-sa">
@@ -32,16 +36,18 @@ const CardSA = ({ linkImg, tag1, tag2, title, harga }) => {
           <div className="main-saCard">
             <h6 className="title-saCard">{title}</h6>
             <h6 className="harga-saCard">Rp. {harga.toLocaleString()}</h6>
-            <Buttons
-              ke="/pembayaran"
-              label="Daftar mentoring"
-              styleBtn="btn-sa1"
-            ></Buttons>
-            <Buttons
-              ke="/detailProgramLogin"
-              label="Lihat detail"
-              styleBtn="btn-sa2"
-            ></Buttons>
+            <div onClick={handleClick2}>
+              <Buttons
+                label="Daftar mentoring"
+                styleBtn="btn-sa1"
+              ></Buttons>
+            </div>
+            <div onClick={handleClick}>
+              <Buttons
+                label="Lihat detail"
+                styleBtn="btn-sa2"
+              ></Buttons>
+            </div>
           </div>
         </div>
       </div>
