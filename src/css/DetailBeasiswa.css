@@ -78,7 +78,7 @@
 
 }
 
-.img-fullBeasiswa {
+.img-fullBEasiswa{
     margin-right: 48px;
     width: 400px;
     height: 240px;
@@ -116,7 +116,8 @@
     color: #121216;
 }
 
-.listUniv-leftBeassiwa {
+.listUniv-leftBeasiswa {
+    margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -137,6 +138,7 @@
 }
 
 .listProdi-rightBeasiswa {
+    margin-top: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;

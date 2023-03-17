@@ -7,6 +7,7 @@ import Footer from "../components/general/Footer";
 
 //assets
 import iisma from "../assets/imageIISMA.svg";
+import { Link } from "react-router-dom";
 
 const DetailBeasiswaLogin = (props) => {
   return (
@@ -14,7 +15,7 @@ const DetailBeasiswaLogin = (props) => {
       <Navbar />
       <div className="whole-beasiswa">
         <div className="bread-crumb">
-          Home - Pojok Beasiswa - Detail Beasiswa
+          <h3><Link to="/home">Home</Link> - <Link to="/pojokbeasiswalogin">Pojok Beasiswa</Link> - Detail Beasiswa</h3>
         </div>
         <div className="header-fullBeasiswa">
           <div className="penyelenggara-beasiswa">Kemdikbud</div>
@@ -39,22 +40,26 @@ const DetailBeasiswaLogin = (props) => {
               <div className="main-midBeasiswa">
                 <div className="left-midBeasiswa">
                   <h3 className="univ-leftBeasiswa">Universitas Pilihan</h3>
-                  <h3 className="listUniv-leftBeasiswa"></h3>
+                  <h3 className="listUniv-leftBeasiswa">
+                    Universitas Brawijaya
+                  </h3>
                 </div>
                 <div className="right-midBeasiswa">
                   <h3 className="prodi-rightBeasiswa">Program Studi Pilihan</h3>
-                  <h3 className="listProdi-rightBeasiswa"></h3>
+                  <h3 className="listProdi-rightBeasiswa">
+                    Teknologi Informasi
+                  </h3>
                 </div>
               </div>
               <div className="akhir-midBeasiswa">
                 <div className="open-beasiswa">
                   <h3 className="title-openBeasiswa">Open Registration</h3>
-                  <h3 className="tanggal-openBeasiswa"></h3>
+                  <h3 className="tanggal-openBeasiswa">23 Januari 2023</h3>
                 </div>
                 <hr />
                 <div className="close-beasiswa">
                   <h3 className="title-closeBeasiswa">Close Registration</h3>
-                  <h3 className="tanggal-closeBeasiswa"></h3>
+                  <h3 className="tanggal-closeBeasiswa">24 Januari 2023</h3>
                 </div>
               </div>
             </div>

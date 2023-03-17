@@ -9,9 +9,6 @@ import ProtectedRoute from "./components/Routes/ProtectedRoute";
 
 //pages
 
-//texting
-import Nyoba from "./pages/Nyoba";
-
 // free for all
 import Home from "./pages/Home";
 import PojokBeasiswa from "./pages/PojokBeasiswa";
@@ -57,8 +54,6 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/nyoba" element={<Nyoba />} />
-
         <Route element={<AuthRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/detailkomunitas" element={<DetailKomunitas />} />

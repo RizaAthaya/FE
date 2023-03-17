@@ -14,9 +14,9 @@ const CardPB = ({
   let navigate = useNavigate();
   const handleClick = () => {
     if (window.localStorage.getItem("token")) {
-      navigate("/detailprogramLogin");
+      navigate("/detailbeasiswaLogin");
     } else {
-      navigate("/detailprogram");
+      navigate("/detailbeasiswa");
     }
   };
   return (

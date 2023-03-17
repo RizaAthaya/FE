@@ -47,22 +47,22 @@ const DetailBeasiswa = (props) => {
               <div className="main-midBeasiswa">
                 <div className="left-midBeasiswa">
                   <h3 className="univ-leftBeasiswa">Universitas Pilihan</h3>
-                  <h3 className="listUniv-leftBeasiswa"></h3>
+                  <h3 className="listUniv-leftBeasiswa">Universitas Indonesia</h3>
                 </div>
                 <div className="right-midBeasiswa">
                   <h3 className="prodi-rightBeasiswa">Program Studi Pilihan</h3>
-                  <h3 className="listProdi-rightBeasiswa"></h3>
+                  <h3 className="listProdi-rightBeasiswa">Teknologi Informasi</h3>
                 </div>
               </div>
               <div className="akhir-midBeasiswa">
                 <div className="open-beasiswa">
                   <h3 className="title-openBeasiswa">Open Registration</h3>
-                  <h3 className="tanggal-openBeasiswa"></h3>
+                  <h3 className="tanggal-openBeasiswa">19 Maret 2023</h3>
                 </div>
                 <hr />
                 <div className="close-beasiswa">
                   <h3 className="title-closeBeasiswa">Close Registration</h3>
-                  <h3 className="tanggal-closeBeasiswa"></h3>
+                  <h3 className="tanggal-closeBeasiswa">19 Maret 2023</h3>
                 </div>
               </div>
             </div>

@@ -9,6 +9,9 @@
     width: 100vw;
     z-index: 1000;
     height: 4.5rem;
+    background: #FAFAFF;
+
+    border-bottom: 1px solid #A9B1F4;
 }
 
 .title-dashN {
