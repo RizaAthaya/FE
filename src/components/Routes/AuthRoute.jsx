@@ -5,7 +5,7 @@ const AuthRoute = () => {
         // return <Navigate to="/home" />
         window.location.replace(`${window.location.origin}/home`)
     else
-        return children
+        return <Outlet/>
 }
 
 export default AuthRoute

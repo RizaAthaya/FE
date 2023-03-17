@@ -2,7 +2,7 @@ import { Navigate, Outlet } from "react-router-dom"
 
 const ProtectedRoute = () => {
     if(window.localStorage.getItem('token'))
-        return children
+        return <Outlet/>
 
         window.location.replace(`${window.location.origin}/login`)
 }
