@@ -23,7 +23,7 @@ const PembayaranBCA = (props) => {
     async function fetchData() {
       const response = await axios
         .post(
-          "https://reyhafiz.aenzt.tech/api/programs/3/buy",
+          "https://reyhafiz.aenzt.tech/api/programs/1/buy",
           {
             payment_type: "bca",
           },
