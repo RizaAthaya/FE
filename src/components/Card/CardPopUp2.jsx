@@ -46,10 +46,6 @@ const CardPopUp2 = (props) => {
           <ButtonPengajuan />
         </div>
         <div className="each-dd">
-          <h3 className="titlenya-dd">Tipe Dokumen</h3>
-          <DropDownPopUp3 />
-        </div>
-        <div className="each-dd">
           <h3 className="titlenya-dd">Unggah Dokumen</h3>
           <BoxUnggah>
             <img className="img-unggah" src={Unggah}></img>

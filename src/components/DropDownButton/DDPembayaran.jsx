@@ -51,7 +51,6 @@ function DropDownPembayaran() {
             <DropdownItem img={BCA} onClick="/pembayaran/bca" />
             <DropdownItem img={BRI} onClick="/pembayaran/bri" />
             <DropdownItem img={BNI} onClick="/pembayaran/bni" />
-            <DropdownItem img={Permata} onClick="/pembayaran/permata" />
           </ul>
         </div>
       </div>

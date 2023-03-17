@@ -101,6 +101,7 @@ const DashboardNew = (props) => {
     };
     handleUser();
   }, []);
+  console.log(konsultasi)
 
   return (
     <div className="new-Dash">
@@ -176,7 +177,10 @@ const DashboardNew = (props) => {
               <hr />
 
               <div className="cards-consultation">
+              {konsultasi.map(()=>(
                 <CardKonsul dataKonsul={konsultasi} />
+              ))}
+                
               </div>
             </div>
           </div>

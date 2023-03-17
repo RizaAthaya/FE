@@ -41,13 +41,6 @@ const Navbar = () => {
             ke="/artikel"
           ></Buttons>
         </li>
-        <li className="list-part">
-          <Buttons
-            label="Dashboard"
-            styleBtn="btn-navWhite"
-            ke="/dashboard"
-          ></Buttons>
-        </li>
       </ul>
       <ul className="nav-list2">
         <li className="list-part2">

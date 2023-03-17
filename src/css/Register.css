@@ -4,6 +4,7 @@
     background-position: cover;
     width: 100vw;
     height: auto;
+    min-height: 100vh;
 
 }
 
@@ -28,6 +29,7 @@
 
 .box-imgRegister {
     width: 50vw;
+    height: 100vh;
     padding-left: 13%;
     padding-right: 5%;
 }

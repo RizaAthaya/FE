@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "../css/Artikel.css";
 
@@ -9,6 +9,9 @@ import CardArtikel from "../components/Card/CardArtikel";
 import Navbar from "../components/general/Navbar2";
 import Footer from "../components/general/Footer";
 import ManggilCardArtikel from "../components/Pagination/ManggilCardArtikel";
+
+//assets
+import profile from "../assets/ProfileWhite.svg";
 
 const ArtikelLogin = (props) => {
   const [Show, setShow] = useState(true);

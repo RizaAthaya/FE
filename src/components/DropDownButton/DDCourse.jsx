@@ -35,15 +35,15 @@ const DDCourse = (props) => {
             setOpen(!open);
           }}
         >
-          <img src={Down} className="img-ddb2"></img>
+          <img src={Down} className="img-ddb2 course"></img>
           <h3 className="tulisannya">Course</h3>
         </div>
 
         <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul>
-            <DropdownItem text={"Dashboard"} onClick="/dashboard" />
-            <DropdownItem text={"My Profile"} onClick="/profile" />
-            <DropdownItem text={"Logout"} />
+            <DropdownItem text={"Topik Pembelajaran 1"} />
+            <DropdownItem text={"Topik Pembelajaran 2"} />
+            <DropdownItem text={"Topik Pembelajaran 3"} />
           </ul>
         </div>
       </div>

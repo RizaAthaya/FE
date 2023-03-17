@@ -1,16 +1,16 @@
 .sidebar-modul {
-    transform: translateY(-68px)
-    translateX(-40px);
-    position: absolute;
+    /* transform: translateY(-68px) translateX(-40px); */
+    /* position: absolute; */
     width: 340px;
     height: 100%;
+    min-height: 100vh;
     border-left: 1px solid #A9B1F4;
-    padding: 0 1%;
-    background: transparent;
+    background: #FAFAFF;
+    /* margin-left: 500px; */
 }
 
 .title-sideBar {
-    padding: 24px;
+
     text-align: right;
     /* margin-bottom: 34px; */
     font-weight: 700;
@@ -19,6 +19,37 @@
     letter-spacing: -0.015em;
     color: #121216;
 }
-.list-modul{
-    padding: 5% 0 ;
+
+.list-modul {
+    background: #FAFAFF;
+
+    border-left: 1px solid #A9B1F4;
+
+    padding: 5% 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+    letter-spacing: 0.005em;
+
+    /* Neutral/70 */
+
+    color: #4C4C50;
+}
+
+.img-sidebar {
+    margin-right: 16px;
+}
+
+.atas-sModul {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #FAFAFF;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: #A9B1F4;
+    padding: 24px;
+    display: flex;
 }

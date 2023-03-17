@@ -7,27 +7,31 @@
 
 .modul-isi {
     display: flex;
-    padding-top: 8%;
+    padding-top: 4.5rem;
 }
 
 .left-modul {
-    width: 80%;
+    margin-top: 3%;
+    width: 83vw;
     padding: 0% 5% 8% 5%;
 }
 
 .right-modul {
+    display: flex;
+    float: right;
     padding: 24px;
     width: 340px;
     height: 828px;
 }
 
-.foto-materi{
+.foto-materi {
     display: flex;
     margin: auto;
     margin-bottom: 48px;
     width: 80%;
     height: auto;
 }
+
 .title-materi {
     font-weight: 700;
     font-size: 32px;

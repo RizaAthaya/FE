@@ -14,6 +14,7 @@ import PopUpBerhasil from "../components/box/PopUpBerhasil";
 import PopUpDiskusiBerhasil from "../components/box/PopUpDiskusiBerhasil";
 import DDCourse from "../components/DropDownButton/DDCourse";
 import SidebarModul from "../components/general/SidebarModul";
+import NavbarDash from "../components/general/NavbarDash";
 
 const Nyoba = (props) => {
   // const [Show, setShow] = useState(false);
@@ -80,12 +81,7 @@ const Nyoba = (props) => {
 
   return (
     <div>
-      // <button className={`tag-artikel${Show}`} onClick={handlerShow}></button>
-      // <button className={`tag-artikel${Show2}`} onClick={handlerShow2}></button>
-      // <button className={`tag-artikel${Show3}`} onClick={handlerShow3}></button>
-      // <button className={`tag-artikel${Show4}`} onClick={handlerShow4}></button>
-      // <button className={`tag-artikel${Show5}`} onClick={handlerShow5}></button>
-      // <button className={`tag-artikel${Show6}`} onClick={handlerShow6}></button>
+      <NavbarDash/>
     </div>
   );
 };
