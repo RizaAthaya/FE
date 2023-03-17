@@ -6,7 +6,6 @@ import "../../css/DDPembayaran.css";
 import BCA from "../../assets/BCA.svg";
 import BNI from "../../assets/BNI2svg.svg";
 import BRI from "../../assets/BRI2.svg";
-import Permata from "../../assets/Permata2.svg";
 import Bank from "../../assets/Bank.svg";
 import Down from "../../assets/Down.svg";
 

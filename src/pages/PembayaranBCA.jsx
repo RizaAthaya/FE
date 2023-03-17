@@ -5,6 +5,7 @@ import axios from "axios";
 
 //components
 import CardPembayaranBerhasil from "../components/Card/CardPembayaranBerhasil";
+import Countdown from "../components/general/CountDown";
 
 //assets
 import Background from "../assets/backgroundPayment.svg";
@@ -68,7 +69,7 @@ const PembayaranBCA = (props) => {
               <CardPembayaranBerhasil />
             </div>
             <h3 className="title-cardSpesifik">Bayar Sebelum</h3>
-            <h3 className="jam-cardSpesifik">24 : 00 : 00</h3>
+            <h3 className="jam-cardSpesifik"><Countdown/></h3>
           </div>
           <hr className="line-paySpesifik" />
 

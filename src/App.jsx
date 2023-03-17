@@ -31,7 +31,7 @@ import Pembayaran from "./pages/Pembayaran";
 import PembayaranBRI from "./pages/PembayaranBRI";
 import PembayaranBNI from "./pages/PembayaranBNI";
 import PembayaranBCA from "./pages/PembayaranBCA";
-import PembayaranPermata from "./pages/PembayaranPermata";
+
 import PembayaranSpesifikQris from "./pages/PembayaranQris";
 import DashboardNew from "./pages/DashboardNew";
 import AllCourse from "./pages/PojokBeasiswaLogin";
@@ -71,7 +71,6 @@ function App() {
           <Route path="/home" element={<Home2 />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/pembayaran" element={<Pembayaran />} />
-          <Route path="/pembayaran/permata" element={<PembayaranPermata />} />
           <Route path="/pembayaran/bca" element={<PembayaranBCA />} />
           <Route path="/pembayaran/bni" element={<PembayaranBNI />} />
           <Route path="/pembayaran/qris" element={<PembayaranSpesifikQris />} />
