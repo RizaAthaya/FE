@@ -45,7 +45,6 @@ import DetailSALogin from "./pages/DetailSALogin";
 import DetailBeasiswaLogin from "./pages/DetailBeasiswaLogin";
 
 function App() {
-  console.log(window.location.origin);
 
   // useEffect(() => {
   //   window.location.replace('http://localhost:5173/register');

@@ -5,9 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/Carousel.css";
 import "../../css/CardPB.css";
-
-//utils
-import { items } from "../utils/Datas3";
 import axios from "axios";
 
 const Carousel = (props) => {

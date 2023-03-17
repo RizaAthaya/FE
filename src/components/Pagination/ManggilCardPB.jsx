@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import "../../css/ManggilCardPB.css";
-import CryptoList from "./CryptoList";
 import Pagination from "./PaginationPB";
 import CardPBList from "../Card/CardPBList";
 

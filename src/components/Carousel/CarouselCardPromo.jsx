@@ -4,9 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../css/Carousel.css';
-import { dataCard2 } from "../utils/Datas2";
 
 const Carousel = (props) => {
+  const [state, setstate] = useState([]);
   const settings = {
     dots: true,
     infinite: false,
@@ -45,7 +45,7 @@ const Carousel = (props) => {
     <div className="carousel">
       <div className="ch1">
         <Slider {...settings}>
-          {dataCard2.map((item) => (
+          {State.map((item) => (
             <div className="card-car">
               <div className="card-top">
                 <div className="card-promo">

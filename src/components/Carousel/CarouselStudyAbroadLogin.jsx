@@ -3,15 +3,7 @@ import "../../css/CarouselStudyAbroad.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import axios from "axios";
-
-// import "./Carousel.css";
-
-import { dataCard2 } from "../utils/Datas2";
-
-//assets
-
 //components
 import Buttons from "../general/Buttons";
 
