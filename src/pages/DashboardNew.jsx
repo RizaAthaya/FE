@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../css/DashboardNew.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 //components
 // import NavbarDashboard from "../components/general/NavbarDashboard";
@@ -22,7 +23,7 @@ const DashboardNew = (props) => {
   const [semua, setSemua] = useState([]);
   const [error, setError] = useState("");
   const [Show, setShow] = useState(false);
-  const[konsultasi,setKonsultasi] = useState([]);
+  const [konsultasi, setKonsultasi] = useState([]);
   const handleClick = () => {
     setShow(!Show);
   };
@@ -75,6 +76,7 @@ const DashboardNew = (props) => {
         });
     };
     handleUser();
+    console.log(semua)
   }, []);
 
   useEffect(() => {
@@ -119,7 +121,24 @@ const DashboardNew = (props) => {
             </div>
             <hr />
             <div className="cards-class">
-              <CardKelas dataKelas={semua} />
+              {semua.map((item) => (
+                <div className="card-kelas">
+                  <img
+                    className="img-kelas"
+                    src={`https://reyhafiz.aenzt.tech${item.image}`}
+                  ></img>
+                  <div className="kotak-cardK">
+                    <div className="part-cardKelas">
+                      <h2 className="text-kelas">{item.name}</h2>
+                      <div className="bar-kelas"></div>
+                    </div>
+                    <Link to="/modul">
+                      <button className="btn-cardKelas">Mulai Belajar</button>
+                    </Link>
+                  </div>
+                </div>
+              ))}
+              
             </div>
           </div>
           <div className={`tanyaMentor-${Show}`}>
@@ -137,7 +156,6 @@ const DashboardNew = (props) => {
                 <h3>Ajukan Konsultasi</h3>
               </div>
               <hr />
-
               <div className="cards-pengajuan">
                 <div className="card-pengajuan1" onClick={handleClick}>
                   <img className="logo-pengajuan" src={Question}></img>

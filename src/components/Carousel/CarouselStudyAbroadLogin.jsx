@@ -70,7 +70,10 @@ const Carousel = (props) => {
               <div className="card-car">
                 <div className="card-top">
                   <div className="card-sa">
-                    <img className="img-sa" src={item.image}></img>
+                    <img
+                      className="img-sa"
+                      src={`https://reyhafiz.aenzt.tech${item.image}`}
+                    ></img>
                     <div className="text-part">
                       <div className="tag-part">
                         <h5 className="tag-sa">{item.tag_level.name}</h5>
@@ -78,13 +81,19 @@ const Carousel = (props) => {
                       </div>
                       <div className="main-saCard">
                         <h6 className="title-saCard">{item.name}</h6>
-                        <h6 className="harga-saCard">Rp. {item.price.toLocaleString()}</h6>
+                        <h6 className="harga-saCard">
+                          Rp. {item.price.toLocaleString()}
+                        </h6>
                         <Buttons
                           ke="/pembayaran"
                           label="Daftar mentoring"
                           styleBtn="btn-sa1"
                         ></Buttons>
-                        <Buttons ke="/detailProgramLogin" label="Lihat detail" styleBtn="btn-sa2"></Buttons>
+                        <Buttons
+                          ke="/detailProgramLogin"
+                          label="Lihat detail"
+                          styleBtn="btn-sa2"
+                        ></Buttons>
                       </div>
                     </div>
                   </div>

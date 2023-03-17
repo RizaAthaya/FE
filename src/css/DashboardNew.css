@@ -61,7 +61,7 @@
 .box-fullClass {
     background: #FAFAFF;
     width:58%;
-    height: 612px;
+    height: auto;
     border: 1px solid #86868B;
     border-radius: 16px;
     margin-right: 20px;
