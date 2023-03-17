@@ -14,15 +14,14 @@ import ManggilCardArtikel from "../components/Pagination/ManggilCardArtikel";
 import profile from "../assets/ProfileWhite.svg";
 // import clock from "../assets/ClockWhite.svg";
 
-
 const Artikel = (props) => {
-  const [Show, setShow] = useState(false);
+  const [Show, setShow] = useState(true);
   const [Show2, setShow2] = useState(false);
   const [Show3, setShow3] = useState(false);
   const [Show4, setShow4] = useState(false);
   const [Show5, setShow5] = useState(false);
   const [Show6, setShow6] = useState(false);
-  const [link, setLink] = useState("");
+  const [link, setLink] = useState("https://reyhafiz.aenzt.tech/api/articles");
 
   const handlerShow = () => {
     setShow(true);
@@ -32,6 +31,7 @@ const Artikel = (props) => {
     setShow5(false);
     setShow6(false);
     setLink("https://reyhafiz.aenzt.tech/api/articles");
+    console.log(link);
   };
   const handlerShow2 = () => {
     setShow(false);
@@ -41,6 +41,7 @@ const Artikel = (props) => {
     setShow5(false);
     setShow6(false);
     setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/1");
+    console.log(link);
   };
   const handlerShow3 = () => {
     setShow(false);
@@ -50,6 +51,7 @@ const Artikel = (props) => {
     setShow5(false);
     setShow6(false);
     setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/2");
+    console.log(link);
   };
   const handlerShow4 = () => {
     setShow(false);
@@ -59,7 +61,9 @@ const Artikel = (props) => {
     setShow5(false);
     setShow6(false);
     setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/3");
+    console.log(link);
   };
+
   const handlerShow5 = () => {
     setShow(false);
     setShow2(false);
@@ -68,6 +72,7 @@ const Artikel = (props) => {
     setShow5(true);
     setShow6(false);
     setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/4");
+    console.log(link);
   };
   const handlerShow6 = () => {
     setShow(false);
@@ -77,6 +82,7 @@ const Artikel = (props) => {
     setShow5(false);
     setShow6(true);
     setLink("https://reyhafiz.aenzt.tech/api/articles/tagArticles/5");
+    console.log(link);
   };
   return (
     <div className="whole-artikel">
@@ -105,30 +111,24 @@ const Artikel = (props) => {
       <div className="main-artikel">
         <h3 className="title-mainArtikel">Artikel Lainnya</h3>
         <div className="tags-artikel">
-          <button
-            className={`tag-artikel${Show}`}
-            onClick={handlerShow}
-          >Semua</button>
-          <button
-            className={`tag-artikel${Show2}`}
-            onClick={handlerShow2}
-          >Tips dan Trick</button>
-          <button
-            className={`tag-artikel${Show3}`}
-            onClick={handlerShow3}
-          >Inspirasi</button>
-          <button
-            className={`tag-artikel${Show4}`}
-            onClick={handlerShow4}
-          >Pendidikan</button>
-          <button
-            className={`tag-artikel${Show5}`}
-            onClick={handlerShow5}
-          >Kehidupan</button>
-          <button
-            className={`tag-artikel${Show6}`}
-            onClick={handlerShow6}
-          >Bahasa dan Budaya</button>
+          <button className={`tag-artikel${Show}`} onClick={handlerShow}>
+            Semua
+          </button>
+          <button className={`tag-artikel${Show2}`} onClick={handlerShow2}>
+            Tips dan Trick
+          </button>
+          <button className={`tag-artikel${Show3}`} onClick={handlerShow3}>
+            Inspirasi
+          </button>
+          <button className={`tag-artikel${Show4}`} onClick={handlerShow4}>
+            Pendidikan
+          </button>
+          <button className={`tag-artikel${Show5}`} onClick={handlerShow5}>
+            Kehidupan
+          </button>
+          <button className={`tag-artikel${Show6}`} onClick={handlerShow6}>
+            Bahasa dan Budaya
+          </button>
         </div>
         <ManggilCardArtikel datanyaLagi={link} />
       </div>

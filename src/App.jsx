@@ -58,8 +58,6 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/nyoba" element={<Nyoba />} />
-        <Route path="/dashboard" element={<DashboardNew />} />
-        <Route path="/modul" element={<Modul />} />
 
         <Route element={<AuthRoute />}>
           <Route path="/" element={<Home />} />
@@ -73,7 +71,6 @@ function App() {
           <Route path="/detailbeasiswa" element={<DetailBeasiswa />} />
           <Route path="/detailprogram" element={<DetailSA />} />
           <Route path="/artikel" element={<Artikel />} />
-
         </Route>
         <Route element={<ProtectedRoute />}>
           <Route path="/home" element={<Home2 />} />
@@ -98,6 +95,8 @@ function App() {
             path="/detailbeasiswalogin"
             element={<DetailBeasiswaLogin />}
           />
+          <Route path="/dashboard" element={<DashboardNew />} />
+          <Route path="/modul" element={<Modul />} />
         </Route>
       </Routes>
     </div>

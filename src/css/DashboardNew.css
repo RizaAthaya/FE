@@ -36,12 +36,8 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
-    /* or 38px */
     margin-bottom: 8px;
     letter-spacing: -0.015em;
-
-    /* Primary/50 */
-
     color: #192BC2;
 }
 .titlepart-newDash{

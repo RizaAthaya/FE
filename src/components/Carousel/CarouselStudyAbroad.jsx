@@ -6,10 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import axios from "axios";
 
-// import "./Carousel.css";
-
-import { dataCard2 } from "../utils/Datas2";
-
 //assets
 
 //components
@@ -85,7 +81,7 @@ const Carousel = (props) => {
                           label="Daftar mentoring"
                           styleBtn="btn-sa1"
                         ></Buttons>
-                        <Buttons ke="/detailProgram" label="Lihat detail" styleBtn="btn-sa2"></Buttons>
+                        <Buttons ke="/detailprogram" label="Lihat detail" styleBtn="btn-sa2"></Buttons>
                       </div>
                     </div>
                   </div>
