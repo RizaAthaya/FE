@@ -15,9 +15,7 @@ const NavbarDash = (props) => {
           <h3 className="text-pay">Kembali</h3>
         </button>
       </Link>
-      <h3 className="title-dashN">
-        IISMA : Indonesian International Student Mobility Awards
-      </h3>
+      <h3 className="title-dashN">Australian National University</h3>
       <Link to="/home">
         <img className="logo-dashN" src={logo}></img>
       </Link>
