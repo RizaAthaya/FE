@@ -9,6 +9,7 @@ const CardKomunitasList = ({ KomunitasData }) => {
         return (
           <CardKomunitas
             key={index}
+            imgProfile={item.user.image}
             nama={item.user.name}
             waktu={item.updated_at}
             judul={item.title}

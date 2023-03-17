@@ -8,7 +8,7 @@ import PaginationCardSA from "./PaginationCardSA";
 const ManggilCardSA = () => {
   // const [beasiswaData, setBeasiswaData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(2);
+  const [postsPerPage, setPostsPerPage] = useState(9);
   // const [tagLevel, setTagLevel] = useState([]);
   // const [tagCost, setTagCost] = useState([]);
   // const [tagCountries, setTagCountries] = useState([]);
@@ -53,7 +53,7 @@ const ManggilCardSA = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "https://reyhafiz.aenzt.tech/api/programs/new"
+        "https://reyhafiz.aenzt.tech/api/programs"
       );
       setProgram(response.data.data);
       console.log(response.data);

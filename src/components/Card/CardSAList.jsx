@@ -29,7 +29,7 @@ const CardSAList = ({ beasiswaData}) => {
                   <div className="total-cardSAnya">
                   <CardSA
                     key={index}
-                    linkImg=""
+                    linkImg={items.image}
                     tag1={items.tag_level.name}
                     tag2={items.tag_cost.name}
                     title={items.name}

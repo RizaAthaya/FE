@@ -10,7 +10,7 @@ import PaginationCardArtikel from "./PaginationCardArtikel";
 const ManggilCardArtikel = ({datanyaLagi}) => {
   const [ArtikelData, setArtikelData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(3);
+  const [postsPerPage, setPostsPerPage] = useState(9);
 
   useEffect(() => {
     async function fetchData() {
@@ -18,7 +18,7 @@ const ManggilCardArtikel = ({datanyaLagi}) => {
         datanyaLagi
       );
       setArtikelData(response.data.data);
-      console.log(response.data);
+      console.log(response);
     }
     fetchData();
     // setArtikelData(datanya);

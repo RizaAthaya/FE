@@ -5,8 +5,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Down from "../../assets/Down.svg";
 const DropDownPopUp = (props) => {
-  const [program, setProgram] = useState("");
-  const [error,setError] = useState("");
+  const [program, setProgram] = useState([]);
+  const [error, setError] = useState("");
   useEffect(() => {
     const localStore = localStorage.getItem("token");
     const token = localStore;
@@ -62,11 +62,11 @@ const DropDownPopUp = (props) => {
 
         <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul>
-            {/** Tempat mapping disini za */}
             <div className="semua-map">
-              <DropdownItem img="" text={"Dashboard"} onClick="/dashboard" />
-              <DropdownItem img="" text={"My Profile"} onClick="/profile" />
-              <DropdownItem img="" text={"Logout"} />
+              {/** Tempat mapping disini za */}
+              {program.map((item) => (
+                <DropdownItem img="" text={item.name} onClick="/dashboard" />
+              ))}
             </div>
           </ul>
         </div>

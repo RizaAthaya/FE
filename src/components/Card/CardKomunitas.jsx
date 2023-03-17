@@ -8,7 +8,7 @@ import Profile from "../../assets/Profile.svg";
 import Chat from "../../assets/Chat.svg";
 import plus from "../../assets/Plus.svg";
 
-const CardKomunitas = ({ nama, waktu, judul, desc, tags, reply }) => {
+const CardKomunitas = ({ nama, waktu, judul, desc, tags, reply , imgProfile}) => {
   let navigate = useNavigate();
   const handleClick = () => {
     if(window.localStorage.getItem('token')){
@@ -20,7 +20,7 @@ const CardKomunitas = ({ nama, waktu, judul, desc, tags, reply }) => {
   return (
     <div className="all-cardKomunitas">
       <div className="profile-komunitas">
-        <img src="" className="profilepart-komunitas"></img>
+        <img src={`https://reyhafiz.aenzt.tech${imgProfile}`} className="profilepart-komunitas"></img>
       </div>
       <div className="card-k">
         <div className="part1-cardk">

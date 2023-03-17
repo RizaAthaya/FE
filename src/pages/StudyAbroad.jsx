@@ -34,7 +34,6 @@ const StudyAbroad = (props) => {
   //   console.log(response.data);
   // };
   const [suggestions, setSuggestions] = useState("");
-
   const debounce = (func) => {
     let timer;
     return function (...args) {

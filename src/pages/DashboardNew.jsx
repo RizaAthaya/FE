@@ -19,6 +19,7 @@ import Aktivitas from "../assets/Aktivitas.svg";
 
 const DashboardNew = (props) => {
   const [Nama, setNama] = useState("");
+  const [semua, setSemua] = useState([]);
   const [error, setError] = useState("");
   const [Show, setShow] = useState(false);
   const handleClick = () => {
@@ -49,13 +50,35 @@ const DashboardNew = (props) => {
           console.log(error);
           setError(error.response.data);
         });
-      
     }
     fetchData();
   }, []);
+  useEffect(() => {
+    const localStore = localStorage.getItem("token");
+    const token = localStore;
+    const handleUser = () => {
+      axios
+        .get("https://reyhafiz.aenzt.tech/api/users/programs", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        .then((response) => {
+          console.log(response.data);
+          console.log(response.data.data)
+          setSemua(response.data.data);
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+    };
+    handleUser();
+  }, []);
+
   return (
     <div className="new-Dash">
-      <Navbar2/>
+      <Navbar2 />
       <div className="whole-newDash">
         <div className="titlepart-newDash">
           <h2 className="title-newDash">{`Selamat datang ${Nama}!`} </h2>
@@ -72,7 +95,7 @@ const DashboardNew = (props) => {
             </div>
             <hr />
             <div className="cards-class">
-              <CardKelas />
+              <CardKelas dataKelas={semua}/>
             </div>
           </div>
           <div className={`tanyaMentor-${Show}`}>
@@ -111,7 +134,7 @@ const DashboardNew = (props) => {
               <hr />
 
               <div className="cards-consultation">
-                <CardKonsul />
+                <CardKonsul dataKonsul={semua}/>
               </div>
             </div>
           </div>

@@ -2,14 +2,16 @@ import React from "react";
 import "../../css/Footer.css";
 
 //assets
+import logo from "../../assets/LogoSWUWhite.svg";
 import Call from "../../assets/Call.svg";
 import Mail from "../../assets/Mail.svg";
+
 const Footer = (props) => {
   return (
     <div className="footer">
       <div className="footer-parts">
         <div className="footer1">
-          <h2>LOGO</h2>
+          <h2><img src={logo}></img></h2>
           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
           <h4>© 2023 Lorem. Hak cipta dilindungi.</h4>
         </div>
