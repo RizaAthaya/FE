@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import "../../css/CarouselSwiper.css"
 
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper";
@@ -49,7 +50,7 @@ export default () => {
         <SwiperSlide>
           <div>
             <div className="card-PM">
-              <img className="img-PM" src=""></img>
+              <img className="img-PM" src={`https://reyhafiz.aenzt.tech${item.image}`}></img>
               <h3 className="nama-PM">{item.name}</h3>
               <h3 className="tag-PM">{item.scholar_history}</h3>
               <h3 className="uni-PM">{item.study_track}</h3>

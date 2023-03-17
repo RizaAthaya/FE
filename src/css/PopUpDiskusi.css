@@ -77,3 +77,10 @@
     border-radius: 8px;
     padding: 12px 24px;
 }
+.diskusi-false{
+    display: none;
+}
+.diskusi-true{
+    display: block;
+    position: absolute;
+}

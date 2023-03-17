@@ -2,8 +2,15 @@
     color: black;
 }
 .ddCourse .menu-trigger{
+    margin: 20px 0;
     display: flex;
+}
+.ddCourse .dropdown-menu.inactive{
+    display: none;
 }
 .ddCourse .dropdown-menu.active{
     display:block;
+}
+.ddCourse .btn-ilang{
+    background-color: transparent;
 }

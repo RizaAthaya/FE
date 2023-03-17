@@ -32,8 +32,16 @@ const CardSA = ({ linkImg, tag1, tag2, title, harga }) => {
           <div className="main-saCard">
             <h6 className="title-saCard">{title}</h6>
             <h6 className="harga-saCard">Rp. {harga.toLocaleString()}</h6>
-            <Buttons label="Daftar mentoring" styleBtn="btn-sa1"></Buttons>
-            <Buttons label="Lihat detail" styleBtn="btn-sa2" onClick={handleClick}></Buttons>
+            <Buttons
+              ke="/pembayaran"
+              label="Daftar mentoring"
+              styleBtn="btn-sa1"
+            ></Buttons>
+            <Buttons
+              ke="/detailProgramLogin"
+              label="Lihat detail"
+              styleBtn="btn-sa2"
+            ></Buttons>
           </div>
         </div>
       </div>

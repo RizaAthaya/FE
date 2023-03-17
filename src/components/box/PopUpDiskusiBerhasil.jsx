@@ -1,5 +1,8 @@
 import React from "react";
 
+//assets
+import exit from "../../assets/ExitBerhasil.svg"
+
 const PopUpDiskusiBerhasil = (props) => {
   return (
     <div className="popUp-berhasilKonsul">

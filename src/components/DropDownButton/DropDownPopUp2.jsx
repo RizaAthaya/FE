@@ -38,9 +38,9 @@ const DropDownPopUp2 = props => {
 
         <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul>
-            <DropdownItem img="" text={"Dashboard"} onClick="/dashboard"/>
-            <DropdownItem img="" text={"My Profile"} onClick="/profile"/>
-            <DropdownItem img="" text={"Logout"}/>
+            <DropdownItem img="" text={"22 Maret 2023"} onClick="/dashboard"/>
+            <DropdownItem img="" text={"23 Maret 2023"} onClick="/profile"/>
+            <DropdownItem img="" text={"24 Maret 2023"}/>
           </ul>
         </div>
       </div>

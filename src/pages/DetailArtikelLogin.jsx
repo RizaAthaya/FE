@@ -18,7 +18,7 @@ const DetailArtikelLogin = (props) => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "https://reyhafiz.aenzt.tech/api/articles"
+        "https://reyhafiz.aenzt.tech/api/articles/1/recomend"
       );
       setArtikelData(response.data.data);
       console.log(response.data);

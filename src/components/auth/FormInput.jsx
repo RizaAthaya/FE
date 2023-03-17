@@ -32,6 +32,7 @@ const FormInput = (props) => {
       })
       .catch((error) => {
         console.log(error);
+        alert("Email atau password anda salah")
         setError(error.response.data);
       });
   };

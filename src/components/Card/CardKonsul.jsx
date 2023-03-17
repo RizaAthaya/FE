@@ -15,16 +15,12 @@ const CardKonsul = ({ dataKonsul }) => {
         <>
           <h3 className="judul-cardK">Tanya Mentor</h3>
           <div className="part-cardK">
-            <img className="icon-cardK" src={user}></img>
-            <h3 className="text-partCardK">{item.mentor.name}</h3>
-          </div>
-          <div className="part-cardK">
             <img className="icon-cardK" src={kalender}></img>
-            <h3 className="text-partCardK">18 Maret 2023</h3>
+            <h3 className="text-partCardK">{item.date}</h3>
           </div>
           <div className="part-cardK">
             <img className="icon-cardK" src={clock}></img>
-            <h3 className="text-partCardK">09.00 - 10.00 WIB</h3>
+            <h3 className="text-partCardK">{item.start} - {item.finish}</h3>
           </div>
           <div className="part-cardK">
             <img className="icon-cardK" src={map}></img>

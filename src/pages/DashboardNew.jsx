@@ -22,6 +22,7 @@ const DashboardNew = (props) => {
   const [semua, setSemua] = useState([]);
   const [error, setError] = useState("");
   const [Show, setShow] = useState(false);
+  const[konsultasi,setKonsultasi] = useState([]);
   const handleClick = () => {
     setShow(!Show);
   };
@@ -65,8 +66,31 @@ const DashboardNew = (props) => {
         })
         .then((response) => {
           console.log(response.data);
-          console.log(response.data.data)
+          console.log(response.data.data);
           setSemua(response.data.data);
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.response.data);
+        });
+    };
+    handleUser();
+  }, []);
+
+  useEffect(() => {
+    const localStore = localStorage.getItem("token");
+    const token = localStore;
+    const handleUser = () => {
+      axios
+        .get("https://reyhafiz.aenzt.tech/api/consultations", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+        .then((response) => {
+          console.log(response.data);
+          console.log(response.data.data);
+          setKonsultasi(response.data.data);
         })
         .catch((error) => {
           console.log(error);
@@ -95,7 +119,7 @@ const DashboardNew = (props) => {
             </div>
             <hr />
             <div className="cards-class">
-              <CardKelas dataKelas={semua}/>
+              <CardKelas dataKelas={semua} />
             </div>
           </div>
           <div className={`tanyaMentor-${Show}`}>
@@ -134,7 +158,7 @@ const DashboardNew = (props) => {
               <hr />
 
               <div className="cards-consultation">
-                <CardKonsul dataKonsul={semua}/>
+                <CardKonsul dataKonsul={konsultasi} />
               </div>
             </div>
           </div>
