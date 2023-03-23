@@ -54,7 +54,6 @@ function App() {
   return (
     <div className="App">
       <Routes>
-      <Route path="/nyoba" element={<Nyoba />} />
         <Route element={<AuthRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/detailkomunitas" element={<DetailKomunitas />} />
