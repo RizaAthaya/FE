@@ -32,7 +32,7 @@ const CardSAList = ({ beasiswaData}) => {
                     id = {items.id}
                     linkImg={items.image}
                     tag1={items.tag_level.name}
-                    tag2={items.tag_cost.name}
+                    tag2={items.tag_countries.name}
                     title={items.name}
                     harga={items.price}
                   />

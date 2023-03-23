@@ -102,3 +102,27 @@
 .semua-pagination {
     margin-top: 148px;
 }
+
+.reset-filter {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+    text-decoration-line: underline;
+    color: #192BC2;
+    justify-content: center;
+    background-color: transparent;
+    display: flex;
+    margin-left: 16px;
+    transition: none;
+    height: 50px;
+    border: none;
+}
+.reset-filter:hover{
+    border: none;
+    color: #121216;
+}
+.reset-filter:after{
+    border: none;
+}

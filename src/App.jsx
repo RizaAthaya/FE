@@ -10,6 +10,7 @@ import ProtectedRoute from "./components/Routes/ProtectedRoute";
 //pages
 
 // free for all
+import Nyoba from "./pages/Nyoba";
 import Home from "./pages/Home";
 import PojokBeasiswa from "./pages/PojokBeasiswa";
 import Komunitas from "./pages/Komunitas";
@@ -53,6 +54,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+      <Route path="/nyoba" element={<Nyoba />} />
         <Route element={<AuthRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/detailkomunitas" element={<DetailKomunitas />} />
