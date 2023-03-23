@@ -10,7 +10,6 @@ import ProtectedRoute from "./components/Routes/ProtectedRoute";
 //pages
 
 // free for all
-import Nyoba from "./pages/Nyoba";
 import Home from "./pages/Home";
 import PojokBeasiswa from "./pages/PojokBeasiswa";
 import Komunitas from "./pages/Komunitas";
