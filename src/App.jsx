@@ -59,11 +59,11 @@ function App() {
           <Route path="/pojokbeasiswa" element={<PojokBeasiswa />} />
           <Route path="/komunitas" element={<Komunitas />} />
           <Route path="/studyabroad" element={<StudyAbroad />} />
-          <Route path="/detailartikel" element={<DetailArtikel />} />
+          <Route path="/detailartikel/:id" element={<DetailArtikel />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/detailbeasiswa" element={<DetailBeasiswa />} />
-          <Route path="/detailprogram" element={<DetailSA />} />
+          <Route path="/detailbeasiswa/:id" element={<DetailBeasiswa />} />
+          <Route path="/detailprogram/:id" element={<DetailSA />} />
           <Route path="/artikel" element={<Artikel />} />
         </Route>
         <Route element={<ProtectedRoute />}>
@@ -74,7 +74,7 @@ function App() {
           <Route path="/pembayaran/bni" element={<PembayaranBNI />} />
           <Route path="/pembayaran/qris" element={<PembayaranSpesifikQris />} />
           <Route path="/pembayaran/bri" element={<PembayaranBRI />} />
-          <Route path="/detailartikellogin" element={<DetailArtikelLogin />} />
+          <Route path="/detailartikellogin/:id" element={<DetailArtikelLogin />} />
           <Route path="/artikelLogin" element={<ArtikelLogin />} />
           <Route path="/komunitaslogin" element={<KomunitasLogin />} />
           <Route path="/pojokbeasiswalogin" element={<AllCourse />} />
@@ -83,9 +83,9 @@ function App() {
             path="/detailkomunitaslogin"
             element={<DetailKomunitasLogin />}
           />
-          <Route path="/detailprogramlogin" element={<DetailSALogin />} />
+          <Route path="/detailprogramlogin/:id" element={<DetailSALogin />} />
           <Route
-            path="/detailbeasiswalogin"
+            path="/detailbeasiswalogin/:id"
             element={<DetailBeasiswaLogin />}
           />
           <Route path="/dashboard" element={<DashboardNew />} />

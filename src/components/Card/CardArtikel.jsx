@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 import { Navigate, Outlet } from "react-router-dom"
 import { useNavigate } from 'react-router';
 
-const CardArtikel = ({ tag_artikel, title, created, description,foto }) => {
+const CardArtikel = ({ tag_artikel, title, created, description,foto , id}) => {
   let navigate = useNavigate();
   const handleClick = () => {
     if(window.localStorage.getItem('token')){
-      navigate('/detailartikelLogin')
+      navigate(`/detailartikellogin/${id}`)
     } else{
-      navigate('/detailartikel')
+      navigate(`/detailartikel/${id}`)
     }
   }
   return (

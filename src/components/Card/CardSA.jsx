@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router';
 
 
 import Buttons from "../general/Buttons";
-const CardSA = ({ linkImg, tag1, tag2, title, harga }) => {
+const CardSA = ({ linkImg, tag1, tag2, title, harga, id}) => {
   const handleClick = () => {
     if (window.localStorage.getItem("token")) {
-      navigate("/detailprogramlogin");
+      navigate(`/detailprogramlogin/${id}`);
     } else {
-      navigate("/detailprogram");
+      navigate(`/detailprogram/${id}`);
     }
   };
   const handleClick2 = () => {

@@ -13,30 +13,39 @@ import Clock from "../assets/Clock.svg";
 import Profile from "../assets/Profile.svg";
 
 const DetailArtikelLogin = (props) => {
+  const [Artikel, setArtikel] = useState([]);
+  const [tagArtikel, setTagArtikel] = useState([]);
   const [ArtikelData, setArtikelData] = useState([]);
+  const { id } = useParams();
 
-  useEffect(() => {
-    async function fetchData() {
+  const getRecommend = async () => {
+    try {
       const response = await axios.get(
-        "https://reyhafiz.aenzt.tech/api/articles/1/recomend"
+        `https://reyhafiz.aenzt.tech/api/articles/${id}/recomend`
       );
       setArtikelData(response.data.data);
-      console.log(response.data);
+    } catch (err) {
+      console.log(err);
     }
-    fetchData();
-  }, []);
-  useEffect(() => {
-    async function fetchData() {
+  };
+
+  const getPerId = async () => {
+    try {
       const response = await axios.get(
-        "https://reyhafiz.aenzt.tech/api/articles/1"
+        `https://reyhafiz.aenzt.tech/api/articles/${id}`
       );
       setArtikel(response.data.data);
-      setTagArtikel(response.data.data.tag_artikel);
-      console.log(response.data);
+      setTagArtikel(response.data.data.tag_article);
+      console.log(response.data.data);
+    } catch (err) {
+      console.log(err);
     }
-    fetchData();
-  }, []);
+  };
 
+  useEffect(() => {
+    getPerId();
+    getRecommend();
+  }, []);
   return (
     <div className="semua-DA">
       <Navbar className="nav-DA" />
@@ -44,7 +53,7 @@ const DetailArtikelLogin = (props) => {
         <div className="bread-crumb"> Beranda - Artikel - judul Artikel</div>
         <div className="whole-artikel2">
           <div className="header2-artikel">
-            <div className="tag2-artikel">Tips and Trick</div>
+            <div className="tag2-artikel">{tagArtikel.name}</div>
             <div className="title2-artikel">{Artikel.title}</div>
             <div className="tanggal2-artikel">{Artikel.updated_at}</div>
           </div>

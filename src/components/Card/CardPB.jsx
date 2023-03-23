@@ -4,8 +4,10 @@ import "../../css/CardPB.css";
 import { useNavigate } from "react-router";
 
 const CardPB = ({
+  id,
   tag_level,
   tag_cost,
+  tag_countries,
   scholarship_provider,
   name,
   close_registration,
@@ -14,16 +16,16 @@ const CardPB = ({
   let navigate = useNavigate();
   const handleClick = () => {
     if (window.localStorage.getItem("token")) {
-      navigate("/detailbeasiswaLogin");
+      navigate(`/detailbeasiswalogin/${id}`);
     } else {
-      navigate("/detailbeasiswa");
+      navigate(`/detailbeasiswa/${id}`);
     }
   };
   return (
     <div className="card-pb">
       <div className="tagpb-part">
         <h5 className="pb-tag1">{tag_level}</h5>
-        <h5 className="pb-tag2">Multiple Countries</h5>
+        <h5 className="pb-tag2">{tag_countries}</h5>
         <h5 className="pb-tag3">{tag_cost}</h5>
       </div>
       <div className="textpb-part">

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../css/DDDB2.css";
 
-const DDDB2 = (props) => {
+const DDDB2 = ({data}) => {
   return (
     <div className="dddb2">
       <div className="dddb2-trigger">
@@ -9,8 +9,8 @@ const DDDB2 = (props) => {
       </div>
       <div className="dddb2-container">
         <ul>
-          <li>Visa</li>
-          <li>Health insurance</li>
+          <li>{data.benefit}</li>
+          
         </ul>
       </div>
     </div>

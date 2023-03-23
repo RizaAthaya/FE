@@ -237,9 +237,10 @@
 
 
 .box-kananSA {
+    margin: auto;
     background: rgba(169, 177, 244, 0.2);
     margin-top: 24px;
-    padding: 48px;
+    padding: 48px 24px;
     width: 35%;
     height: 216px;
     border: 1px solid #192BC2;
@@ -247,6 +248,7 @@
 }
 
 .title-boxKanan {
+    padding: 0 12px;
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 20px;
@@ -257,7 +259,10 @@
 }
 
 .btn-boxKanan {
-    padding: 12px 24px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
     width: 304px;
     height: 48px;
     background: #192BC2;

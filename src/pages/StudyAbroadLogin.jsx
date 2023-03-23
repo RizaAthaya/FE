@@ -1,23 +1,28 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import "../css/StudyAbroad.css";
 import axios from "axios";
 
 // components
 // import Manggil from "../Pagination/Manggil"
 import Navbar from "../components/general/Navbar2";
-import CarouselStudyAbroad from "../components/Carousel/CarouselStudyAbroadLogin";
+import CarouselStudyAbroad from "../components/Carousel/CarouselStudyAbroad";
 import Footer from "../components/general/Footer";
 import ManggilCardSA from "../components/Pagination/ManggilCardSA";
 import Search from "../components/general/Search";
 import DropDown from "../components/DropDownButton/DDBFilter";
 import DropDown2 from "../components/DropDownButton/DDBFilter2";
 import DropDown3 from "../components/DropDownButton/DDBFilter3";
-import { Link } from "react-router-dom";
 
 //assets
 import Cari from "../assets/Search.svg";
-
 const StudyAbroadLogin = (props) => {
+  const [search, setSearch] = useState("");
+  // const [scholarshipsData, setScholarshipsData] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [linknya, setLink] = useState(
+    `https://reyhafiz.aenzt.tech/api/programs`
+  );
   // const [searchProgram, setSearchProgram] = useState([]);
   // const [program, setProgram] = useState([]);
 
@@ -33,27 +38,38 @@ const StudyAbroadLogin = (props) => {
   //   setProgram(response.data);
   //   console.log(response.data);
   // };
-  const [suggestions, setSuggestions] = useState("");
 
-  const debounce = (func) => {
-    let timer;
-    return function (...args) {
-      const context = this;
-      if (timer) clearTimeout(timer);
-      timer = setTimeout(() => {
-        timer = null;
-        func.apply(context, args);
-      }, 500);
-    };
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    setSearchParams({ name: search });
   };
 
-  const handleChange = (value) => {
-    fetch(`https://reyhafiz.aenzt.tech/api/programs/search?name=${title}`)
-      .then((res) => res.json())
-      .then((json) => setSuggestions(json.data.items));
-  };
+  useEffect(() => {
+    handleSearch();
+    setLink(`https://reyhafiz.aenzt.tech/api/programs/search?name=${search}`);
+  }, [search]);
 
-  const optimizedFn = useCallback(debounce(handleChange), []);
+  // const [suggestions, setSuggestions] = useState("");
+
+  // const debounce = (func) => {
+  //   let timer;
+  //   return function (...args) {
+  //     const context = this;
+  //     if (timer) clearTimeout(timer);
+  //     timer = setTimeout(() => {
+  //       timer = null;
+  //       func.apply(context, args);
+  //     }, 500);
+  //   };
+  // };
+
+  // const handleChange = (value) => {
+  //   fetch(`https://reyhafiz.aenzt.tech/api/programs/search?name=${title}`)
+  //     .then((res) => res.json())
+  //     .then((json) => setSuggestions(json.data.items));
+  // };
+
+  // const optimizedFn = useCallback(debounce(handleChange), []);
 
   return (
     <div className="whole-sa">
@@ -79,8 +95,21 @@ const StudyAbroadLogin = (props) => {
         <div className="nav-tengah">
           <div className="nav-sa2">
             <div className="search-filter">
-              {/** Search */}
-              <Search />
+              <form onSubmit={handleSearch}>
+                {/** Search */}
+                <div className="search-box">
+                  <div className="search-part">
+                    <img className="img-search" src={Cari}></img>
+                    <input
+                      onChange={(e) => setSearch(e.target.value)}
+                      className="cari-box"
+                      type="search"
+                      placeholder="Cari layanan mentoring"
+                    ></input>
+                  </div>
+                  <button className="btn-search">Cari</button>
+                </div>
+              </form>
             </div>
             <div className="nav-filter">
               <DropDown />
@@ -90,7 +119,7 @@ const StudyAbroadLogin = (props) => {
           </div>
         </div>
         <div className="semua-pagination">
-          <ManggilCardSA/>
+          <ManggilCardSA data={linknya} />
         </div>
       </div>
       <Footer />

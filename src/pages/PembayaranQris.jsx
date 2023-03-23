@@ -66,7 +66,7 @@ const PembayaranSpesifikQris = (props) => {
           </div>
           <div className="atas-cardSpesifik">
             <h3 className="title-cardSpesifik">Bayar Sebelum</h3>
-            <h3 className="jam-cardSpesifik"><CountDown/></h3>
+            <h3 className="jam-cardSpesifik"><Countdown/></h3>
           </div>
           <hr className="line-paySpesifik" />
           <div className="bottom-cardSpesfik">

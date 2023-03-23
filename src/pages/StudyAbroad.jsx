@@ -1,4 +1,5 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import "../css/StudyAbroad.css";
 import axios from "axios";
 
@@ -15,9 +16,14 @@ import DropDown3 from "../components/DropDownButton/DDBFilter3";
 
 //assets
 import Cari from "../assets/Search.svg";
-import { Link } from "react-router-dom";
 
 const StudyAbroad = (props) => {
+  const [search, setSearch] = useState("");
+  // const [scholarshipsData, setScholarshipsData] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [linknya, setLink] = useState(
+    `https://reyhafiz.aenzt.tech/api/programs`
+  );
   // const [searchProgram, setSearchProgram] = useState([]);
   // const [program, setProgram] = useState([]);
 
@@ -33,26 +39,16 @@ const StudyAbroad = (props) => {
   //   setProgram(response.data);
   //   console.log(response.data);
   // };
-  const [suggestions, setSuggestions] = useState("");
-  const debounce = (func) => {
-    let timer;
-    return function (...args) {
-      const context = this;
-      if (timer) clearTimeout(timer);
-      timer = setTimeout(() => {
-        timer = null;
-        func.apply(context, args);
-      }, 500);
-    };
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    setSearchParams({ name: search });
   };
 
-  const handleChange = (value) => {
-    fetch(`https://reyhafiz.aenzt.tech/api/programs/search?name=${title}`)
-      .then((res) => res.json())
-      .then((json) => setSuggestions(json.data.items));
-  };
-
-  const optimizedFn = useCallback(debounce(handleChange), []);
+  useEffect(() => {
+    handleSearch();
+    setLink(`https://reyhafiz.aenzt.tech/api/programs/search?name=${search}`);
+  }, [search]);
 
   return (
     <div className="whole-sa">
@@ -66,7 +62,8 @@ const StudyAbroad = (props) => {
         <div className="header-sa">
           <div className="title-sa">Mentoring</div>
           <div className="desc-sa">
-          Dapatkan bimbingan dari mentor berpengalaman untuk membantumu meraih beasiswa impianmu.
+            Dapatkan bimbingan dari mentor berpengalaman untuk membantumu meraih
+            beasiswa impianmu.
           </div>
         </div>
       </div>
@@ -77,8 +74,21 @@ const StudyAbroad = (props) => {
         <div className="nav-tengah">
           <div className="nav-sa2">
             <div className="search-filter">
-              {/** Search */}
-              <Search />
+              <form onSubmit={handleSearch}>
+                {/** Search */}
+                <div className="search-box">
+                  <div className="search-part">
+                    <img className="img-search" src={Cari}></img>
+                    <input
+                      onChange={(e) => setSearch(e.target.value)}
+                      className="cari-box"
+                      type="search"
+                      placeholder="Cari layanan mentoring"
+                    ></input>
+                  </div>
+                  <button className="btn-search">Cari</button>
+                </div>
+              </form>
             </div>
             <div className="nav-filter">
               <DropDown />
@@ -88,7 +98,7 @@ const StudyAbroad = (props) => {
           </div>
         </div>
         <div className="semua-pagination">
-        <ManggilCardSA/>
+          <ManggilCardSA data={linknya} />
         </div>
       </div>
       <Footer />

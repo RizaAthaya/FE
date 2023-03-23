@@ -3,15 +3,18 @@ import "../../css/CarouselStudyAbroad.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useNavigate } from 'react-router';
 import axios from "axios";
 
 //assets
 
 //components
 import Buttons from "../general/Buttons";
+import CardSA from "../Card/CardSA";
 
 const Carousel = (props) => {
+  let navigate = useNavigate();
+  let id = 0;
   const [newProgram, setNewProgram] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -23,6 +26,14 @@ const Carousel = (props) => {
     }
     fetchData();
   }, []);
+
+  const handleDetail = ({id}) => {
+    if (window.localStorage.getItem("token")) {
+      navigate(`/detailprogramlogin/${id}`);
+    } else {
+      navigate(`/detailprogram/${id}`);
+    }
+  }
   const settings = {
     dots: true,
     infinite: false,
@@ -62,31 +73,14 @@ const Carousel = (props) => {
       <div className="carousel">
         <div className="ch1">
           <Slider {...settings}>
-            {newProgram.map((item) => (
-              <div className="card-car">
-                <div className="card-top">
-                  <div className="card-sa">
-                  
-                    <img className="img-sa" src={`https://reyhafiz.aenzt.tech${item.image}`}></img>
-                    <div className="text-part">
-                      <div className="tag-part">
-                        <h5 className="tag-sa">{item.tag_level.name}</h5>
-                        <h5 className="tag-sa">{item.tag_cost.name}</h5>
-                      </div>
-                      <div className="main-saCard">
-                        <h6 className="title-saCard">{item.name}</h6>
-                        <h6 className="harga-saCard">Rp. {item.price.toLocaleString()}</h6>
-                        <Buttons
-                          ke="/login"
-                          label="Daftar mentoring"
-                          styleBtn="btn-sa1"
-                        ></Buttons>
-                        <Buttons ke="/detailprogram" label="Lihat detail" styleBtn="btn-sa2"></Buttons>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {newProgram.map((items, index) => (
+              <CardSA key={index}
+              id = {items.id}
+              linkImg={items.image}
+              tag1={items.tag_level.name}
+              tag2={items.tag_cost.name}
+              title={items.name}
+              harga={items.price}/>
             ))}
           </Slider>
         </div>

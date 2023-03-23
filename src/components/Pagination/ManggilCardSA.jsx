@@ -5,7 +5,7 @@ import "../../css/ManggilCardSA.css";
 import CardSAList from "../Card/CardSAList";
 import PaginationCardSA from "./PaginationCardSA";
 
-const ManggilCardSA = () => {
+const ManggilCardSA = ({data}) => {
   // const [beasiswaData, setBeasiswaData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(9);
@@ -53,13 +53,13 @@ const ManggilCardSA = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "https://reyhafiz.aenzt.tech/api/programs"
+        data
       );
       setProgram(response.data.data);
       console.log(response.data);
     }
     fetchData();
-  }, []);
+  }, [data]);
   // setProgram(datanya);
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;

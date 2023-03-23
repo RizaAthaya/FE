@@ -8,21 +8,37 @@ import PaginationKomunitas from "./PaginationKomunitas";
 // import CardPBList from "../Card/CardPBList";
 import CardKomunitasList from "../Card/CardKomunitasList";
 
-const ManggilKomunitas = () => {
+const ManggilKomunitas = ({data}) => {
   const [KomunitasData, setKomunitasData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(3);
 
-  useEffect(() => {
-    async function fetchData() {
+  
+  const getData = async () => {
+    try{
       const response = await axios.get(
-        "https://reyhafiz.aenzt.tech/api/discussions"
-      );
-      setKomunitasData(response.data.data);
-      console.log(response.data);
+        data
+       );
+       setKomunitasData(response.data.data);
+       console.log(response.data);
+       console.log(response.data.data)
+    } catch(err){
+      console.log(err);
     }
-    fetchData();
-  }, []);
+  }
+  useEffect(() => {
+    getData();
+  }, [data]);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get(
+  //       data
+  //     );
+  //     setKomunitasData(response.data.data);
+  //     console.log(response.data);
+  //   }
+  //   fetchData();
+  // }, [data]);
 
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;

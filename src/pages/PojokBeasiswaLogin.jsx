@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import "../css/PojokBeasiswa.css";
 import styled from "styled-components";
 
@@ -6,14 +7,16 @@ import styled from "styled-components";
 import Navbar from "../components/general/Navbar2";
 import Footer from "../components/general/Footer";
 import CardPB from "../components/Card/CardPB";
-import BoxInputFilter from "../components/box/BoxInputFilter";
-
+// import BoxInputFilter from "../components/box/BoxInputFilter";
 import ManggilCardPB from "../components/Pagination/ManggilCardPB";
 import DropDown from "../components/DropDownButton/DDBFilter";
 import DropDown2 from "../components/DropDownButton/DDBFilter2";
 import DropDown3 from "../components/DropDownButton/DDBFilter3";
-import { Link } from "react-router-dom";
 import BoxFilterTag from "../components/box/BoxFilterTag";
+
+//assets
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 // const FilterMini = styled.nav`
 //   padding: 8px 16px;
@@ -25,6 +28,25 @@ import BoxFilterTag from "../components/box/BoxFilterTag";
 // `;
 
 const AllCourse = (props) => {
+  const [search, setSearch] = useState("");
+  // const [scholarshipsData, setScholarshipsData] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [linknya, setLink] = useState(
+    `https://reyhafiz.aenzt.tech/api/scholarships`
+  );
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    setSearchParams({ name: search });
+  };
+  useEffect(() => {
+    handleSearch();
+    // searching();
+    setLink(
+      `https://reyhafiz.aenzt.tech/api/scholarships/search?name=${search}`
+    );
+  }, [search]);
+
   return (
     <div className="whole-sec4">
       <Navbar />
@@ -37,26 +59,40 @@ const AllCourse = (props) => {
         <div className="main-img">
           <h3 className="title-pb">Pojok Beasiswa</h3>
           <h5 className="desc-pb">
-          Temukan ratusan informasi beasiswa terlengkap dan terbaru dari berbagai negara di Pojok Beasiswa kami.
+            Temukan ratusan informasi beasiswa terlengkap dan terbaru dari
+            berbagai negara di Pojok Beasiswa kami.
           </h5>
         </div>
         <div className="main-part">
-          <div className="filter-bar">
-            <BoxInputFilter />
-            <button type="submit" className="btn-filterBar">
-              Cari
-            </button>
-          </div>
+          <form onSubmit={handleSearch}>
+            <div className="filter-bar">
+              <div className="boxInputFilter">
+                {/** Search part */}
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+                <input
+                  onChange={(e) => setSearch(e.target.value)}
+                  type="search"
+                  placeholder="Cari beasiswa"
+                  className="inputFilter"
+                ></input>
+              </div>
+              <button type="submit" className="btn-filterBar">
+                Cari
+              </button>
+            </div>
+          </form>
         </div>
         <div className="semua-bawah-filter">
           <div className="nav-section">
             <BoxFilterTag />
           </div>
-          <ManggilCardPB />
+          {/** Pagination Part */}
+          <ManggilCardPB dataLink={linknya} />
         </div>
       </div>
-
-      <Footer />
+      <div className="footerPB">
+        <Footer />
+      </div>
     </div>
   );
 };
