@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/PembayaranQris.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 
@@ -18,6 +18,7 @@ const PembayaranSpesifikQris = (props) => {
   const navigate = useNavigate();
   const [Qris, setQris] = useState("");
   const [error, setError] = useState("");
+  const { id } = useParams();
   const token = localStorage.getItem("token");
   const handleKonfirmasi = () => {
     setOpen(!Open);
@@ -29,7 +30,7 @@ const PembayaranSpesifikQris = (props) => {
     async function fetchData() {
       const response = await axios
         .post(
-          "https://reyhafiz.aenzt.tech/api/programs/3/buy",
+          `https://reyhafiz.aenzt.tech/api/programs/${id}/buy`,
           {
             payment_type: "qris",
           },

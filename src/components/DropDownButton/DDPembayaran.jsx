@@ -9,7 +9,7 @@ import BRI from "../../assets/BRI2.svg";
 import Bank from "../../assets/Bank.svg";
 import Down from "../../assets/Down.svg";
 
-function DropDownPembayaran() {
+function DropDownPembayaran({id}) {
   const [open, setOpen] = useState(true);
 
   //   let menuRef = useRef();
@@ -47,9 +47,9 @@ function DropDownPembayaran() {
 
         <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
           <ul>
-            <DropdownItem img={BCA} onClick="/pembayaran/bca" />
-            <DropdownItem img={BRI} onClick="/pembayaran/bri" />
-            <DropdownItem img={BNI} onClick="/pembayaran/bni" />
+            <DropdownItem img={BCA} onClick={`/pembayaran/bca/${id}`} />
+            <DropdownItem img={BRI} onClick={`/pembayaran/bri/${id}`} />
+            <DropdownItem img={BNI} onClick={`/pembayaran/bni/${id}`} />
           </ul>
         </div>
       </div>

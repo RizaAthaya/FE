@@ -7,7 +7,7 @@ import qris from "../../assets/qris.svg";
 import qr from "../../assets/qrsvg.svg";
 import Down from "../../assets/Down.svg";
 
-function DropDownPembayaran2() {
+function DropDownPembayaran2({id}) {
   const [open2, setOpen2] = useState(false);
 
   let menuRef = useRef();
@@ -45,7 +45,7 @@ function DropDownPembayaran2() {
 
         <div className={`dropdown-menu ${open2 ? "active" : "inactive"}`}>
           <ul>
-            <DropdownItem img={qris} onClick="/pembayaran/qris" />
+            <DropdownItem img={qris} onClick={`/pembayaran/qris/${id}`} />
             
           </ul>
         </div>

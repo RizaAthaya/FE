@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../css/PembayaranBCA.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
+import { rupiahFormatter } from "../components/general/rupiahformatter";
 
 //components
 import CardPembayaranBerhasil from "../components/Card/CardPembayaranBerhasil";
@@ -12,18 +13,20 @@ import Background from "../assets/backgroundPayment.svg";
 import BCA from "../assets/BCA.svg";
 import NavbarPay from "../components/general/NavbarPay";
 
+
 const PembayaranBCA = (props) => {
   const navigate = useNavigate();
   const [bankbca, setBCA] = useState([]);
   const [error, setError] = useState("");
   const [arraybca, setArrayBCA] = useState([]);
   const [Open, setOpen] = useState(false);
+  const { id } = useParams();
   const token = localStorage.getItem("token");
   useEffect(() => {
     async function fetchData() {
       const response = await axios
         .post(
-          "https://reyhafiz.aenzt.tech/api/programs/1/buy",
+          `https://reyhafiz.aenzt.tech/api/programs/${id}/buy`,
           {
             payment_type: "bca",
           },
@@ -79,7 +82,7 @@ const PembayaranBCA = (props) => {
                 <h3 className="title-bBox">Virtual Account</h3>
                 <h3 className="desc-bBox">{item.va_number}</h3>
                 <h3 className="title-bBox">Total Pembayaran</h3>
-                <h3 className="desc-bBox">Rp 500.000</h3>
+                <h3 className="desc-bBox">{rupiahFormatter(bankbca.transaction.gross_amount)}</h3>
               </div>
               <div className="right-cardSpesifik">
                 <img className="logo-bank" src={BCA}></img>

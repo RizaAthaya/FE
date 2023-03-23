@@ -69,11 +69,11 @@ function App() {
         <Route element={<ProtectedRoute />}>
           <Route path="/home" element={<Home2 />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/pembayaran" element={<Pembayaran />} />
-          <Route path="/pembayaran/bca" element={<PembayaranBCA />} />
-          <Route path="/pembayaran/bni" element={<PembayaranBNI />} />
-          <Route path="/pembayaran/qris" element={<PembayaranSpesifikQris />} />
-          <Route path="/pembayaran/bri" element={<PembayaranBRI />} />
+          <Route path="/pembayaran/:id" element={<Pembayaran />} />
+          <Route path="/pembayaran/bca/:id" element={<PembayaranBCA />} />
+          <Route path="/pembayaran/bni/:id" element={<PembayaranBNI />} />
+          <Route path="/pembayaran/qris/:id" element={<PembayaranSpesifikQris />} />
+          <Route path="/pembayaran/bri/:id" element={<PembayaranBRI />} />
           <Route path="/detailartikellogin/:id" element={<DetailArtikelLogin />} />
           <Route path="/artikelLogin" element={<ArtikelLogin />} />
           <Route path="/komunitaslogin" element={<KomunitasLogin />} />

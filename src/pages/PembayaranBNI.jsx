@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "../css/PembayaranBCA.css";
+import { rupiahFormatter } from "../components/general/rupiahformatter";
 
 //components
 import CardPembayaranBerhasil from "../components/Card/CardPembayaranBerhasil";
@@ -15,8 +16,10 @@ import NavbarPay from "../components/general/NavbarPay";
 const PembayaranBNI = (props) => {
   const [Open, setOpen] = useState(false);
   const [bni, setBNI] = useState([]);
+  const [semua, setSemua] = useState([]);
   const [error, setError] = useState("");
   const token = localStorage.getItem("token");
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const handleKonfirmasi = () => {
@@ -29,7 +32,7 @@ const PembayaranBNI = (props) => {
     async function fetchData() {
       const response = await axios
         .post(
-          "https://reyhafiz.aenzt.tech/api/programs/3/buy",
+          `https://reyhafiz.aenzt.tech/api/programs/${id}/buy`,
           {
             payment_type: "bni",
           },
@@ -42,6 +45,7 @@ const PembayaranBNI = (props) => {
         .then((response) => {
           // console.log(response);
           setBNI(response.data.data.Virtual_Account_Number);
+          setSemua(response.data.data);
           console.log(response.data);
         })
         .catch((error) => {
@@ -75,7 +79,7 @@ const PembayaranBNI = (props) => {
                 <h3 className="title-bBox">Virtual Account</h3>
                 <h3 className="desc-bBox">{item.va_number}</h3>
                 <h3 className="title-bBox">Total Pembayaran</h3>
-                <h3 className="desc-bBox">Rp 500.000</h3>
+                <h3 className="desc-bBox">{rupiahFormatter(semua.transaction.gross_amount)}</h3>
               </div>
               <div className="right-cardSpesifik">
                 <img className="logo-bank" src={BNI}></img>

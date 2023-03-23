@@ -14,7 +14,7 @@ const CardSA = ({ linkImg, tag1, tag2, title, harga, id}) => {
   };
   const handleClick2 = () => {
     if (window.localStorage.getItem("token")) {
-      navigate("/pembayaran");
+      navigate(`/pembayaran/${id}`);
     } else {
       navigate("/login");
     }
